@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE cov SYSTEM "ucdb_srcinfo.dtd">
+  <srcinfo name="/home/12112195/register-controller-functional-coverage/funct_cov/delivery"  >
+    <ucapi_version  major_ver="13"  minor_ver="1"  patch_str="N-2017.12-1"  />
+      <fileinfo name=".mhdlinst.dat"  id="0"  />
+      <fileinfo name="../../tb/interface.sv"  id="1"  />
+      <fileinfo name="../../tb/transaction.sv"  id="2"  />
+      <fileinfo name="../../tb/test_registry.sv"  id="3"  />
+      <fileinfo name="../../tb/driver.sv"  id="4"  />
+      <fileinfo name="../../tb/coverage.sv"  id="5"  />
+      <fileinfo name="../../tb/monitor.sv"  id="6"  />
+      <fileinfo name="../../tb/scoreboard.sv"  id="7"  />
+      <fileinfo name="../../tb/generator.sv"  id="8"  />
+      <fileinfo name="../../tb/enviroment.sv"  id="9"  />
+      <fileinfo name="../../tests/basic_test.sv"  id="10"  />
+      <fileinfo name="../../tb/reg_ctrl_tb.sv"  id="11"  />
+      <fileinfo name="/home/suleiman/sv_blackbox2_exercise10/delivery/../dut.sv"  id="12"  />
+    </srcinfo>

@@ -1,0 +1,81 @@
+Command: /home/12112195/register-controller-functional-coverage/funct_cov/delivery/./simv +vcs+vcdpluson -l ../../results/logs/simulation.log +vcdfile=../../results/logs/dump.vcd
+Chronologic VCS simulator copyright 1991-2017
+Contains Synopsys proprietary information.
+Compiler version N-2017.12-1_Full64; Runtime version N-2017.12-1_Full64;  Jun 11 19:11 2025
+VCD+ Writer N-2017.12-1_Full64 Copyright (c) 1991-2017 by Synopsys Inc.
+T=20000 [Generator] Generating 10 transactions ...
+T=20000 [Driver] starting ...
+T=20000 [Monitor] starting ...
+T=30000 [Driver] waiting for item ...
+T=30000 [Driver] addr=0x87 wr=1 wdata=0x11f58b rdata=0x0
+T=50000 [Driver] waiting for item ...
+T=50000 [Driver] addr=0x36 wr=0 wdata=0x241f28 rdata=0x0
+T=50000 [Monitor] addr=0x87 wr=1 wdata=0x11f58b rdata=0x0
+T=50000 [Scoreboard] addr=0x87 wr=1 wdata=0x11f58b rdata=0x0
+T=50000 [Scoreboard] Store addr=0x87 wr=0x1 data=0x11f58b
+T=70000 [Driver] waiting for item ...
+T=70000 [Driver] addr=0x6a wr=0 wdata=0x896db3 rdata=0x0
+T=90000 [Driver] wait until ready is high
+T=90000 [Monitor] addr=0x36 wr=0 wdata=0x241f28 rdata=0x123456
+T=90000 [Scoreboard] addr=0x36 wr=0 wdata=0x241f28 rdata=0x123456
+T=90000 [Scoreboard] ERROR! First time read, addr=0x36 exp=1234 act=0x123456
+T=110000 [Driver] waiting for item ...
+T=110000 [Driver] addr=0xcc wr=1 wdata=0xf9fbf7 rdata=0x0
+T=130000 [Driver] wait until ready is high
+T=130000 [Monitor] addr=0x6a wr=0 wdata=0x896db3 rdata=0x123456
+T=130000 [Scoreboard] addr=0x6a wr=0 wdata=0x896db3 rdata=0x123456
+T=130000 [Scoreboard] ERROR! First time read, addr=0x6a exp=1234 act=0x123456
+T=150000 [Driver] waiting for item ...
+T=150000 [Driver] addr=0x22 wr=0 wdata=0xca4953 rdata=0x0
+T=150000 [Monitor] addr=0xcc wr=1 wdata=0xf9fbf7 rdata=0x0
+T=150000 [Scoreboard] addr=0xcc wr=1 wdata=0xf9fbf7 rdata=0x0
+T=150000 [Scoreboard] Store addr=0xcc wr=0x1 data=0xf9fbf7
+T=170000 [Driver] waiting for item ...
+T=170000 [Driver] addr=0x2d wr=0 wdata=0x5e8709 rdata=0x0
+T=190000 [Driver] wait until ready is high
+T=190000 [Monitor] addr=0x22 wr=0 wdata=0xca4953 rdata=0x123456
+T=190000 [Scoreboard] addr=0x22 wr=0 wdata=0xca4953 rdata=0x123456
+T=190000 [Scoreboard] ERROR! First time read, addr=0x22 exp=1234 act=0x123456
+T=210000 [Driver] waiting for item ...
+T=210000 [Driver] addr=0xab wr=1 wdata=0xd11a73 rdata=0x0
+T=230000 [Driver] wait until ready is high
+T=230000 [Monitor] addr=0x2d wr=0 wdata=0x5e8709 rdata=0x123456
+T=230000 [Scoreboard] addr=0x2d wr=0 wdata=0x5e8709 rdata=0x123456
+T=230000 [Scoreboard] ERROR! First time read, addr=0x2d exp=1234 act=0x123456
+T=250000 [Driver] waiting for item ...
+T=250000 [Driver] addr=0x15 wr=0 wdata=0x30bdfc rdata=0x0
+T=250000 [Monitor] addr=0xab wr=1 wdata=0xd11a73 rdata=0x0
+T=250000 [Scoreboard] addr=0xab wr=1 wdata=0xd11a73 rdata=0x0
+T=250000 [Scoreboard] Store addr=0xab wr=0x1 data=0xd11a73
+T=270000 [Driver] waiting for item ...
+T=270000 [Driver] addr=0x9d wr=0 wdata=0x5ae843 rdata=0x0
+T=290000 [Driver] wait until ready is high
+T=290000 [Monitor] addr=0x15 wr=0 wdata=0x30bdfc rdata=0x123456
+T=290000 [Scoreboard] addr=0x15 wr=0 wdata=0x30bdfc rdata=0x123456
+T=290000 [Scoreboard] ERROR! First time read, addr=0x15 exp=1234 act=0x123456
+T=310000 [Driver] waiting for item ...
+T=310000 [Driver] addr=0x20 wr=1 wdata=0x2f49e1 rdata=0x0
+T=330000 [Driver] wait until ready is high
+T=330000 [Monitor] addr=0x9d wr=0 wdata=0x5ae843 rdata=0x123456
+T=330000 [Scoreboard] addr=0x9d wr=0 wdata=0x5ae843 rdata=0x123456
+T=330000 [Scoreboard] ERROR! First time read, addr=0x9d exp=1234 act=0x123456
+T=350000 [Driver] waiting for item ...
+T=350000 [Driver] addr=0xaa wr=1 wdata=0xbeef rdata=0x0
+T=350000 [Monitor] addr=0x20 wr=1 wdata=0x2f49e1 rdata=0x0
+T=350000 [Scoreboard] addr=0x20 wr=1 wdata=0x2f49e1 rdata=0x0
+T=350000 [Scoreboard] Store addr=0x20 wr=0x1 data=0x2f49e1
+T=370000 [Driver] waiting for item ...
+T=370000 [Driver] addr=0xaa wr=0 wdata=0x72b486 rdata=0x0
+T=370000 [Monitor] addr=0xaa wr=1 wdata=0xbeef rdata=0x0
+T=370000 [Scoreboard] addr=0xaa wr=1 wdata=0xbeef rdata=0x0
+T=370000 [Scoreboard] Store addr=0xaa wr=0x1 data=0xbeef
+T=390000 [Driver] waiting for item ...
+T=410000 [Monitor] addr=0xaa wr=0 wdata=0x72b486 rdata=0xbeef
+T=410000 [Scoreboard] addr=0xaa wr=0 wdata=0x72b486 rdata=0xbeef
+T=410000 [Scoreboard] PASS! addr=0xaa exp=0xbeef act=0xbeef
+$finish called from file "../../tb/reg_ctrl_tb.sv", line 35.
+$finish at simulation time               520000
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 520000 ps
+CPU Time:      0.300 seconds;       Data structure size:   0.0Mb
+Wed Jun 11 19:11:22 2025

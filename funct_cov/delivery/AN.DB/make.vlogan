@@ -1,0 +1,17 @@
+
+VLOGAN	= vlogan
+VLOGAN_OPT	= -l ../../results/logs/compile_cov.log -sverilog
+
+all :		_VCSgd_C8Tegb_1.db \
+	_VCSgd_TuRBPc_1.db \
+
+
+
+_VCSgd_C8Tegb_1.db :	../../tb/interface.sv 
+		${VLOGAN}  ${VLOGAN_OPT} ../../tb/interface.sv
+
+
+_VCSgd_TuRBPc_1.db :	../../tb/reg_ctrl_tb.sv 
+		${VLOGAN}  ${VLOGAN_OPT} ../../tb/reg_ctrl_tb.sv
+
+

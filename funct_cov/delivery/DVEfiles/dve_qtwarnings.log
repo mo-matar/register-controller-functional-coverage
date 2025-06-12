@@ -1,0 +1,13 @@
+QWarning: QString::arg(): Argument missing: .4.4.-1.-1.%, 0
+QWarning: QString::arg(): Argument missing: .6.6.-1.-1.%, 0
+QWarning: QString::arg(): Argument missing: .13.13.-1.-1.%, 0
+QWarning: QString::arg(): Argument missing: .21.21.-1.-1.%, 0
+QWarning: QString::arg(): Argument missing: .28.28.-1.-1.%, 0
+QWarning: QString::arg(): Argument missing: .33.33.-1.-1.%, 0
+QWarning: QString::arg(): Argument missing: .38.38.-1.-1.%, 0
+QWarning: QString::arg(): Argument missing: .69.69.-1.-1.%, 0
+QWarning: QString::arg(): Argument missing: .44.44.-1.-1.%, 0
+QWarning: QString::arg(): Argument missing: .49.49.-1.-1.%, 0
+QWarning: QString::arg(): Argument missing: .56.56.-1.-1.%, 0
+QWarning: QString::arg(): Argument missing: .62.62.-1.-1.%, 0
+QWarning: QMetaObjectCleanUp::setMetaObject: Double use of QMetaObjectCleanUp!

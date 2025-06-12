@@ -1,0 +1,5 @@
+{"comelab":{"timestamp_begin":1749658057.114149393, "rt":1.55, "ut":0.99, "st":0.69}}
+{"SNPS_VCS_INTERNAL_ROOT_START_TIME": 1749658056.730323659}
+{"VCS_COMP_START_TIME": 1749658056.730323659}
+{"VCS_COMP_END_TIME": 1749658058.698187266}
+{"VCS_USER_OPTIONS": "-debug_access+all -full64 +vcs+vcdpluson tb -l ../../results/logs/build.log"}

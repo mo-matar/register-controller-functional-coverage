@@ -1,0 +1,21 @@
+Command: vlogan -sverilog ../../tb/interface.sv ../../tb/transaction.sv ../../tb/driver.sv \
+../../tb/monitor.sv ../../tb/checker.sv ../../tb/generator.sv ../../tests/basic_test.sv \
+../../tb/reg_ctrl_tb.sv -l ../../results/logs/compile.log
+                         Chronologic VCS (TM)
+           Version N-2017.12-1 -- Wed Jun 11 19:11:19 2025
+               Copyright (c) 1991-2017 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+Parsing design file '../../tb/interface.sv'
+Parsing design file '../../tb/transaction.sv'
+Parsing design file '../../tb/driver.sv'
+Parsing design file '../../tb/monitor.sv'
+Parsing design file '../../tb/checker.sv'
+Parsing design file '../../tb/generator.sv'
+Parsing design file '../../tests/basic_test.sv'
+Parsing design file '../../tb/reg_ctrl_tb.sv'
+CPU time: .092 seconds to compile

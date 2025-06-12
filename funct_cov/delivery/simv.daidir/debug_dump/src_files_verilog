@@ -1,0 +1,12 @@
+/home/12112195/register-controller-functional-coverage/tb/coverage.sv
+/home/12112195/register-controller-functional-coverage/tb/driver.sv
+/home/12112195/register-controller-functional-coverage/tb/enviroment.sv
+/home/12112195/register-controller-functional-coverage/tb/generator.sv
+/home/12112195/register-controller-functional-coverage/tb/interface.sv
+/home/12112195/register-controller-functional-coverage/tb/monitor.sv
+/home/12112195/register-controller-functional-coverage/tb/reg_ctrl_tb.sv
+/home/12112195/register-controller-functional-coverage/tb/scoreboard.sv
+/home/12112195/register-controller-functional-coverage/tb/test_registry.sv
+/home/12112195/register-controller-functional-coverage/tb/transaction.sv
+/home/12112195/register-controller-functional-coverage/tests/basic_test.sv
+/home/suleiman/sv_blackbox2_exercise10/dut.sv

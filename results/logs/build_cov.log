@@ -1,0 +1,109 @@
+Command: vcs -full64 -licqueue -timescale=1ns/1ns +vcs+flush+all +warn=all -sverilog \
+-debug_access+all +vcs+vcdpluson -cm line+cond+fsm+branch+tgl tb -l ../../results/logs/build_cov.log \
+
+Doing common elaboration 
+                         Chronologic VCS (TM)
+        Version N-2017.12-1_Full64 -- Thu Jun 12 23:07:14 2025
+               Copyright (c) 1991-2017 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+Top Level Modules:
+       tb
+TimeScale is 1 ns / 1 ps
+VCS Coverage Metrics Release N-2017.12-1_Full64 Copyright (c) 1991-2017 by Synopsys Inc.
+***** Warning: +memcbk/-debug_access will not enable toggle coverage on MDAs.  Please use -cm_tgl mda to enable it.
+
+Warning-[CPBRM] Precision or Sign Mismatch
+../../tb/coverage.sv, 72
+  Potential precision or sign mismatch in range values of user defined bin 
+  read_after_acc of coverpoint special_cases in covergroup 
+  $unit::coverage_collector::reg_ctrl_cg
+  Source info: bins read_after_acc = { 3'b01x } ;. Values outside the valid 
+  coverpoint range will either be deleted(singleton values) or 
+  adjusted(ranges) as per the precision semantics.
+
+
+Warning-[PSBU] Invalid values in bin
+../../tb/coverage.sv, 72
+_vcs_unit__2555075540, "$unit::coverage_collector::reg_ctrl_cg"
+  Bin 'read_after_acc' of coverpoint 'special_cases' in covergroup 
+  '$unit::coverage_collector::reg_ctrl_cg' is excluded as all bin values are 
+  invalid as per precision semantics. In addition, any cross bin referring to 
+  this coverpoint bin will also be excluded.
+  Make sure that the bin references values within the valid coverpoint range 
+  and the values do not have X/Z bits.
+
+
+Warning-[CPBRM] Precision or Sign Mismatch
+../../tb/coverage.sv, 73
+  Potential precision or sign mismatch in range values of user defined bin 
+  simple_write of coverpoint special_cases in covergroup 
+  $unit::coverage_collector::reg_ctrl_cg
+  Source info: bins simple_write = { 3'b10x } ;. Values outside the valid 
+  coverpoint range will either be deleted(singleton values) or 
+  adjusted(ranges) as per the precision semantics.
+
+
+Warning-[PSBU] Invalid values in bin
+../../tb/coverage.sv, 73
+_vcs_unit__2555075540, "$unit::coverage_collector::reg_ctrl_cg"
+  Bin 'simple_write' of coverpoint 'special_cases' in covergroup 
+  '$unit::coverage_collector::reg_ctrl_cg' is excluded as all bin values are 
+  invalid as per precision semantics. In addition, any cross bin referring to 
+  this coverpoint bin will also be excluded.
+  Make sure that the bin references values within the valid coverpoint range 
+  and the values do not have X/Z bits.
+
+
+Warning-[CPBRM] Precision or Sign Mismatch
+../../tb/coverage.sv, 74
+  Potential precision or sign mismatch in range values of user defined bin 
+  simple_read of coverpoint special_cases in covergroup 
+  $unit::coverage_collector::reg_ctrl_cg
+  Source info: bins simple_read = { 3'b00x } ;. Values outside the valid 
+  coverpoint range will either be deleted(singleton values) or 
+  adjusted(ranges) as per the precision semantics.
+
+
+Warning-[PSBU] Invalid values in bin
+../../tb/coverage.sv, 74
+_vcs_unit__2555075540, "$unit::coverage_collector::reg_ctrl_cg"
+  Bin 'simple_read' of coverpoint 'special_cases' in covergroup 
+  '$unit::coverage_collector::reg_ctrl_cg' is excluded as all bin values are 
+  invalid as per precision semantics. In addition, any cross bin referring to 
+  this coverpoint bin will also be excluded.
+  Make sure that the bin references values within the valid coverpoint range 
+  and the values do not have X/Z bits.
+
+Starting vcs inline pass...
+3 modules and 0 UDP read.
+recompiling module tb
+	However, due to incremental compilation, only 1 module needs to be compiled. 
+make[1]: Entering directory `/home/12112195/register-controller-functional-coverage/funct_cov/delivery/csrc' \
+
+rm -f _csrc*.so pre_vcsobj_*.so share_vcsobj_*.so
+ld -shared  -o .//../simv.daidir//_csrc0.so objs/amcQw_d.o 
+rm -f _csrc0.so
+if [ -x ../simv ]; then chmod -x ../simv; fi
+g++  -o ../simv   -Wl,-rpath-link=./ -Wl,-rpath='$ORIGIN'/simv.daidir/ -Wl,-rpath=./simv.daidir/ \
+-Wl,-rpath='$ORIGIN'/simv.daidir//scsim.db.dir  -rdynamic    _71789_archive_1.so \
+_prev_archive_1.so _csrc0.so  SIM_l.o  _csrc0.so     rmapats_mop.o rmapats.o rmar.o \
+rmar_nd.o  rmar_llvm_0_1.o rmar_llvm_0_0.o          /Disk2/eda/synopsys/2017-18/RHELx86/VCSMX_2017.12-1/linux64/lib/libzerosoft_rt_stubs.so \
+/Disk2/eda/synopsys/2017-18/RHELx86/VCSMX_2017.12-1/linux64/lib/liberrorinf.so /Disk2/eda/synopsys/2017-18/RHELx86/VCSMX_2017.12-1/linux64/lib/libsnpsmalloc.so \
+/Disk2/eda/synopsys/2017-18/RHELx86/VCSMX_2017.12-1/linux64/lib/libvfs.so    /Disk2/eda/synopsys/2017-18/RHELx86/VCSMX_2017.12-1/linux64/lib/libvcsnew.so \
+/Disk2/eda/synopsys/2017-18/RHELx86/VCSMX_2017.12-1/linux64/lib/libsimprofile.so \
+/Disk2/eda/synopsys/2017-18/RHELx86/VCSMX_2017.12-1/linux64/lib/libvirsim.so /Disk2/eda/synopsys/2017-18/RHELx86/VCSMX_2017.12-1/linux64/lib/libreader_common.so \
+/Disk2/eda/synopsys/2017-18/RHELx86/VCSMX_2017.12-1/linux64/lib/libBA.a /Disk2/eda/synopsys/2017-18/RHELx86/VCSMX_2017.12-1/linux64/lib/libuclinative.so \
+/Disk2/eda/synopsys/2017-18/RHELx86/VCSMX_2017.12-1/linux64/lib/vcs_tls.o   -Wl,-whole-archive \
+/Disk2/eda/synopsys/2017-18/RHELx86/VCSMX_2017.12-1/linux64/lib/libvcsucli.so -Wl,-no-whole-archive \
+_vcs_pli_stub_.o   /Disk2/eda/synopsys/2017-18/RHELx86/VCSMX_2017.12-1/linux64/lib/vcs_save_restore_new.o \
+/Disk2/eda/synopsys/2017-18/RHELx86/VERDI_2017.12-1/share/PLI/VCS/LINUX64/pli.a -ldl \
+-lc -lm -lpthread -ldl 
+../simv up to date
+make[1]: Leaving directory `/home/12112195/register-controller-functional-coverage/funct_cov/delivery/csrc' \
+
+CPU time: .478 seconds to compile + .353 seconds to elab + .364 seconds to link

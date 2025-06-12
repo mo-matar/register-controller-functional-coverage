@@ -1,0 +1,1701 @@
+Command: /home/12112195/register-controller-functional-coverage/funct_cov/delivery/./simv +vcs+vcdpluson -cm line+cond+fsm+branch+tgl -l ../../results/logs/simulation_cov.log +vcdfile=../../results/logs/dump_cov.vcd
+Chronologic VCS simulator copyright 1991-2017
+Contains Synopsys proprietary information.
+Compiler version N-2017.12-1_Full64; Runtime version N-2017.12-1_Full64;  Jun 12 23:07 2025
+VCD+ Writer N-2017.12-1_Full64 Copyright (c) 1991-2017 by Synopsys Inc.
+T=20000 [Test] Environment started ...
+T=20000 [Driver] starting ...
+T=20000 [Monitor] starting ...
+T=20000 [Generator] Generating 2000 transactions ...
+T=30000 [Driver] waiting for item ...
+T=30000 [Driver] addr=0xcc RD   NO_ACC wdata=0x34 rdata=0x0
+T=50000 [Driver] waiting for item ...
+T=50000 [Driver] addr=0xd8 WR   NO_ACC wdata=0x57d58 rdata=0x0
+T=70000 [Driver] wait until ready is high
+T=70000 [Monitor] addr=0xcc RD   NO_ACC wdata=0x34 rdata=0x123456
+[SCB] PASS! Addr 0xcc: 0x123456
+T=90000 [Driver] waiting for item ...
+T=90000 [Driver] addr=0x79 RD   NO_ACC wdata=0xcaef02 rdata=0x0
+T=90000 [Monitor] addr=0xd8 WR   NO_ACC wdata=0x57d58 rdata=0x0
+[SCB] Writing to Addr 0xd8: the value is 0x57d58
+[SCB] Updated Addr 0xd8: New value is 0x57d58
+T=110000 [Driver] waiting for item ...
+T=110000 [Driver] addr=0x11 WR   NO_ACC wdata=0x293f rdata=0x0
+T=130000 [Driver] wait until ready is high
+T=130000 [Monitor] addr=0x79 RD   NO_ACC wdata=0xcaef02 rdata=0x123456
+[SCB] PASS! Addr 0x79: 0x123456
+T=150000 [Driver] waiting for item ...
+T=150000 [Driver] addr=0x78 WR ACC_MULT wdata=0x5d rdata=0x0
+T=150000 [Monitor] addr=0x11 WR   NO_ACC wdata=0x293f rdata=0x0
+[SCB] Writing to Addr 0x11: the value is 0x293f
+[SCB] Updated Addr 0x11: New value is 0x293f
+T=170000 [Driver] waiting for item ...
+T=170000 [Driver] addr=0x9b WR   NO_ACC wdata=0xffffff rdata=0x0
+T=170000 [Monitor] addr=0x78 WR ACC_MULT wdata=0x5d rdata=0x0
+[SCB] Writing to Addr 0x78: the value is 0x5d
+[SCB] Updated Addr 0x78: New value is 0x9d033e
+T=190000 [Driver] waiting for item ...
+T=190000 [Driver] addr=0x64 RD   NO_ACC wdata=0x9bcf4 rdata=0x0
+T=190000 [Monitor] addr=0x9b WR   NO_ACC wdata=0xffffff rdata=0x0
+[SCB] Writing to Addr 0x9b: the value is 0xffffff
+[SCB] Updated Addr 0x9b: New value is 0xffffff
+T=210000 [Driver] waiting for item ...
+T=210000 [Driver] addr=0x3a RD   NO_ACC wdata=0xea4df rdata=0x0
+T=230000 [Driver] wait until ready is high
+T=230000 [Monitor] addr=0x64 RD   NO_ACC wdata=0x9bcf4 rdata=0x123456
+[SCB] PASS! Addr 0x64: 0x123456
+T=250000 [Driver] waiting for item ...
+T=250000 [Driver] addr=0xd0 RD   NO_ACC wdata=0x1150 rdata=0x0
+T=270000 [Driver] wait until ready is high
+T=270000 [Monitor] addr=0x3a RD   NO_ACC wdata=0xea4df rdata=0x123456
+[SCB] PASS! Addr 0x3a: 0x123456
+T=290000 [Driver] waiting for item ...
+T=290000 [Driver] addr=0xd1 WR   NO_ACC wdata=0xa4 rdata=0x0
+T=310000 [Driver] wait until ready is high
+T=310000 [Monitor] addr=0xd0 RD   NO_ACC wdata=0x1150 rdata=0x123456
+[SCB] PASS! Addr 0xd0: 0x123456
+T=330000 [Driver] waiting for item ...
+T=330000 [Driver] addr=0xb8 WR  ACC_ADD wdata=0x4a rdata=0x0
+T=330000 [Monitor] addr=0xd1 WR   NO_ACC wdata=0xa4 rdata=0x0
+[SCB] Writing to Addr 0xd1: the value is 0xa4
+[SCB] Updated Addr 0xd1: New value is 0xa4
+T=350000 [Driver] waiting for item ...
+T=350000 [Driver] addr=0x80 RD   NO_ACC wdata=0x825001 rdata=0x0
+T=350000 [Monitor] addr=0xb8 WR  ACC_ADD wdata=0x4a rdata=0x0
+[SCB] Writing to Addr 0xb8: the value is 0x4a
+[SCB] Updated Addr 0xb8: New value is 0x1234a0
+T=370000 [Driver] waiting for item ...
+T=370000 [Driver] addr=0xf2 RD   NO_ACC wdata=0x5c rdata=0x0
+T=390000 [Driver] wait until ready is high
+T=390000 [Monitor] addr=0x80 RD   NO_ACC wdata=0x825001 rdata=0x123456
+[SCB] PASS! Addr 0x80: 0x123456
+T=410000 [Driver] waiting for item ...
+T=410000 [Driver] addr=0x33 WR   NO_ACC wdata=0x3b0587 rdata=0x0
+T=430000 [Driver] wait until ready is high
+T=430000 [Monitor] addr=0xf2 RD   NO_ACC wdata=0x5c rdata=0x123456
+[SCB] PASS! Addr 0xf2: 0x123456
+T=450000 [Driver] waiting for item ...
+T=450000 [Driver] addr=0x8b RD   NO_ACC wdata=0x8521 rdata=0x0
+T=450000 [Monitor] addr=0x33 WR   NO_ACC wdata=0x3b0587 rdata=0x0
+[SCB] Writing to Addr 0x33: the value is 0x3b0587
+[SCB] Updated Addr 0x33: New value is 0x3b0587
+T=470000 [Driver] waiting for item ...
+T=470000 [Driver] addr=0xab WR   NO_ACC wdata=0x47 rdata=0x0
+T=490000 [Driver] wait until ready is high
+T=490000 [Monitor] addr=0x8b RD   NO_ACC wdata=0x8521 rdata=0x123456
+[SCB] PASS! Addr 0x8b: 0x123456
+T=510000 [Driver] waiting for item ...
+T=510000 [Driver] addr=0x3c RD   NO_ACC wdata=0xcbe28b rdata=0x0
+T=510000 [Monitor] addr=0xab WR   NO_ACC wdata=0x47 rdata=0x0
+[SCB] Writing to Addr 0xab: the value is 0x47
+[SCB] Updated Addr 0xab: New value is 0x47
+T=530000 [Driver] waiting for item ...
+T=530000 [Driver] addr=0x8d RD   NO_ACC wdata=0xef7 rdata=0x0
+T=550000 [Driver] wait until ready is high
+T=550000 [Monitor] addr=0x3c RD   NO_ACC wdata=0xcbe28b rdata=0x123456
+[SCB] PASS! Addr 0x3c: 0x123456
+T=570000 [Driver] waiting for item ...
+T=570000 [Driver] addr=0x83 RD   NO_ACC wdata=0x7f05e rdata=0x0
+T=590000 [Driver] wait until ready is high
+T=590000 [Monitor] addr=0x8d RD   NO_ACC wdata=0xef7 rdata=0x123456
+[SCB] PASS! Addr 0x8d: 0x123456
+T=610000 [Driver] waiting for item ...
+T=610000 [Driver] addr=0x2d RD   NO_ACC wdata=0xc305b6 rdata=0x0
+T=630000 [Driver] wait until ready is high
+T=630000 [Monitor] addr=0x83 RD   NO_ACC wdata=0x7f05e rdata=0x123456
+[SCB] PASS! Addr 0x83: 0x123456
+T=650000 [Driver] waiting for item ...
+T=650000 [Driver] addr=0x75 RD   NO_ACC wdata=0x4e0b0c rdata=0x0
+T=670000 [Driver] wait until ready is high
+T=670000 [Monitor] addr=0x2d RD   NO_ACC wdata=0xc305b6 rdata=0x123456
+[SCB] PASS! Addr 0x2d: 0x123456
+T=690000 [Driver] waiting for item ...
+T=690000 [Driver] addr=0x9d RD   NO_ACC wdata=0x160de rdata=0x0
+T=710000 [Driver] wait until ready is high
+T=710000 [Monitor] addr=0x75 RD   NO_ACC wdata=0x4e0b0c rdata=0x123456
+[SCB] PASS! Addr 0x75: 0x123456
+T=730000 [Driver] waiting for item ...
+T=730000 [Driver] addr=0x9c RD   NO_ACC wdata=0x8399ab rdata=0x0
+T=750000 [Driver] wait until ready is high
+T=750000 [Monitor] addr=0x9d RD   NO_ACC wdata=0x160de rdata=0x123456
+[SCB] PASS! Addr 0x9d: 0x123456
+T=770000 [Driver] waiting for item ...
+T=770000 [Driver] addr=0xd8 RD   NO_ACC wdata=0xa72ec rdata=0x0
+T=790000 [Driver] wait until ready is high
+T=790000 [Monitor] addr=0x9c RD   NO_ACC wdata=0x8399ab rdata=0x123456
+[SCB] PASS! Addr 0x9c: 0x123456
+T=810000 [Driver] waiting for item ...
+T=810000 [Driver] addr=0xbe RD   NO_ACC wdata=0x55e22 rdata=0x0
+T=830000 [Driver] wait until ready is high
+T=830000 [Monitor] addr=0xd8 RD   NO_ACC wdata=0xa72ec rdata=0x57d58
+[SCB] PASS! Addr 0xd8: 0x57d58
+T=850000 [Driver] waiting for item ...
+T=850000 [Driver] addr=0xec WR   NO_ACC wdata=0x8 rdata=0x0
+T=870000 [Driver] wait until ready is high
+T=870000 [Monitor] addr=0xbe RD   NO_ACC wdata=0x55e22 rdata=0x123456
+[SCB] PASS! Addr 0xbe: 0x123456
+T=890000 [Driver] waiting for item ...
+T=890000 [Driver] addr=0x66 WR   NO_ACC wdata=0x3898f9 rdata=0x0
+T=890000 [Monitor] addr=0xec WR   NO_ACC wdata=0x8 rdata=0x0
+[SCB] Writing to Addr 0xec: the value is 0x8
+[SCB] Updated Addr 0xec: New value is 0x8
+T=910000 [Driver] waiting for item ...
+T=910000 [Driver] addr=0x93 WR   NO_ACC wdata=0x2ea2 rdata=0x0
+T=910000 [Monitor] addr=0x66 WR   NO_ACC wdata=0x3898f9 rdata=0x0
+[SCB] Writing to Addr 0x66: the value is 0x3898f9
+[SCB] Updated Addr 0x66: New value is 0x3898f9
+T=930000 [Driver] waiting for item ...
+T=930000 [Driver] addr=0xb4 RD ACC_MULT wdata=0x7 rdata=0x0
+T=930000 [Monitor] addr=0x93 WR   NO_ACC wdata=0x2ea2 rdata=0x0
+[SCB] Writing to Addr 0x93: the value is 0x2ea2
+[SCB] Updated Addr 0x93: New value is 0x2ea2
+T=950000 [Driver] waiting for item ...
+T=950000 [Driver] addr=0x95 RD   NO_ACC wdata=0xa304b rdata=0x0
+T=970000 [Driver] waiting for item ...
+T=970000 [Driver] addr=0x2c WR   NO_ACC wdata=0x30680 rdata=0x0
+T=990000 [Driver] wait until ready is high
+T=990000 [Monitor] addr=0xb4 RD ACC_MULT wdata=0x7 rdata=0x123456
+[SCB] PASS! Addr 0xb4: 0x123456
+T=1010000 [Driver] waiting for item ...
+T=1010000 [Driver] addr=0x30 RD   NO_ACC wdata=0x3cde2 rdata=0x0
+T=1010000 [Monitor] addr=0x2c WR   NO_ACC wdata=0x30680 rdata=0x0
+[SCB] Writing to Addr 0x2c: the value is 0x30680
+[SCB] Updated Addr 0x2c: New value is 0x30680
+T=1020000 [Test] Reporting coverage ...
+
+=== ENHANCED FUNCTIONAL COVERAGE REPORT ===
+Total Coverage: 92.34%
+Address Coverage: 100.00%
+Write Data Coverage: 80.00%
+Read Data Coverage: 100.00%
+Write/Read Coverage: 100.00%
+Accumulate Coverage: 100.00%
+Function Coverage: 100.00%
+
+Cross Coverage:
+WR x Addr: 85.71%
+WR x ACC: 100.00%
+ACC x Func: 100.00%
+Addr x Wdata: 50.00%
+Special Cases: 100.00%
+==========================================
+
+T=1030000 [Driver] waiting for item ...
+T=1030000 [Driver] addr=0xa7 RD   NO_ACC wdata=0xffffff rdata=0x0
+T=1050000 [Driver] wait until ready is high
+T=1050000 [Monitor] addr=0x30 RD   NO_ACC wdata=0x3cde2 rdata=0x123456
+[SCB] PASS! Addr 0x30: 0x123456
+T=1070000 [Driver] waiting for item ...
+T=1070000 [Driver] addr=0xe9 WR   NO_ACC wdata=0x39c2 rdata=0x0
+T=1090000 [Driver] wait until ready is high
+T=1090000 [Monitor] addr=0xa7 RD   NO_ACC wdata=0xffffff rdata=0x123456
+[SCB] PASS! Addr 0xa7: 0x123456
+T=1110000 [Driver] waiting for item ...
+T=1110000 [Driver] addr=0xe5 RD  ACC_ADD wdata=0x2b rdata=0x0
+T=1110000 [Monitor] addr=0xe9 WR   NO_ACC wdata=0x39c2 rdata=0x0
+[SCB] Writing to Addr 0xe9: the value is 0x39c2
+[SCB] Updated Addr 0xe9: New value is 0x39c2
+T=1130000 [Driver] waiting for item ...
+T=1130000 [Driver] addr=0x60 RD ACC_MULT wdata=0xd rdata=0x0
+T=1150000 [Driver] waiting for item ...
+T=1150000 [Driver] addr=0x85 WR ACC_MULT wdata=0x1a rdata=0x0
+T=1170000 [Driver] waiting for item ...
+T=1170000 [Driver] addr=0x67 RD ACC_MULT wdata=0x4e rdata=0x0
+T=1190000 [Driver] waiting for item ...
+T=1190000 [Driver] addr=0x21 RD   NO_ACC wdata=0xe69a rdata=0x0
+T=1210000 [Driver] waiting for item ...
+T=1210000 [Driver] addr=0x4b WR ACC_MULT wdata=0xd rdata=0x0
+T=1230000 [Driver] wait until ready is high
+T=1230000 [Monitor] addr=0xe5 RD  ACC_ADD wdata=0x2b rdata=0x123456
+[SCB] PASS! Addr 0xe5: 0x123456
+T=1250000 [Driver] waiting for item ...
+T=1250000 [Driver] addr=0x7d RD   NO_ACC wdata=0xa784e7 rdata=0x0
+T=1250000 [Monitor] addr=0x4b WR ACC_MULT wdata=0xd rdata=0x0
+[SCB] Writing to Addr 0x4b: the value is 0xd
+[SCB] Updated Addr 0x4b: New value is 0xeca85e
+T=1270000 [Driver] waiting for item ...
+T=1270000 [Driver] addr=0xba RD   NO_ACC wdata=0x6a5351 rdata=0x0
+T=1290000 [Driver] wait until ready is high
+T=1290000 [Monitor] addr=0x7d RD   NO_ACC wdata=0xa784e7 rdata=0x123456
+[SCB] PASS! Addr 0x7d: 0x123456
+T=1310000 [Driver] waiting for item ...
+T=1310000 [Driver] addr=0x50 WR ACC_MULT wdata=0x2 rdata=0x0
+T=1330000 [Driver] wait until ready is high
+T=1330000 [Monitor] addr=0xba RD   NO_ACC wdata=0x6a5351 rdata=0x123456
+[SCB] PASS! Addr 0xba: 0x123456
+T=1350000 [Driver] waiting for item ...
+T=1350000 [Driver] addr=0x80 RD   NO_ACC wdata=0x0 rdata=0x0
+T=1350000 [Monitor] addr=0x50 WR ACC_MULT wdata=0x2 rdata=0x0
+[SCB] Writing to Addr 0x50: the value is 0x2
+[SCB] Updated Addr 0x50: New value is 0x2468ac
+T=1370000 [Driver] waiting for item ...
+T=1370000 [Driver] addr=0xa0 WR   NO_ACC wdata=0xaffaa rdata=0x0
+T=1390000 [Driver] wait until ready is high
+T=1390000 [Monitor] addr=0x80 RD   NO_ACC wdata=0x0 rdata=0x123456
+[SCB] PASS! Addr 0x80: 0x123456
+T=1410000 [Driver] waiting for item ...
+T=1410000 [Driver] addr=0x34 WR   NO_ACC wdata=0x99b8d rdata=0x0
+T=1410000 [Monitor] addr=0xa0 WR   NO_ACC wdata=0xaffaa rdata=0x0
+[SCB] Writing to Addr 0xa0: the value is 0xaffaa
+[SCB] Updated Addr 0xa0: New value is 0xaffaa
+T=1430000 [Driver] waiting for item ...
+T=1430000 [Driver] addr=0x94 WR  ACC_ADD wdata=0x46 rdata=0x0
+T=1430000 [Monitor] addr=0x34 WR   NO_ACC wdata=0x99b8d rdata=0x0
+[SCB] Writing to Addr 0x34: the value is 0x99b8d
+[SCB] Updated Addr 0x34: New value is 0x99b8d
+T=1450000 [Driver] waiting for item ...
+T=1450000 [Driver] addr=0x58 RD  ACC_ADD wdata=0x16 rdata=0x0
+T=1450000 [Monitor] addr=0x94 WR  ACC_ADD wdata=0x46 rdata=0x0
+[SCB] Writing to Addr 0x94: the value is 0x46
+[SCB] Updated Addr 0x94: New value is 0x12349c
+T=1470000 [Driver] waiting for item ...
+T=1470000 [Driver] addr=0xff WR   NO_ACC wdata=0x9469 rdata=0x0
+T=1490000 [Driver] waiting for item ...
+T=1490000 [Driver] addr=0xda WR   NO_ACC wdata=0xbb120 rdata=0x0
+T=1510000 [Driver] waiting for item ...
+T=1510000 [Driver] addr=0x6e WR  ACC_ADD wdata=0x36 rdata=0x0
+T=1530000 [Driver] waiting for item ...
+T=1530000 [Driver] addr=0x3c WR   NO_ACC wdata=0x89e07 rdata=0x0
+T=1550000 [Driver] waiting for item ...
+T=1550000 [Driver] addr=0x48 RD   NO_ACC wdata=0x619e9a rdata=0x0
+T=1570000 [Driver] waiting for item ...
+T=1570000 [Driver] addr=0xa9 RD  ACC_ADD wdata=0x4c rdata=0x0
+T=1590000 [Driver] wait until ready is high
+T=1590000 [Monitor] addr=0x58 RD  ACC_ADD wdata=0x16 rdata=0x123456
+[SCB] PASS! Addr 0x58: 0x123456
+T=1610000 [Driver] waiting for item ...
+T=1610000 [Driver] addr=0x2c RD   NO_ACC wdata=0xbc rdata=0x0
+T=1630000 [Driver] waiting for item ...
+T=1630000 [Driver] addr=0x73 RD   NO_ACC wdata=0x777b2 rdata=0x0
+T=1650000 [Driver] wait until ready is high
+T=1650000 [Monitor] addr=0xa9 RD  ACC_ADD wdata=0x4c rdata=0x30680
+[SCB] ERROR! Addr 0xa9: Exp=0x123456 Act=0x30680
+T=1670000 [Driver] waiting for item ...
+T=1670000 [Driver] addr=0x7e WR   NO_ACC wdata=0x16a66 rdata=0x0
+T=1690000 [Driver] wait until ready is high
+T=1690000 [Monitor] addr=0x73 RD   NO_ACC wdata=0x777b2 rdata=0x123456
+[SCB] PASS! Addr 0x73: 0x123456
+T=1710000 [Driver] waiting for item ...
+T=1710000 [Driver] addr=0x17 WR  ACC_ADD wdata=0x26 rdata=0x0
+T=1710000 [Monitor] addr=0x7e WR   NO_ACC wdata=0x16a66 rdata=0x0
+[SCB] Writing to Addr 0x7e: the value is 0x16a66
+[SCB] Updated Addr 0x7e: New value is 0x16a66
+T=1730000 [Driver] waiting for item ...
+T=1730000 [Driver] addr=0xc5 RD ACC_MULT wdata=0x62 rdata=0x0
+T=1730000 [Monitor] addr=0x17 WR  ACC_ADD wdata=0x26 rdata=0x0
+[SCB] Writing to Addr 0x17: the value is 0x26
+[SCB] Updated Addr 0x17: New value is 0x12347c
+T=1750000 [Driver] waiting for item ...
+T=1750000 [Driver] addr=0x6c WR   NO_ACC wdata=0x50bc rdata=0x0
+T=1770000 [Driver] waiting for item ...
+T=1770000 [Driver] addr=0x64 WR  ACC_ADD wdata=0x3c rdata=0x0
+T=1790000 [Driver] waiting for item ...
+T=1790000 [Driver] addr=0x23 RD   NO_ACC wdata=0xd7df rdata=0x0
+T=1810000 [Driver] waiting for item ...
+T=1810000 [Driver] addr=0x6f WR   NO_ACC wdata=0xae77 rdata=0x0
+T=1830000 [Driver] wait until ready is high
+T=1830000 [Monitor] addr=0xc5 RD ACC_MULT wdata=0x62 rdata=0x123456
+[SCB] PASS! Addr 0xc5: 0x123456
+T=1850000 [Driver] waiting for item ...
+T=1850000 [Driver] addr=0x33 WR   NO_ACC wdata=0x3e6af2 rdata=0x0
+T=1850000 [Monitor] addr=0x6f WR   NO_ACC wdata=0xae77 rdata=0x0
+[SCB] Writing to Addr 0x6f: the value is 0xae77
+[SCB] Updated Addr 0x6f: New value is 0xae77
+T=1870000 [Driver] waiting for item ...
+T=1870000 [Driver] addr=0x5b WR   NO_ACC wdata=0xa9275 rdata=0x0
+T=1870000 [Monitor] addr=0x33 WR   NO_ACC wdata=0x3e6af2 rdata=0x0
+[SCB] Writing to Addr 0x33: the value is 0x3e6af2
+[SCB] Updated Addr 0x33: New value is 0x3e6af2
+T=1890000 [Driver] waiting for item ...
+T=1890000 [Driver] addr=0x9d RD   NO_ACC wdata=0x77b15 rdata=0x0
+T=1890000 [Monitor] addr=0x5b WR   NO_ACC wdata=0xa9275 rdata=0x0
+[SCB] Writing to Addr 0x5b: the value is 0xa9275
+[SCB] Updated Addr 0x5b: New value is 0xa9275
+T=1910000 [Driver] waiting for item ...
+T=1910000 [Driver] addr=0x94 WR ACC_MULT wdata=0x2a rdata=0x0
+T=1930000 [Driver] wait until ready is high
+T=1930000 [Monitor] addr=0x9d RD   NO_ACC wdata=0x77b15 rdata=0x123456
+[SCB] PASS! Addr 0x9d: 0x123456
+T=1950000 [Driver] waiting for item ...
+T=1950000 [Driver] addr=0xf2 RD  ACC_ADD wdata=0xd rdata=0x0
+T=1950000 [Monitor] addr=0x94 WR ACC_MULT wdata=0x2a rdata=0x0
+[SCB] Writing to Addr 0x94: the value is 0x2a
+[SCB] Updated Addr 0x94: New value is 0xfca198
+T=1970000 [Driver] waiting for item ...
+T=1970000 [Driver] addr=0xa0 WR  ACC_ADD wdata=0x24 rdata=0x0
+T=1990000 [Driver] waiting for item ...
+T=1990000 [Driver] addr=0x79 WR   NO_ACC wdata=0x173963 rdata=0x0
+T=2010000 [Driver] waiting for item ...
+T=2010000 [Driver] addr=0xdd WR ACC_MULT wdata=0x4b rdata=0x0
+T=2030000 [Driver] waiting for item ...
+T=2030000 [Driver] addr=0xc0 RD   NO_ACC wdata=0x802fdf rdata=0x0
+T=2050000 [Driver] waiting for item ...
+T=2050000 [Driver] addr=0xa2 RD   NO_ACC wdata=0x4476 rdata=0x0
+T=2070000 [Driver] wait until ready is high
+T=2070000 [Monitor] addr=0xf2 RD  ACC_ADD wdata=0xd rdata=0x123456
+[SCB] PASS! Addr 0xf2: 0x123456
+T=2090000 [Driver] waiting for item ...
+T=2090000 [Driver] addr=0x59 WR   NO_ACC wdata=0x4dbd rdata=0x0
+T=2110000 [Driver] wait until ready is high
+T=2110000 [Monitor] addr=0xa2 RD   NO_ACC wdata=0x4476 rdata=0x123456
+[SCB] PASS! Addr 0xa2: 0x123456
+T=2130000 [Driver] waiting for item ...
+T=2130000 [Driver] addr=0xf8 RD   NO_ACC wdata=0x7e28d0 rdata=0x0
+T=2130000 [Monitor] addr=0x59 WR   NO_ACC wdata=0x4dbd rdata=0x0
+[SCB] Writing to Addr 0x59: the value is 0x4dbd
+[SCB] Updated Addr 0x59: New value is 0x4dbd
+T=2150000 [Driver] waiting for item ...
+T=2150000 [Driver] addr=0x10 RD   NO_ACC wdata=0x8170 rdata=0x0
+T=2170000 [Driver] wait until ready is high
+T=2170000 [Monitor] addr=0xf8 RD   NO_ACC wdata=0x7e28d0 rdata=0x123456
+[SCB] PASS! Addr 0xf8: 0x123456
+T=2190000 [Driver] waiting for item ...
+T=2190000 [Driver] addr=0x35 RD   NO_ACC wdata=0xffffff rdata=0x0
+T=2210000 [Driver] wait until ready is high
+T=2210000 [Monitor] addr=0x10 RD   NO_ACC wdata=0x8170 rdata=0x123456
+[SCB] PASS! Addr 0x10: 0x123456
+T=2230000 [Driver] waiting for item ...
+T=2230000 [Driver] addr=0x7d RD   NO_ACC wdata=0xa2639 rdata=0x0
+T=2250000 [Driver] wait until ready is high
+T=2250000 [Monitor] addr=0x35 RD   NO_ACC wdata=0xffffff rdata=0x123456
+[SCB] PASS! Addr 0x35: 0x123456
+T=2270000 [Driver] waiting for item ...
+T=2270000 [Driver] addr=0x4d RD  ACC_ADD wdata=0x25 rdata=0x0
+T=2290000 [Driver] wait until ready is high
+T=2290000 [Monitor] addr=0x7d RD   NO_ACC wdata=0xa2639 rdata=0x123456
+[SCB] PASS! Addr 0x7d: 0x123456
+T=2310000 [Driver] waiting for item ...
+T=2310000 [Driver] addr=0x6b RD   NO_ACC wdata=0xee rdata=0x0
+T=2330000 [Driver] waiting for item ...
+T=2330000 [Driver] addr=0x1f RD   NO_ACC wdata=0xced rdata=0x0
+T=2350000 [Driver] wait until ready is high
+T=2350000 [Monitor] addr=0x4d RD  ACC_ADD wdata=0x25 rdata=0x123456
+[SCB] PASS! Addr 0x4d: 0x123456
+T=2370000 [Driver] waiting for item ...
+T=2370000 [Driver] addr=0xd3 WR  ACC_ADD wdata=0x57 rdata=0x0
+T=2390000 [Driver] wait until ready is high
+T=2390000 [Monitor] addr=0x1f RD   NO_ACC wdata=0xced rdata=0x123456
+[SCB] PASS! Addr 0x1f: 0x123456
+T=2410000 [Driver] waiting for item ...
+T=2410000 [Driver] addr=0x97 RD   NO_ACC wdata=0x321b6 rdata=0x0
+T=2410000 [Monitor] addr=0xd3 WR  ACC_ADD wdata=0x57 rdata=0x0
+[SCB] Writing to Addr 0xd3: the value is 0x57
+[SCB] Updated Addr 0xd3: New value is 0x1234ad
+T=2430000 [Driver] waiting for item ...
+T=2430000 [Driver] addr=0xf4 WR ACC_MULT wdata=0x12 rdata=0x0
+T=2450000 [Driver] wait until ready is high
+T=2450000 [Monitor] addr=0x97 RD   NO_ACC wdata=0x321b6 rdata=0x123456
+[SCB] PASS! Addr 0x97: 0x123456
+T=2470000 [Driver] waiting for item ...
+T=2470000 [Driver] addr=0x71 WR   NO_ACC wdata=0xdd1e rdata=0x0
+T=2470000 [Monitor] addr=0xf4 WR ACC_MULT wdata=0x12 rdata=0x0
+[SCB] Writing to Addr 0xf4: the value is 0x12
+[SCB] Updated Addr 0xf4: New value is 0x47ae0c
+T=2490000 [Driver] waiting for item ...
+T=2490000 [Driver] addr=0xc6 RD   NO_ACC wdata=0xce98f3 rdata=0x0
+T=2490000 [Monitor] addr=0x71 WR   NO_ACC wdata=0xdd1e rdata=0x0
+[SCB] Writing to Addr 0x71: the value is 0xdd1e
+[SCB] Updated Addr 0x71: New value is 0xdd1e
+T=2510000 [Driver] waiting for item ...
+T=2510000 [Driver] addr=0xa7 RD   NO_ACC wdata=0xfdfc5c rdata=0x0
+T=2530000 [Driver] wait until ready is high
+T=2530000 [Monitor] addr=0xc6 RD   NO_ACC wdata=0xce98f3 rdata=0x123456
+[SCB] PASS! Addr 0xc6: 0x123456
+T=2550000 [Driver] waiting for item ...
+T=2550000 [Driver] addr=0x64 RD   NO_ACC wdata=0xb83d rdata=0x0
+T=2570000 [Driver] wait until ready is high
+T=2570000 [Monitor] addr=0xa7 RD   NO_ACC wdata=0xfdfc5c rdata=0x123456
+[SCB] PASS! Addr 0xa7: 0x123456
+T=2590000 [Driver] waiting for item ...
+T=2590000 [Driver] addr=0x3 WR ACC_MULT wdata=0x6 rdata=0x0
+T=2610000 [Driver] wait until ready is high
+T=2610000 [Monitor] addr=0x64 RD   NO_ACC wdata=0xb83d rdata=0x3c
+[SCB] ERROR! Addr 0x64: Exp=0x123456 Act=0x3c
+T=2630000 [Driver] waiting for item ...
+T=2630000 [Driver] addr=0xbf WR   NO_ACC wdata=0x2c405 rdata=0x0
+T=2630000 [Monitor] addr=0x3 WR ACC_MULT wdata=0x6 rdata=0x0
+[SCB] Writing to Addr 0x3: the value is 0x6
+[SCB] Updated Addr 0x3: New value is 0x6d3a04
+T=2650000 [Driver] waiting for item ...
+T=2650000 [Driver] addr=0xb7 RD   NO_ACC wdata=0xf4 rdata=0x0
+T=2650000 [Monitor] addr=0xbf WR   NO_ACC wdata=0x2c405 rdata=0x0
+[SCB] Writing to Addr 0xbf: the value is 0x2c405
+[SCB] Updated Addr 0xbf: New value is 0x2c405
+T=2670000 [Driver] waiting for item ...
+T=2670000 [Driver] addr=0xc6 RD  ACC_ADD wdata=0x4d rdata=0x0
+T=2690000 [Driver] wait until ready is high
+T=2690000 [Monitor] addr=0xb7 RD   NO_ACC wdata=0xf4 rdata=0x123456
+[SCB] PASS! Addr 0xb7: 0x123456
+T=2710000 [Driver] waiting for item ...
+T=2710000 [Driver] addr=0xdc RD ACC_MULT wdata=0x54 rdata=0x0
+T=2730000 [Driver] waiting for item ...
+T=2730000 [Driver] addr=0xd2 WR   NO_ACC wdata=0xc3299e rdata=0x0
+T=2750000 [Driver] waiting for item ...
+T=2750000 [Driver] addr=0xa6 RD  ACC_ADD wdata=0x3d rdata=0x0
+T=2770000 [Driver] waiting for item ...
+T=2770000 [Driver] addr=0x4e WR   NO_ACC wdata=0x4e5b20 rdata=0x0
+T=2790000 [Driver] waiting for item ...
+T=2790000 [Driver] addr=0x75 WR   NO_ACC wdata=0x75d9 rdata=0x0
+T=2810000 [Driver] waiting for item ...
+T=2810000 [Driver] addr=0xc9 WR   NO_ACC wdata=0x15d3 rdata=0x0
+T=2830000 [Driver] waiting for item ...
+T=2830000 [Driver] addr=0xc8 RD   NO_ACC wdata=0xf2 rdata=0x0
+T=2850000 [Driver] waiting for item ...
+T=2850000 [Driver] addr=0xb8 WR ACC_MULT wdata=0x24 rdata=0x0
+T=2870000 [Driver] wait until ready is high
+T=2870000 [Monitor] addr=0xc6 RD  ACC_ADD wdata=0x4d rdata=0x123456
+[SCB] PASS! Addr 0xc6: 0x123456
+T=2890000 [Driver] waiting for item ...
+T=2890000 [Driver] addr=0xb6 WR   NO_ACC wdata=0x9ba6 rdata=0x0
+T=2890000 [Monitor] addr=0xb8 WR ACC_MULT wdata=0x24 rdata=0x0
+[SCB] Writing to Addr 0xb8: the value is 0x24
+[SCB] Updated Addr 0xb8: New value is 0x8f6680
+T=2910000 [Driver] waiting for item ...
+T=2910000 [Driver] addr=0xeb WR   NO_ACC wdata=0x4d rdata=0x0
+T=2910000 [Monitor] addr=0xb6 WR   NO_ACC wdata=0x9ba6 rdata=0x0
+[SCB] Writing to Addr 0xb6: the value is 0x9ba6
+[SCB] Updated Addr 0xb6: New value is 0x9ba6
+T=2930000 [Driver] waiting for item ...
+T=2930000 [Driver] addr=0x49 WR   NO_ACC wdata=0x8b52 rdata=0x0
+T=2930000 [Monitor] addr=0xeb WR   NO_ACC wdata=0x4d rdata=0x0
+[SCB] Writing to Addr 0xeb: the value is 0x4d
+[SCB] Updated Addr 0xeb: New value is 0x4d
+T=2950000 [Driver] waiting for item ...
+T=2950000 [Driver] addr=0xdc WR ACC_MULT wdata=0x5c rdata=0x0
+T=2950000 [Monitor] addr=0x49 WR   NO_ACC wdata=0x8b52 rdata=0x0
+[SCB] Writing to Addr 0x49: the value is 0x8b52
+[SCB] Updated Addr 0x49: New value is 0x8b52
+T=2970000 [Driver] waiting for item ...
+T=2970000 [Driver] addr=0x11 RD ACC_MULT wdata=0x5d rdata=0x0
+T=2970000 [Monitor] addr=0xdc WR ACC_MULT wdata=0x5c rdata=0x0
+[SCB] Writing to Addr 0xdc: the value is 0x5c
+[SCB] Updated Addr 0xdc: New value is 0x8acee8
+T=2990000 [Driver] waiting for item ...
+T=2990000 [Driver] addr=0xa8 RD   NO_ACC wdata=0x2516 rdata=0x0
+T=3010000 [Driver] waiting for item ...
+T=3010000 [Driver] addr=0x40 WR   NO_ACC wdata=0xd96 rdata=0x0
+T=3030000 [Driver] wait until ready is high
+T=3030000 [Monitor] addr=0x11 RD ACC_MULT wdata=0x5d rdata=0x123456
+[SCB] ERROR! Addr 0x11: Exp=0x293f Act=0x123456
+T=3050000 [Driver] waiting for item ...
+T=3050000 [Driver] addr=0x45 WR   NO_ACC wdata=0x8030 rdata=0x0
+T=3050000 [Monitor] addr=0x40 WR   NO_ACC wdata=0xd96 rdata=0x0
+[SCB] Writing to Addr 0x40: the value is 0xd96
+[SCB] Updated Addr 0x40: New value is 0xd96
+T=3070000 [Driver] waiting for item ...
+T=3070000 [Driver] addr=0xcf RD ACC_MULT wdata=0xd rdata=0x0
+T=3070000 [Monitor] addr=0x45 WR   NO_ACC wdata=0x8030 rdata=0x0
+[SCB] Writing to Addr 0x45: the value is 0x8030
+[SCB] Updated Addr 0x45: New value is 0x8030
+T=3090000 [Driver] waiting for item ...
+T=3090000 [Driver] addr=0x88 RD ACC_MULT wdata=0x19 rdata=0x0
+T=3110000 [Driver] waiting for item ...
+T=3110000 [Driver] addr=0xb5 WR  ACC_ADD wdata=0x51 rdata=0x0
+T=3130000 [Driver] waiting for item ...
+T=3130000 [Driver] addr=0x2 WR   NO_ACC wdata=0xb2424 rdata=0x0
+T=3150000 [Driver] waiting for item ...
+T=3150000 [Driver] addr=0x9b RD   NO_ACC wdata=0x110d rdata=0x0
+T=3170000 [Driver] waiting for item ...
+T=3170000 [Driver] addr=0x35 RD   NO_ACC wdata=0xb2b7 rdata=0x0
+T=3190000 [Driver] wait until ready is high
+T=3190000 [Monitor] addr=0xcf RD ACC_MULT wdata=0xd rdata=0xffffff
+[SCB] ERROR! Addr 0xcf: Exp=0x123456 Act=0xffffff
+T=3210000 [Driver] waiting for item ...
+T=3210000 [Driver] addr=0xfe RD   NO_ACC wdata=0x38 rdata=0x0
+T=3230000 [Driver] wait until ready is high
+T=3230000 [Monitor] addr=0x35 RD   NO_ACC wdata=0xb2b7 rdata=0x123456
+[SCB] PASS! Addr 0x35: 0x123456
+T=3250000 [Driver] waiting for item ...
+T=3250000 [Driver] addr=0xc9 RD   NO_ACC wdata=0xb966b rdata=0x0
+T=3270000 [Driver] wait until ready is high
+T=3270000 [Monitor] addr=0xfe RD   NO_ACC wdata=0x38 rdata=0x123456
+[SCB] PASS! Addr 0xfe: 0x123456
+T=3290000 [Driver] waiting for item ...
+T=3290000 [Driver] addr=0xeb RD   NO_ACC wdata=0x9f49c4 rdata=0x0
+T=3310000 [Driver] wait until ready is high
+T=3310000 [Monitor] addr=0xc9 RD   NO_ACC wdata=0xb966b rdata=0x15d3
+[SCB] ERROR! Addr 0xc9: Exp=0x123456 Act=0x15d3
+T=3330000 [Driver] waiting for item ...
+T=3330000 [Driver] addr=0x46 RD   NO_ACC wdata=0x0 rdata=0x0
+T=3350000 [Driver] wait until ready is high
+T=3350000 [Monitor] addr=0xeb RD   NO_ACC wdata=0x9f49c4 rdata=0x4d
+[SCB] PASS! Addr 0xeb: 0x4d
+T=3370000 [Driver] waiting for item ...
+T=3370000 [Driver] addr=0xd2 WR   NO_ACC wdata=0xce69a rdata=0x0
+T=3390000 [Driver] wait until ready is high
+T=3390000 [Monitor] addr=0x46 RD   NO_ACC wdata=0x0 rdata=0x123456
+[SCB] PASS! Addr 0x46: 0x123456
+T=3410000 [Driver] waiting for item ...
+T=3410000 [Driver] addr=0xe0 RD   NO_ACC wdata=0xe8d rdata=0x0
+T=3410000 [Monitor] addr=0xd2 WR   NO_ACC wdata=0xce69a rdata=0x0
+[SCB] Writing to Addr 0xd2: the value is 0xce69a
+[SCB] Updated Addr 0xd2: New value is 0xce69a
+T=3430000 [Driver] waiting for item ...
+T=3430000 [Driver] addr=0x6a WR   NO_ACC wdata=0x0 rdata=0x0
+T=3450000 [Driver] wait until ready is high
+T=3450000 [Monitor] addr=0xe0 RD   NO_ACC wdata=0xe8d rdata=0x123456
+[SCB] PASS! Addr 0xe0: 0x123456
+T=3470000 [Driver] waiting for item ...
+T=3470000 [Driver] addr=0x5c WR   NO_ACC wdata=0xffffff rdata=0x0
+T=3470000 [Monitor] addr=0x6a WR   NO_ACC wdata=0x0 rdata=0x0
+[SCB] Writing to Addr 0x6a: the value is 0x0
+[SCB] Updated Addr 0x6a: New value is 0x0
+T=3490000 [Driver] waiting for item ...
+T=3490000 [Driver] addr=0x8d RD   NO_ACC wdata=0x18 rdata=0x0
+T=3490000 [Monitor] addr=0x5c WR   NO_ACC wdata=0xffffff rdata=0x0
+[SCB] Writing to Addr 0x5c: the value is 0xffffff
+[SCB] Updated Addr 0x5c: New value is 0xffffff
+T=3510000 [Driver] waiting for item ...
+T=3510000 [Driver] addr=0xeb WR   NO_ACC wdata=0xac5a96 rdata=0x0
+T=3530000 [Driver] wait until ready is high
+T=3530000 [Monitor] addr=0x8d RD   NO_ACC wdata=0x18 rdata=0x123456
+[SCB] PASS! Addr 0x8d: 0x123456
+T=3550000 [Driver] waiting for item ...
+T=3550000 [Driver] addr=0x15 RD ACC_MULT wdata=0x3d rdata=0x0
+T=3550000 [Monitor] addr=0xeb WR   NO_ACC wdata=0xac5a96 rdata=0x0
+[SCB] Writing to Addr 0xeb: the value is 0xac5a96
+[SCB] Updated Addr 0xeb: New value is 0xac5a96
+T=3570000 [Driver] waiting for item ...
+T=3570000 [Driver] addr=0x3a RD   NO_ACC wdata=0x97aa8 rdata=0x0
+T=3590000 [Driver] waiting for item ...
+T=3590000 [Driver] addr=0x8b WR   NO_ACC wdata=0xd1602 rdata=0x0
+T=3610000 [Driver] wait until ready is high
+T=3610000 [Monitor] addr=0x15 RD ACC_MULT wdata=0x3d rdata=0x123456
+[SCB] PASS! Addr 0x15: 0x123456
+T=3630000 [Driver] waiting for item ...
+T=3630000 [Driver] addr=0xde RD   NO_ACC wdata=0x94ab3e rdata=0x0
+T=3630000 [Monitor] addr=0x8b WR   NO_ACC wdata=0xd1602 rdata=0x0
+[SCB] Writing to Addr 0x8b: the value is 0xd1602
+[SCB] Updated Addr 0x8b: New value is 0xd1602
+T=3650000 [Driver] waiting for item ...
+T=3650000 [Driver] addr=0x13 WR  ACC_ADD wdata=0x3e rdata=0x0
+T=3670000 [Driver] wait until ready is high
+T=3670000 [Monitor] addr=0xde RD   NO_ACC wdata=0x94ab3e rdata=0x123456
+[SCB] PASS! Addr 0xde: 0x123456
+T=3690000 [Driver] waiting for item ...
+T=3690000 [Driver] addr=0x30 RD   NO_ACC wdata=0xa37f rdata=0x0
+T=3690000 [Monitor] addr=0x13 WR  ACC_ADD wdata=0x3e rdata=0x0
+[SCB] Writing to Addr 0x13: the value is 0x3e
+[SCB] Updated Addr 0x13: New value is 0x123494
+T=3710000 [Driver] waiting for item ...
+T=3710000 [Driver] addr=0xc6 WR ACC_MULT wdata=0x4a rdata=0x0
+T=3730000 [Driver] wait until ready is high
+T=3730000 [Monitor] addr=0x30 RD   NO_ACC wdata=0xa37f rdata=0x123456
+[SCB] PASS! Addr 0x30: 0x123456
+T=3750000 [Driver] waiting for item ...
+T=3750000 [Driver] addr=0x61 RD   NO_ACC wdata=0x5a91 rdata=0x0
+T=3750000 [Monitor] addr=0xc6 WR ACC_MULT wdata=0x4a rdata=0x0
+[SCB] Writing to Addr 0xc6: the value is 0x4a
+[SCB] Updated Addr 0xc6: New value is 0x4320dc
+T=3770000 [Driver] waiting for item ...
+T=3770000 [Driver] addr=0x83 RD   NO_ACC wdata=0xc4cfa6 rdata=0x0
+T=3790000 [Driver] wait until ready is high
+T=3790000 [Monitor] addr=0x61 RD   NO_ACC wdata=0x5a91 rdata=0x123456
+[SCB] PASS! Addr 0x61: 0x123456
+T=3810000 [Driver] waiting for item ...
+T=3810000 [Driver] addr=0x41 WR   NO_ACC wdata=0x147cc rdata=0x0
+T=3830000 [Driver] wait until ready is high
+T=3830000 [Monitor] addr=0x83 RD   NO_ACC wdata=0xc4cfa6 rdata=0x123456
+[SCB] PASS! Addr 0x83: 0x123456
+T=3850000 [Driver] waiting for item ...
+T=3850000 [Driver] addr=0x66 RD   NO_ACC wdata=0x8c85c rdata=0x0
+T=3850000 [Monitor] addr=0x41 WR   NO_ACC wdata=0x147cc rdata=0x0
+[SCB] Writing to Addr 0x41: the value is 0x147cc
+[SCB] Updated Addr 0x41: New value is 0x147cc
+T=3870000 [Driver] waiting for item ...
+T=3870000 [Driver] addr=0xb2 WR   NO_ACC wdata=0xc869 rdata=0x0
+T=3890000 [Driver] wait until ready is high
+T=3890000 [Monitor] addr=0x66 RD   NO_ACC wdata=0x8c85c rdata=0x3898f9
+[SCB] PASS! Addr 0x66: 0x3898f9
+T=3910000 [Driver] waiting for item ...
+T=3910000 [Driver] addr=0x55 RD   NO_ACC wdata=0x2f42e7 rdata=0x0
+T=3910000 [Monitor] addr=0xb2 WR   NO_ACC wdata=0xc869 rdata=0x0
+[SCB] Writing to Addr 0xb2: the value is 0xc869
+[SCB] Updated Addr 0xb2: New value is 0xc869
+T=3930000 [Driver] waiting for item ...
+T=3930000 [Driver] addr=0xd9 WR   NO_ACC wdata=0xd41804 rdata=0x0
+T=3950000 [Driver] wait until ready is high
+T=3950000 [Monitor] addr=0x55 RD   NO_ACC wdata=0x2f42e7 rdata=0x123456
+[SCB] PASS! Addr 0x55: 0x123456
+T=3970000 [Driver] waiting for item ...
+T=3970000 [Driver] addr=0xbf RD   NO_ACC wdata=0x803c55 rdata=0x0
+T=3970000 [Monitor] addr=0xd9 WR   NO_ACC wdata=0xd41804 rdata=0x0
+[SCB] Writing to Addr 0xd9: the value is 0xd41804
+[SCB] Updated Addr 0xd9: New value is 0xd41804
+T=3990000 [Driver] waiting for item ...
+T=3990000 [Driver] addr=0x2e WR  ACC_ADD wdata=0x1e rdata=0x0
+T=4010000 [Driver] wait until ready is high
+T=4010000 [Monitor] addr=0xbf RD   NO_ACC wdata=0x803c55 rdata=0x2c405
+[SCB] PASS! Addr 0xbf: 0x2c405
+T=4030000 [Driver] waiting for item ...
+T=4030000 [Driver] addr=0x94 RD  ACC_ADD wdata=0x3c rdata=0x0
+T=4030000 [Monitor] addr=0x2e WR  ACC_ADD wdata=0x1e rdata=0x0
+[SCB] Writing to Addr 0x2e: the value is 0x1e
+[SCB] Updated Addr 0x2e: New value is 0x123474
+T=4050000 [Driver] waiting for item ...
+T=4050000 [Driver] addr=0x78 WR   NO_ACC wdata=0x218b6e rdata=0x0
+T=4070000 [Driver] waiting for item ...
+T=4070000 [Driver] addr=0xd3 RD   NO_ACC wdata=0xffffff rdata=0x0
+T=4090000 [Driver] waiting for item ...
+T=4090000 [Driver] addr=0x66 WR   NO_ACC wdata=0xe15b7b rdata=0x0
+T=4110000 [Driver] wait until ready is high
+T=4110000 [Monitor] addr=0x94 RD  ACC_ADD wdata=0x3c rdata=0x57
+[SCB] ERROR! Addr 0x94: Exp=0xfca198 Act=0x57
+T=4130000 [Driver] waiting for item ...
+T=4130000 [Driver] addr=0xa1 WR ACC_MULT wdata=0x4d rdata=0x0
+T=4130000 [Monitor] addr=0x66 WR   NO_ACC wdata=0xe15b7b rdata=0x0
+[SCB] Writing to Addr 0x66: the value is 0xe15b7b
+[SCB] Updated Addr 0x66: New value is 0xe15b7b
+T=4150000 [Driver] waiting for item ...
+T=4150000 [Driver] addr=0x71 RD   NO_ACC wdata=0x7d541 rdata=0x0
+T=4150000 [Monitor] addr=0xa1 WR ACC_MULT wdata=0x4d rdata=0x0
+[SCB] Writing to Addr 0xa1: the value is 0x4d
+[SCB] Updated Addr 0xa1: New value is 0x79bdde
+T=4170000 [Driver] waiting for item ...
+T=4170000 [Driver] addr=0xfe RD   NO_ACC wdata=0xd3e8 rdata=0x0
+T=4190000 [Driver] wait until ready is high
+T=4190000 [Monitor] addr=0x71 RD   NO_ACC wdata=0x7d541 rdata=0xdd1e
+[SCB] PASS! Addr 0x71: 0xdd1e
+T=4210000 [Driver] waiting for item ...
+T=4210000 [Driver] addr=0x90 WR   NO_ACC wdata=0xe5d09a rdata=0x0
+T=4230000 [Driver] wait until ready is high
+T=4230000 [Monitor] addr=0xfe RD   NO_ACC wdata=0xd3e8 rdata=0x123456
+[SCB] PASS! Addr 0xfe: 0x123456
+T=4250000 [Driver] waiting for item ...
+T=4250000 [Driver] addr=0x4b RD   NO_ACC wdata=0x1a4ee rdata=0x0
+T=4250000 [Monitor] addr=0x90 WR   NO_ACC wdata=0xe5d09a rdata=0x0
+[SCB] Writing to Addr 0x90: the value is 0xe5d09a
+[SCB] Updated Addr 0x90: New value is 0xe5d09a
+T=4270000 [Driver] waiting for item ...
+T=4270000 [Driver] addr=0xf4 RD   NO_ACC wdata=0x66c456 rdata=0x0
+T=4290000 [Driver] wait until ready is high
+T=4290000 [Monitor] addr=0x4b RD   NO_ACC wdata=0x1a4ee rdata=0xd
+[SCB] ERROR! Addr 0x4b: Exp=0xeca85e Act=0xd
+T=4310000 [Driver] waiting for item ...
+T=4310000 [Driver] addr=0x56 RD   NO_ACC wdata=0xce848 rdata=0x0
+T=4330000 [Driver] wait until ready is high
+T=4330000 [Monitor] addr=0xf4 RD   NO_ACC wdata=0x66c456 rdata=0x12
+[SCB] ERROR! Addr 0xf4: Exp=0x47ae0c Act=0x12
+T=4350000 [Driver] waiting for item ...
+T=4350000 [Driver] addr=0x17 WR   NO_ACC wdata=0x36ef rdata=0x0
+T=4370000 [Driver] wait until ready is high
+T=4370000 [Monitor] addr=0x56 RD   NO_ACC wdata=0xce848 rdata=0x123456
+[SCB] PASS! Addr 0x56: 0x123456
+T=4390000 [Driver] waiting for item ...
+T=4390000 [Driver] addr=0x8e RD   NO_ACC wdata=0xd23f rdata=0x0
+T=4390000 [Monitor] addr=0x17 WR   NO_ACC wdata=0x36ef rdata=0x0
+[SCB] Writing to Addr 0x17: the value is 0x36ef
+[SCB] Updated Addr 0x17: New value is 0x36ef
+T=4410000 [Driver] waiting for item ...
+T=4410000 [Driver] addr=0xf2 WR   NO_ACC wdata=0x4841 rdata=0x0
+T=4430000 [Driver] wait until ready is high
+T=4430000 [Monitor] addr=0x8e RD   NO_ACC wdata=0xd23f rdata=0x123456
+[SCB] PASS! Addr 0x8e: 0x123456
+T=4450000 [Driver] waiting for item ...
+T=4450000 [Driver] addr=0xa2 RD   NO_ACC wdata=0x706186 rdata=0x0
+T=4450000 [Monitor] addr=0xf2 WR   NO_ACC wdata=0x4841 rdata=0x0
+[SCB] Writing to Addr 0xf2: the value is 0x4841
+[SCB] Updated Addr 0xf2: New value is 0x4841
+T=4470000 [Driver] waiting for item ...
+T=4470000 [Driver] addr=0xa1 RD   NO_ACC wdata=0x5b96 rdata=0x0
+T=4490000 [Driver] wait until ready is high
+T=4490000 [Monitor] addr=0xa2 RD   NO_ACC wdata=0x706186 rdata=0x123456
+[SCB] PASS! Addr 0xa2: 0x123456
+T=4510000 [Driver] waiting for item ...
+T=4510000 [Driver] addr=0x9e WR   NO_ACC wdata=0x5f rdata=0x0
+T=4530000 [Driver] wait until ready is high
+T=4530000 [Monitor] addr=0xa1 RD   NO_ACC wdata=0x5b96 rdata=0x4d
+[SCB] ERROR! Addr 0xa1: Exp=0x79bdde Act=0x4d
+T=4550000 [Driver] waiting for item ...
+T=4550000 [Driver] addr=0x5e WR   NO_ACC wdata=0x38006 rdata=0x0
+T=4550000 [Monitor] addr=0x9e WR   NO_ACC wdata=0x5f rdata=0x0
+[SCB] Writing to Addr 0x9e: the value is 0x5f
+[SCB] Updated Addr 0x9e: New value is 0x5f
+T=4570000 [Driver] waiting for item ...
+T=4570000 [Driver] addr=0x27 WR  ACC_ADD wdata=0x4e rdata=0x0
+T=4570000 [Monitor] addr=0x5e WR   NO_ACC wdata=0x38006 rdata=0x0
+[SCB] Writing to Addr 0x5e: the value is 0x38006
+[SCB] Updated Addr 0x5e: New value is 0x38006
+T=4590000 [Driver] waiting for item ...
+T=4590000 [Driver] addr=0x2a RD ACC_MULT wdata=0x64 rdata=0x0
+T=4590000 [Monitor] addr=0x27 WR  ACC_ADD wdata=0x4e rdata=0x0
+[SCB] Writing to Addr 0x27: the value is 0x4e
+[SCB] Updated Addr 0x27: New value is 0x1234a4
+T=4610000 [Driver] waiting for item ...
+T=4610000 [Driver] addr=0x95 RD   NO_ACC wdata=0xa9b7b rdata=0x0
+T=4630000 [Driver] waiting for item ...
+T=4630000 [Driver] addr=0x72 RD   NO_ACC wdata=0xb3d9c rdata=0x0
+T=4650000 [Driver] wait until ready is high
+T=4650000 [Monitor] addr=0x2a RD ACC_MULT wdata=0x64 rdata=0x123456
+[SCB] PASS! Addr 0x2a: 0x123456
+T=4670000 [Driver] waiting for item ...
+T=4670000 [Driver] addr=0x8a RD   NO_ACC wdata=0xdc52d rdata=0x0
+T=4690000 [Driver] wait until ready is high
+T=4690000 [Monitor] addr=0x72 RD   NO_ACC wdata=0xb3d9c rdata=0x123456
+[SCB] PASS! Addr 0x72: 0x123456
+T=4710000 [Driver] waiting for item ...
+T=4710000 [Driver] addr=0x1d WR ACC_MULT wdata=0xd rdata=0x0
+T=4730000 [Driver] wait until ready is high
+T=4730000 [Monitor] addr=0x8a RD   NO_ACC wdata=0xdc52d rdata=0x123456
+[SCB] PASS! Addr 0x8a: 0x123456
+T=4750000 [Driver] waiting for item ...
+T=4750000 [Driver] addr=0xe4 WR   NO_ACC wdata=0x4385 rdata=0x0
+T=4750000 [Monitor] addr=0x1d WR ACC_MULT wdata=0xd rdata=0x0
+[SCB] Writing to Addr 0x1d: the value is 0xd
+[SCB] Updated Addr 0x1d: New value is 0xeca85e
+T=4770000 [Driver] waiting for item ...
+T=4770000 [Driver] addr=0x4a WR   NO_ACC wdata=0x306eb rdata=0x0
+T=4770000 [Monitor] addr=0xe4 WR   NO_ACC wdata=0x4385 rdata=0x0
+[SCB] Writing to Addr 0xe4: the value is 0x4385
+[SCB] Updated Addr 0xe4: New value is 0x4385
+T=4790000 [Driver] waiting for item ...
+T=4790000 [Driver] addr=0xff RD  ACC_ADD wdata=0x2a rdata=0x0
+T=4790000 [Monitor] addr=0x4a WR   NO_ACC wdata=0x306eb rdata=0x0
+[SCB] Writing to Addr 0x4a: the value is 0x306eb
+[SCB] Updated Addr 0x4a: New value is 0x306eb
+T=4810000 [Driver] waiting for item ...
+T=4810000 [Driver] addr=0x20 RD   NO_ACC wdata=0x813f4 rdata=0x0
+T=4830000 [Driver] waiting for item ...
+T=4830000 [Driver] addr=0x6c WR   NO_ACC wdata=0x413 rdata=0x0
+T=4850000 [Driver] wait until ready is high
+T=4850000 [Monitor] addr=0xff RD  ACC_ADD wdata=0x2a rdata=0x123456
+[SCB] PASS! Addr 0xff: 0x123456
+T=4870000 [Driver] waiting for item ...
+T=4870000 [Driver] addr=0x8d RD   NO_ACC wdata=0x7e55e rdata=0x0
+T=4870000 [Monitor] addr=0x6c WR   NO_ACC wdata=0x413 rdata=0x0
+[SCB] Writing to Addr 0x6c: the value is 0x413
+[SCB] Updated Addr 0x6c: New value is 0x413
+T=4890000 [Driver] waiting for item ...
+T=4890000 [Driver] addr=0x4e RD   NO_ACC wdata=0x841685 rdata=0x0
+T=4910000 [Driver] wait until ready is high
+T=4910000 [Monitor] addr=0x8d RD   NO_ACC wdata=0x7e55e rdata=0x123456
+[SCB] PASS! Addr 0x8d: 0x123456
+T=4930000 [Driver] waiting for item ...
+T=4930000 [Driver] addr=0xc2 RD   NO_ACC wdata=0xea rdata=0x0
+T=4950000 [Driver] wait until ready is high
+T=4950000 [Monitor] addr=0x4e RD   NO_ACC wdata=0x841685 rdata=0x4e5b20
+[SCB] ERROR! Addr 0x4e: Exp=0x123456 Act=0x4e5b20
+T=4970000 [Driver] waiting for item ...
+T=4970000 [Driver] addr=0xc2 RD   NO_ACC wdata=0xadf9c6 rdata=0x0
+T=4990000 [Driver] wait until ready is high
+T=4990000 [Monitor] addr=0xc2 RD   NO_ACC wdata=0xea rdata=0x123456
+[SCB] PASS! Addr 0xc2: 0x123456
+T=5010000 [Driver] waiting for item ...
+T=5010000 [Driver] addr=0x16 WR ACC_MULT wdata=0x54 rdata=0x0
+T=5030000 [Driver] wait until ready is high
+T=5030000 [Monitor] addr=0xc2 RD   NO_ACC wdata=0xadf9c6 rdata=0x123456
+[SCB] PASS! Addr 0xc2: 0x123456
+T=5050000 [Driver] waiting for item ...
+T=5050000 [Driver] addr=0x62 WR   NO_ACC wdata=0x9e73a rdata=0x0
+T=5050000 [Monitor] addr=0x16 WR ACC_MULT wdata=0x54 rdata=0x0
+[SCB] Writing to Addr 0x16: the value is 0x54
+[SCB] Updated Addr 0x16: New value is 0xf92c38
+T=5070000 [Driver] waiting for item ...
+T=5070000 [Driver] addr=0xe3 WR ACC_MULT wdata=0x2f rdata=0x0
+T=5070000 [Monitor] addr=0x62 WR   NO_ACC wdata=0x9e73a rdata=0x0
+[SCB] Writing to Addr 0x62: the value is 0x9e73a
+[SCB] Updated Addr 0x62: New value is 0x9e73a
+T=5090000 [Driver] waiting for item ...
+T=5090000 [Driver] addr=0x47 RD   NO_ACC wdata=0xb7b0 rdata=0x0
+T=5090000 [Monitor] addr=0xe3 WR ACC_MULT wdata=0x2f rdata=0x0
+[SCB] Writing to Addr 0xe3: the value is 0x2f
+[SCB] Updated Addr 0xe3: New value is 0x579bca
+T=5110000 [Driver] waiting for item ...
+T=5110000 [Driver] addr=0xc2 WR ACC_MULT wdata=0x35 rdata=0x0
+T=5130000 [Driver] wait until ready is high
+T=5130000 [Monitor] addr=0x47 RD   NO_ACC wdata=0xb7b0 rdata=0x123456
+[SCB] PASS! Addr 0x47: 0x123456
+T=5150000 [Driver] waiting for item ...
+T=5150000 [Driver] addr=0x8d RD   NO_ACC wdata=0x0 rdata=0x0
+T=5150000 [Monitor] addr=0xc2 WR ACC_MULT wdata=0x35 rdata=0x0
+[SCB] Writing to Addr 0xc2: the value is 0x35
+[SCB] Updated Addr 0xc2: New value is 0xc4d5ce
+T=5170000 [Driver] waiting for item ...
+T=5170000 [Driver] addr=0x60 RD   NO_ACC wdata=0x8b59 rdata=0x0
+T=5190000 [Driver] wait until ready is high
+T=5190000 [Monitor] addr=0x8d RD   NO_ACC wdata=0x0 rdata=0x123456
+[SCB] PASS! Addr 0x8d: 0x123456
+T=5210000 [Driver] waiting for item ...
+T=5210000 [Driver] addr=0xad RD   NO_ACC wdata=0xffffff rdata=0x0
+T=5230000 [Driver] wait until ready is high
+T=5230000 [Monitor] addr=0x60 RD   NO_ACC wdata=0x8b59 rdata=0xeca85e
+[SCB] ERROR! Addr 0x60: Exp=0x123456 Act=0xeca85e
+T=5250000 [Driver] waiting for item ...
+T=5250000 [Driver] addr=0xda WR   NO_ACC wdata=0xb32d5 rdata=0x0
+T=5270000 [Driver] wait until ready is high
+T=5270000 [Monitor] addr=0xad RD   NO_ACC wdata=0xffffff rdata=0x123456
+[SCB] PASS! Addr 0xad: 0x123456
+T=5290000 [Driver] waiting for item ...
+T=5290000 [Driver] addr=0x15 WR   NO_ACC wdata=0x51189 rdata=0x0
+T=5290000 [Monitor] addr=0xda WR   NO_ACC wdata=0xb32d5 rdata=0x0
+[SCB] Writing to Addr 0xda: the value is 0xb32d5
+[SCB] Updated Addr 0xda: New value is 0xb32d5
+T=5310000 [Driver] waiting for item ...
+T=5310000 [Driver] addr=0xe6 RD   NO_ACC wdata=0x6f3b0 rdata=0x0
+T=5310000 [Monitor] addr=0x15 WR   NO_ACC wdata=0x51189 rdata=0x0
+[SCB] Writing to Addr 0x15: the value is 0x51189
+[SCB] Updated Addr 0x15: New value is 0x51189
+T=5330000 [Driver] waiting for item ...
+T=5330000 [Driver] addr=0xbc RD   NO_ACC wdata=0x59 rdata=0x0
+T=5350000 [Driver] wait until ready is high
+T=5350000 [Monitor] addr=0xe6 RD   NO_ACC wdata=0x6f3b0 rdata=0x123456
+[SCB] PASS! Addr 0xe6: 0x123456
+T=5370000 [Driver] waiting for item ...
+T=5370000 [Driver] addr=0xc4 WR   NO_ACC wdata=0xb0a1 rdata=0x0
+T=5390000 [Driver] wait until ready is high
+T=5390000 [Monitor] addr=0xbc RD   NO_ACC wdata=0x59 rdata=0x123456
+[SCB] PASS! Addr 0xbc: 0x123456
+T=5410000 [Driver] waiting for item ...
+T=5410000 [Driver] addr=0x84 RD   NO_ACC wdata=0xb37c71 rdata=0x0
+T=5410000 [Monitor] addr=0xc4 WR   NO_ACC wdata=0xb0a1 rdata=0x0
+[SCB] Writing to Addr 0xc4: the value is 0xb0a1
+[SCB] Updated Addr 0xc4: New value is 0xb0a1
+T=5430000 [Driver] waiting for item ...
+T=5430000 [Driver] addr=0xbf WR   NO_ACC wdata=0xedb3 rdata=0x0
+T=5450000 [Driver] wait until ready is high
+T=5450000 [Monitor] addr=0x84 RD   NO_ACC wdata=0xb37c71 rdata=0x123456
+[SCB] PASS! Addr 0x84: 0x123456
+T=5470000 [Driver] waiting for item ...
+T=5470000 [Driver] addr=0xce RD   NO_ACC wdata=0x15f78b rdata=0x0
+T=5470000 [Monitor] addr=0xbf WR   NO_ACC wdata=0xedb3 rdata=0x0
+[SCB] Writing to Addr 0xbf: the value is 0xedb3
+[SCB] Updated Addr 0xbf: New value is 0xedb3
+T=5490000 [Driver] waiting for item ...
+T=5490000 [Driver] addr=0x25 RD ACC_MULT wdata=0x64 rdata=0x0
+T=5510000 [Driver] wait until ready is high
+T=5510000 [Monitor] addr=0xce RD   NO_ACC wdata=0x15f78b rdata=0x123456
+[SCB] PASS! Addr 0xce: 0x123456
+T=5530000 [Driver] waiting for item ...
+T=5530000 [Driver] addr=0xef WR  ACC_ADD wdata=0x2d rdata=0x0
+T=5550000 [Driver] waiting for item ...
+T=5550000 [Driver] addr=0x98 WR   NO_ACC wdata=0x458c rdata=0x0
+T=5570000 [Driver] waiting for item ...
+T=5570000 [Driver] addr=0x95 RD   NO_ACC wdata=0x8a46 rdata=0x0
+T=5590000 [Driver] waiting for item ...
+T=5590000 [Driver] addr=0x78 RD   NO_ACC wdata=0x53977e rdata=0x0
+T=5610000 [Driver] wait until ready is high
+T=5610000 [Monitor] addr=0x25 RD ACC_MULT wdata=0x64 rdata=0x123456
+[SCB] PASS! Addr 0x25: 0x123456
+T=5630000 [Driver] waiting for item ...
+T=5630000 [Driver] addr=0x74 RD   NO_ACC wdata=0x9c535 rdata=0x0
+T=5650000 [Driver] wait until ready is high
+T=5650000 [Monitor] addr=0x78 RD   NO_ACC wdata=0x53977e rdata=0x218b6e
+[SCB] ERROR! Addr 0x78: Exp=0x9d033e Act=0x218b6e
+T=5670000 [Driver] waiting for item ...
+T=5670000 [Driver] addr=0x70 RD   NO_ACC wdata=0x7614f1 rdata=0x0
+T=5690000 [Driver] wait until ready is high
+T=5690000 [Monitor] addr=0x74 RD   NO_ACC wdata=0x9c535 rdata=0x123456
+[SCB] PASS! Addr 0x74: 0x123456
+T=5710000 [Driver] waiting for item ...
+T=5710000 [Driver] addr=0x22 RD   NO_ACC wdata=0x2af2f rdata=0x0
+T=5730000 [Driver] wait until ready is high
+T=5730000 [Monitor] addr=0x70 RD   NO_ACC wdata=0x7614f1 rdata=0x123456
+[SCB] PASS! Addr 0x70: 0x123456
+T=5750000 [Driver] waiting for item ...
+T=5750000 [Driver] addr=0x4e RD   NO_ACC wdata=0x33fd0 rdata=0x0
+T=5770000 [Driver] wait until ready is high
+T=5770000 [Monitor] addr=0x22 RD   NO_ACC wdata=0x2af2f rdata=0x123456
+[SCB] PASS! Addr 0x22: 0x123456
+T=5790000 [Driver] waiting for item ...
+T=5790000 [Driver] addr=0x90 WR ACC_MULT wdata=0x42 rdata=0x0
+T=5810000 [Driver] wait until ready is high
+T=5810000 [Monitor] addr=0x4e RD   NO_ACC wdata=0x33fd0 rdata=0x4e5b20
+[SCB] ERROR! Addr 0x4e: Exp=0x123456 Act=0x4e5b20
+T=5830000 [Driver] waiting for item ...
+T=5830000 [Driver] addr=0x81 WR ACC_MULT wdata=0x50 rdata=0x0
+T=5830000 [Monitor] addr=0x90 WR ACC_MULT wdata=0x42 rdata=0x0
+[SCB] Writing to Addr 0x90: the value is 0x42
+[SCB] Updated Addr 0x90: New value is 0x3fc7b4
+T=5850000 [Driver] waiting for item ...
+T=5850000 [Driver] addr=0x32 WR   NO_ACC wdata=0x32008c rdata=0x0
+T=5850000 [Monitor] addr=0x81 WR ACC_MULT wdata=0x50 rdata=0x0
+[SCB] Writing to Addr 0x81: the value is 0x50
+[SCB] Updated Addr 0x81: New value is 0xb05ae0
+T=5870000 [Driver] waiting for item ...
+T=5870000 [Driver] addr=0xe6 WR   NO_ACC wdata=0x0 rdata=0x0
+T=5870000 [Monitor] addr=0x32 WR   NO_ACC wdata=0x32008c rdata=0x0
+[SCB] Writing to Addr 0x32: the value is 0x32008c
+[SCB] Updated Addr 0x32: New value is 0x32008c
+T=5890000 [Driver] waiting for item ...
+T=5890000 [Driver] addr=0x20 WR   NO_ACC wdata=0x9adc84 rdata=0x0
+T=5890000 [Monitor] addr=0xe6 WR   NO_ACC wdata=0x0 rdata=0x0
+[SCB] Writing to Addr 0xe6: the value is 0x0
+[SCB] Updated Addr 0xe6: New value is 0x0
+T=5910000 [Driver] waiting for item ...
+T=5910000 [Driver] addr=0x7d WR   NO_ACC wdata=0xec6bd rdata=0x0
+T=5910000 [Monitor] addr=0x20 WR   NO_ACC wdata=0x9adc84 rdata=0x0
+[SCB] Writing to Addr 0x20: the value is 0x9adc84
+[SCB] Updated Addr 0x20: New value is 0x9adc84
+T=5930000 [Driver] waiting for item ...
+T=5930000 [Driver] addr=0xc9 RD   NO_ACC wdata=0x823a rdata=0x0
+T=5930000 [Monitor] addr=0x7d WR   NO_ACC wdata=0xec6bd rdata=0x0
+[SCB] Writing to Addr 0x7d: the value is 0xec6bd
+[SCB] Updated Addr 0x7d: New value is 0xec6bd
+T=5950000 [Driver] waiting for item ...
+T=5950000 [Driver] addr=0x28 WR ACC_MULT wdata=0x52 rdata=0x0
+T=5970000 [Driver] wait until ready is high
+T=5970000 [Monitor] addr=0xc9 RD   NO_ACC wdata=0x823a rdata=0x15d3
+[SCB] ERROR! Addr 0xc9: Exp=0x123456 Act=0x15d3
+T=5990000 [Driver] waiting for item ...
+T=5990000 [Driver] addr=0x59 WR   NO_ACC wdata=0x40cb6e rdata=0x0
+T=5990000 [Monitor] addr=0x28 WR ACC_MULT wdata=0x52 rdata=0x0
+[SCB] Writing to Addr 0x28: the value is 0x52
+[SCB] Updated Addr 0x28: New value is 0xd4c38c
+T=6010000 [Driver] waiting for item ...
+T=6010000 [Driver] addr=0xc1 RD ACC_MULT wdata=0x5f rdata=0x0
+T=6010000 [Monitor] addr=0x59 WR   NO_ACC wdata=0x40cb6e rdata=0x0
+[SCB] Writing to Addr 0x59: the value is 0x40cb6e
+[SCB] Updated Addr 0x59: New value is 0x40cb6e
+T=6030000 [Driver] waiting for item ...
+T=6030000 [Driver] addr=0xe4 RD   NO_ACC wdata=0x8f20ee rdata=0x0
+T=6050000 [Driver] waiting for item ...
+T=6050000 [Driver] addr=0xa5 WR   NO_ACC wdata=0xe2 rdata=0x0
+T=6070000 [Driver] wait until ready is high
+T=6070000 [Monitor] addr=0xc1 RD ACC_MULT wdata=0x5f rdata=0x4385
+[SCB] ERROR! Addr 0xc1: Exp=0x123456 Act=0x4385
+T=6090000 [Driver] waiting for item ...
+T=6090000 [Driver] addr=0xc1 RD ACC_MULT wdata=0x1b rdata=0x0
+T=6090000 [Monitor] addr=0xa5 WR   NO_ACC wdata=0xe2 rdata=0x0
+[SCB] Writing to Addr 0xa5: the value is 0xe2
+[SCB] Updated Addr 0xa5: New value is 0xe2
+T=6110000 [Driver] waiting for item ...
+T=6110000 [Driver] addr=0x38 RD   NO_ACC wdata=0x6a62ac rdata=0x0
+T=6130000 [Driver] waiting for item ...
+T=6130000 [Driver] addr=0xb4 RD   NO_ACC wdata=0x3a66 rdata=0x0
+T=6150000 [Driver] wait until ready is high
+T=6150000 [Monitor] addr=0xc1 RD ACC_MULT wdata=0x1b rdata=0x123456
+[SCB] PASS! Addr 0xc1: 0x123456
+T=6170000 [Driver] waiting for item ...
+T=6170000 [Driver] addr=0x87 RD  ACC_ADD wdata=0xe rdata=0x0
+T=6190000 [Driver] wait until ready is high
+T=6190000 [Monitor] addr=0xb4 RD   NO_ACC wdata=0x3a66 rdata=0x7f6e5a
+[SCB] ERROR! Addr 0xb4: Exp=0x123456 Act=0x7f6e5a
+T=6210000 [Driver] waiting for item ...
+T=6210000 [Driver] addr=0x13 WR  ACC_ADD wdata=0x15 rdata=0x0
+T=6230000 [Driver] waiting for item ...
+T=6230000 [Driver] addr=0x14 RD  ACC_ADD wdata=0x3 rdata=0x0
+T=6250000 [Driver] waiting for item ...
+T=6250000 [Driver] addr=0xa0 WR ACC_MULT wdata=0x22 rdata=0x0
+T=6270000 [Driver] waiting for item ...
+T=6270000 [Driver] addr=0x1e WR  ACC_ADD wdata=0x30 rdata=0x0
+T=6290000 [Driver] waiting for item ...
+T=6290000 [Driver] addr=0x29 WR   NO_ACC wdata=0x3181 rdata=0x0
+T=6310000 [Driver] waiting for item ...
+T=6310000 [Driver] addr=0x89 RD   NO_ACC wdata=0xa9e2f rdata=0x0
+T=6330000 [Driver] waiting for item ...
+T=6330000 [Driver] addr=0x88 RD   NO_ACC wdata=0x2564 rdata=0x0
+T=6350000 [Driver] wait until ready is high
+T=6350000 [Monitor] addr=0x87 RD  ACC_ADD wdata=0xe rdata=0x123456
+[SCB] PASS! Addr 0x87: 0x123456
+T=6370000 [Driver] waiting for item ...
+T=6370000 [Driver] addr=0x2b RD   NO_ACC wdata=0x31 rdata=0x0
+T=6390000 [Driver] wait until ready is high
+T=6390000 [Monitor] addr=0x88 RD   NO_ACC wdata=0x2564 rdata=0xc71c66
+[SCB] ERROR! Addr 0x88: Exp=0x123456 Act=0xc71c66
+T=6410000 [Driver] waiting for item ...
+T=6410000 [Driver] addr=0x42 RD   NO_ACC wdata=0x1936 rdata=0x0
+T=6430000 [Driver] wait until ready is high
+T=6430000 [Monitor] addr=0x2b RD   NO_ACC wdata=0x31 rdata=0x123456
+[SCB] PASS! Addr 0x2b: 0x123456
+T=6450000 [Driver] waiting for item ...
+T=6450000 [Driver] addr=0x5e RD  ACC_ADD wdata=0x4e rdata=0x0
+T=6470000 [Driver] wait until ready is high
+T=6470000 [Monitor] addr=0x42 RD   NO_ACC wdata=0x1936 rdata=0x123456
+[SCB] PASS! Addr 0x42: 0x123456
+T=6490000 [Driver] waiting for item ...
+T=6490000 [Driver] addr=0x3f WR ACC_MULT wdata=0x2 rdata=0x0
+T=6510000 [Driver] waiting for item ...
+T=6510000 [Driver] addr=0x7b RD   NO_ACC wdata=0xc992 rdata=0x0
+T=6530000 [Driver] waiting for item ...
+T=6530000 [Driver] addr=0xdc RD ACC_MULT wdata=0x53 rdata=0x0
+T=6550000 [Driver] wait until ready is high
+T=6550000 [Monitor] addr=0x5e RD  ACC_ADD wdata=0x4e rdata=0x123456
+[SCB] ERROR! Addr 0x5e: Exp=0x38006 Act=0x123456
+T=6570000 [Driver] waiting for item ...
+T=6570000 [Driver] addr=0xf1 RD   NO_ACC wdata=0x51828e rdata=0x0
+T=6590000 [Driver] waiting for item ...
+T=6590000 [Driver] addr=0xf2 RD  ACC_ADD wdata=0x29 rdata=0x0
+T=6610000 [Driver] wait until ready is high
+T=6610000 [Monitor] addr=0xdc RD ACC_MULT wdata=0x53 rdata=0x123456
+[SCB] ERROR! Addr 0xdc: Exp=0x8acee8 Act=0x123456
+T=6630000 [Driver] waiting for item ...
+T=6630000 [Driver] addr=0xe4 WR   NO_ACC wdata=0x7f rdata=0x0
+T=6650000 [Driver] waiting for item ...
+T=6650000 [Driver] addr=0x5e WR  ACC_ADD wdata=0x50 rdata=0x0
+T=6670000 [Driver] waiting for item ...
+T=6670000 [Driver] addr=0x84 WR   NO_ACC wdata=0xd2e81 rdata=0x0
+T=6690000 [Driver] waiting for item ...
+T=6690000 [Driver] addr=0x30 RD  ACC_ADD wdata=0x4b rdata=0x0
+T=6710000 [Driver] waiting for item ...
+T=6710000 [Driver] addr=0x2e WR   NO_ACC wdata=0xc2ddd5 rdata=0x0
+T=6730000 [Driver] waiting for item ...
+T=6730000 [Driver] addr=0x13 RD   NO_ACC wdata=0x745d rdata=0x0
+T=6750000 [Driver] waiting for item ...
+T=6750000 [Driver] addr=0x17 WR   NO_ACC wdata=0xd98c rdata=0x0
+T=6770000 [Driver] wait until ready is high
+T=6770000 [Monitor] addr=0xf2 RD  ACC_ADD wdata=0x29 rdata=0x15
+[SCB] ERROR! Addr 0xf2: Exp=0x4841 Act=0x15
+T=6790000 [Driver] waiting for item ...
+T=6790000 [Driver] addr=0x50 RD   NO_ACC wdata=0x6d rdata=0x0
+T=6790000 [Monitor] addr=0x17 WR   NO_ACC wdata=0xd98c rdata=0x0
+[SCB] Writing to Addr 0x17: the value is 0xd98c
+[SCB] Updated Addr 0x17: New value is 0xd98c
+T=6810000 [Driver] waiting for item ...
+T=6810000 [Driver] addr=0x38 WR   NO_ACC wdata=0x915b90 rdata=0x0
+T=6830000 [Driver] wait until ready is high
+T=6830000 [Monitor] addr=0x50 RD   NO_ACC wdata=0x6d rdata=0x2
+[SCB] ERROR! Addr 0x50: Exp=0x2468ac Act=0x2
+T=6850000 [Driver] waiting for item ...
+T=6850000 [Driver] addr=0x34 RD  ACC_ADD wdata=0x1e rdata=0x0
+T=6850000 [Monitor] addr=0x38 WR   NO_ACC wdata=0x915b90 rdata=0x0
+[SCB] Writing to Addr 0x38: the value is 0x915b90
+[SCB] Updated Addr 0x38: New value is 0x915b90
+T=6870000 [Driver] waiting for item ...
+T=6870000 [Driver] addr=0xdd RD   NO_ACC wdata=0x50b9 rdata=0x0
+T=6890000 [Driver] waiting for item ...
+T=6890000 [Driver] addr=0x6f RD   NO_ACC wdata=0xac08 rdata=0x0
+T=6910000 [Driver] wait until ready is high
+T=6910000 [Monitor] addr=0x34 RD  ACC_ADD wdata=0x1e rdata=0x4b
+[SCB] ERROR! Addr 0x34: Exp=0x99b8d Act=0x4b
+T=6930000 [Driver] waiting for item ...
+T=6930000 [Driver] addr=0xe9 WR   NO_ACC wdata=0xa0c4 rdata=0x0
+T=6950000 [Driver] wait until ready is high
+T=6950000 [Monitor] addr=0x6f RD   NO_ACC wdata=0xac08 rdata=0xae77
+[SCB] PASS! Addr 0x6f: 0xae77
+T=6970000 [Driver] waiting for item ...
+T=6970000 [Driver] addr=0xf2 WR   NO_ACC wdata=0xffffff rdata=0x0
+T=6970000 [Monitor] addr=0xe9 WR   NO_ACC wdata=0xa0c4 rdata=0x0
+[SCB] Writing to Addr 0xe9: the value is 0xa0c4
+[SCB] Updated Addr 0xe9: New value is 0xa0c4
+T=6990000 [Driver] waiting for item ...
+T=6990000 [Driver] addr=0x2e RD   NO_ACC wdata=0x18ca rdata=0x0
+T=6990000 [Monitor] addr=0xf2 WR   NO_ACC wdata=0xffffff rdata=0x0
+[SCB] Writing to Addr 0xf2: the value is 0xffffff
+[SCB] Updated Addr 0xf2: New value is 0xffffff
+T=7010000 [Driver] waiting for item ...
+T=7010000 [Driver] addr=0xdf RD   NO_ACC wdata=0xcbfd rdata=0x0
+T=7030000 [Driver] wait until ready is high
+T=7030000 [Monitor] addr=0x2e RD   NO_ACC wdata=0x18ca rdata=0xc2ddd5
+[SCB] ERROR! Addr 0x2e: Exp=0x123474 Act=0xc2ddd5
+T=7050000 [Driver] waiting for item ...
+T=7050000 [Driver] addr=0x3e RD   NO_ACC wdata=0x0 rdata=0x0
+T=7070000 [Driver] wait until ready is high
+T=7070000 [Monitor] addr=0xdf RD   NO_ACC wdata=0xcbfd rdata=0x123456
+[SCB] PASS! Addr 0xdf: 0x123456
+T=7090000 [Driver] waiting for item ...
+T=7090000 [Driver] addr=0x5c RD   NO_ACC wdata=0xf8207b rdata=0x0
+T=7110000 [Driver] wait until ready is high
+T=7110000 [Monitor] addr=0x3e RD   NO_ACC wdata=0x0 rdata=0x123456
+[SCB] PASS! Addr 0x3e: 0x123456
+T=7130000 [Driver] waiting for item ...
+T=7130000 [Driver] addr=0x9f WR  ACC_ADD wdata=0xc rdata=0x0
+T=7150000 [Driver] wait until ready is high
+T=7150000 [Monitor] addr=0x5c RD   NO_ACC wdata=0xf8207b rdata=0xffffff
+[SCB] PASS! Addr 0x5c: 0xffffff
+T=7170000 [Driver] waiting for item ...
+T=7170000 [Driver] addr=0xce WR   NO_ACC wdata=0x63bb0b rdata=0x0
+T=7170000 [Monitor] addr=0x9f WR  ACC_ADD wdata=0xc rdata=0x0
+[SCB] Writing to Addr 0x9f: the value is 0xc
+[SCB] Updated Addr 0x9f: New value is 0x123462
+T=7190000 [Driver] waiting for item ...
+T=7190000 [Driver] addr=0x69 RD   NO_ACC wdata=0xc0de44 rdata=0x0
+T=7190000 [Monitor] addr=0xce WR   NO_ACC wdata=0x63bb0b rdata=0x0
+[SCB] Writing to Addr 0xce: the value is 0x63bb0b
+[SCB] Updated Addr 0xce: New value is 0x63bb0b
+T=7210000 [Driver] waiting for item ...
+T=7210000 [Driver] addr=0x9d WR   NO_ACC wdata=0xc58d7 rdata=0x0
+T=7230000 [Driver] wait until ready is high
+T=7230000 [Monitor] addr=0x69 RD   NO_ACC wdata=0xc0de44 rdata=0x123456
+[SCB] PASS! Addr 0x69: 0x123456
+T=7250000 [Driver] waiting for item ...
+T=7250000 [Driver] addr=0xce RD   NO_ACC wdata=0x3c7c51 rdata=0x0
+T=7250000 [Monitor] addr=0x9d WR   NO_ACC wdata=0xc58d7 rdata=0x0
+[SCB] Writing to Addr 0x9d: the value is 0xc58d7
+[SCB] Updated Addr 0x9d: New value is 0xc58d7
+T=7270000 [Driver] waiting for item ...
+T=7270000 [Driver] addr=0x94 WR   NO_ACC wdata=0xbf998 rdata=0x0
+T=7290000 [Driver] wait until ready is high
+T=7290000 [Monitor] addr=0xce RD   NO_ACC wdata=0x3c7c51 rdata=0x63bb0b
+[SCB] PASS! Addr 0xce: 0x63bb0b
+T=7310000 [Driver] waiting for item ...
+T=7310000 [Driver] addr=0xe3 WR   NO_ACC wdata=0xce26f rdata=0x0
+T=7310000 [Monitor] addr=0x94 WR   NO_ACC wdata=0xbf998 rdata=0x0
+[SCB] Writing to Addr 0x94: the value is 0xbf998
+[SCB] Updated Addr 0x94: New value is 0xbf998
+T=7330000 [Driver] waiting for item ...
+T=7330000 [Driver] addr=0xdd WR   NO_ACC wdata=0xdb985 rdata=0x0
+T=7330000 [Monitor] addr=0xe3 WR   NO_ACC wdata=0xce26f rdata=0x0
+[SCB] Writing to Addr 0xe3: the value is 0xce26f
+[SCB] Updated Addr 0xe3: New value is 0xce26f
+T=7350000 [Driver] waiting for item ...
+T=7350000 [Driver] addr=0x3a RD  ACC_ADD wdata=0x26 rdata=0x0
+T=7350000 [Monitor] addr=0xdd WR   NO_ACC wdata=0xdb985 rdata=0x0
+[SCB] Writing to Addr 0xdd: the value is 0xdb985
+[SCB] Updated Addr 0xdd: New value is 0xdb985
+T=7370000 [Driver] waiting for item ...
+T=7370000 [Driver] addr=0xac RD   NO_ACC wdata=0xe8 rdata=0x0
+T=7390000 [Driver] waiting for item ...
+T=7390000 [Driver] addr=0x74 WR   NO_ACC wdata=0x1fa949 rdata=0x0
+T=7410000 [Driver] wait until ready is high
+T=7410000 [Monitor] addr=0x3a RD  ACC_ADD wdata=0x26 rdata=0x123456
+[SCB] PASS! Addr 0x3a: 0x123456
+T=7430000 [Driver] waiting for item ...
+T=7430000 [Driver] addr=0x1a WR   NO_ACC wdata=0xe172ab rdata=0x0
+T=7430000 [Monitor] addr=0x74 WR   NO_ACC wdata=0x1fa949 rdata=0x0
+[SCB] Writing to Addr 0x74: the value is 0x1fa949
+[SCB] Updated Addr 0x74: New value is 0x1fa949
+T=7450000 [Driver] waiting for item ...
+T=7450000 [Driver] addr=0x31 WR   NO_ACC wdata=0xf1e8f9 rdata=0x0
+T=7450000 [Monitor] addr=0x1a WR   NO_ACC wdata=0xe172ab rdata=0x0
+[SCB] Writing to Addr 0x1a: the value is 0xe172ab
+[SCB] Updated Addr 0x1a: New value is 0xe172ab
+T=7470000 [Driver] waiting for item ...
+T=7470000 [Driver] addr=0x69 RD  ACC_ADD wdata=0x17 rdata=0x0
+T=7470000 [Monitor] addr=0x31 WR   NO_ACC wdata=0xf1e8f9 rdata=0x0
+[SCB] Writing to Addr 0x31: the value is 0xf1e8f9
+[SCB] Updated Addr 0x31: New value is 0xf1e8f9
+T=7490000 [Driver] waiting for item ...
+T=7490000 [Driver] addr=0xba RD   NO_ACC wdata=0xf9f1d0 rdata=0x0
+T=7510000 [Driver] waiting for item ...
+T=7510000 [Driver] addr=0x23 RD  ACC_ADD wdata=0x38 rdata=0x0
+T=7530000 [Driver] wait until ready is high
+T=7530000 [Monitor] addr=0x69 RD  ACC_ADD wdata=0x17 rdata=0x123456
+[SCB] PASS! Addr 0x69: 0x123456
+T=7550000 [Driver] waiting for item ...
+T=7550000 [Driver] addr=0x82 WR   NO_ACC wdata=0xdfe3 rdata=0x0
+T=7570000 [Driver] waiting for item ...
+T=7570000 [Driver] addr=0xd8 RD   NO_ACC wdata=0x5d1c rdata=0x0
+T=7590000 [Driver] waiting for item ...
+T=7590000 [Driver] addr=0x99 WR  ACC_ADD wdata=0x2a rdata=0x0
+T=7610000 [Driver] wait until ready is high
+T=7610000 [Monitor] addr=0x23 RD  ACC_ADD wdata=0x38 rdata=0x57d58
+[SCB] ERROR! Addr 0x23: Exp=0x123456 Act=0x57d58
+T=7630000 [Driver] waiting for item ...
+T=7630000 [Driver] addr=0xb6 RD   NO_ACC wdata=0x8850 rdata=0x0
+T=7630000 [Monitor] addr=0x99 WR  ACC_ADD wdata=0x2a rdata=0x0
+[SCB] Writing to Addr 0x99: the value is 0x2a
+[SCB] Updated Addr 0x99: New value is 0x123480
+T=7650000 [Driver] waiting for item ...
+T=7650000 [Driver] addr=0x2d WR ACC_MULT wdata=0x3 rdata=0x0
+T=7670000 [Driver] wait until ready is high
+T=7670000 [Monitor] addr=0xb6 RD   NO_ACC wdata=0x8850 rdata=0x9ba6
+[SCB] PASS! Addr 0xb6: 0x9ba6
+T=7690000 [Driver] waiting for item ...
+T=7690000 [Driver] addr=0xe6 RD   NO_ACC wdata=0xce3153 rdata=0x0
+T=7690000 [Monitor] addr=0x2d WR ACC_MULT wdata=0x3 rdata=0x0
+[SCB] Writing to Addr 0x2d: the value is 0x3
+[SCB] Updated Addr 0x2d: New value is 0x369d02
+T=7710000 [Driver] waiting for item ...
+T=7710000 [Driver] addr=0xa6 RD ACC_MULT wdata=0x29 rdata=0x0
+T=7730000 [Driver] wait until ready is high
+T=7730000 [Monitor] addr=0xe6 RD   NO_ACC wdata=0xce3153 rdata=0x0
+[SCB] PASS! Addr 0xe6: 0x0
+T=7750000 [Driver] waiting for item ...
+T=7750000 [Driver] addr=0xe2 RD  ACC_ADD wdata=0x50 rdata=0x0
+T=7770000 [Driver] waiting for item ...
+T=7770000 [Driver] addr=0x6f RD   NO_ACC wdata=0xcb5 rdata=0x0
+T=7790000 [Driver] waiting for item ...
+T=7790000 [Driver] addr=0xf0 WR   NO_ACC wdata=0x3365 rdata=0x0
+T=7810000 [Driver] wait until ready is high
+T=7810000 [Monitor] addr=0xa6 RD ACC_MULT wdata=0x29 rdata=0xae77
+[SCB] ERROR! Addr 0xa6: Exp=0x123456 Act=0xae77
+T=7830000 [Driver] waiting for item ...
+T=7830000 [Driver] addr=0xea WR   NO_ACC wdata=0x68a55 rdata=0x0
+T=7830000 [Monitor] addr=0xf0 WR   NO_ACC wdata=0x3365 rdata=0x0
+[SCB] Writing to Addr 0xf0: the value is 0x3365
+[SCB] Updated Addr 0xf0: New value is 0x3365
+T=7850000 [Driver] waiting for item ...
+T=7850000 [Driver] addr=0x8e RD   NO_ACC wdata=0xd806 rdata=0x0
+T=7850000 [Monitor] addr=0xea WR   NO_ACC wdata=0x68a55 rdata=0x0
+[SCB] Writing to Addr 0xea: the value is 0x68a55
+[SCB] Updated Addr 0xea: New value is 0x68a55
+T=7870000 [Driver] waiting for item ...
+T=7870000 [Driver] addr=0xd1 WR ACC_MULT wdata=0x49 rdata=0x0
+T=7890000 [Driver] wait until ready is high
+T=7890000 [Monitor] addr=0x8e RD   NO_ACC wdata=0xd806 rdata=0x123456
+[SCB] PASS! Addr 0x8e: 0x123456
+T=7910000 [Driver] waiting for item ...
+T=7910000 [Driver] addr=0x17 WR ACC_MULT wdata=0x36 rdata=0x0
+T=7910000 [Monitor] addr=0xd1 WR ACC_MULT wdata=0x49 rdata=0x0
+[SCB] Writing to Addr 0xd1: the value is 0x49
+[SCB] Updated Addr 0xd1: New value is 0x2ec4
+T=7930000 [Driver] waiting for item ...
+T=7930000 [Driver] addr=0x6c WR ACC_MULT wdata=0x37 rdata=0x0
+T=7930000 [Monitor] addr=0x17 WR ACC_MULT wdata=0x36 rdata=0x0
+[SCB] Writing to Addr 0x17: the value is 0x36
+[SCB] Updated Addr 0x17: New value is 0x2de388
+T=7950000 [Driver] waiting for item ...
+T=7950000 [Driver] addr=0x87 RD ACC_MULT wdata=0x18 rdata=0x0
+T=7950000 [Monitor] addr=0x6c WR ACC_MULT wdata=0x37 rdata=0x0
+[SCB] Writing to Addr 0x6c: the value is 0x37
+[SCB] Updated Addr 0x6c: New value is 0xe015
+T=7970000 [Driver] waiting for item ...
+T=7970000 [Driver] addr=0x50 RD   NO_ACC wdata=0x808c45 rdata=0x0
+T=7990000 [Driver] waiting for item ...
+T=7990000 [Driver] addr=0xd3 WR   NO_ACC wdata=0xca72d rdata=0x0
+T=8010000 [Driver] wait until ready is high
+T=8010000 [Monitor] addr=0x87 RD ACC_MULT wdata=0x18 rdata=0x2
+[SCB] ERROR! Addr 0x87: Exp=0x123456 Act=0x2
+T=8030000 [Driver] waiting for item ...
+T=8030000 [Driver] addr=0xee RD   NO_ACC wdata=0x2421 rdata=0x0
+T=8030000 [Monitor] addr=0xd3 WR   NO_ACC wdata=0xca72d rdata=0x0
+[SCB] Writing to Addr 0xd3: the value is 0xca72d
+[SCB] Updated Addr 0xd3: New value is 0xca72d
+T=8050000 [Driver] waiting for item ...
+T=8050000 [Driver] addr=0x62 WR   NO_ACC wdata=0x19c4 rdata=0x0
+T=8070000 [Driver] wait until ready is high
+T=8070000 [Monitor] addr=0xee RD   NO_ACC wdata=0x2421 rdata=0x123456
+[SCB] PASS! Addr 0xee: 0x123456
+T=8090000 [Driver] waiting for item ...
+T=8090000 [Driver] addr=0x18 WR   NO_ACC wdata=0xf58d rdata=0x0
+T=8090000 [Monitor] addr=0x62 WR   NO_ACC wdata=0x19c4 rdata=0x0
+[SCB] Writing to Addr 0x62: the value is 0x19c4
+[SCB] Updated Addr 0x62: New value is 0x19c4
+T=8110000 [Driver] waiting for item ...
+T=8110000 [Driver] addr=0x13 RD   NO_ACC wdata=0x68e67f rdata=0x0
+T=8110000 [Monitor] addr=0x18 WR   NO_ACC wdata=0xf58d rdata=0x0
+[SCB] Writing to Addr 0x18: the value is 0xf58d
+[SCB] Updated Addr 0x18: New value is 0xf58d
+T=8130000 [Driver] waiting for item ...
+T=8130000 [Driver] addr=0xcc WR   NO_ACC wdata=0xe4df3d rdata=0x0
+T=8150000 [Driver] wait until ready is high
+T=8150000 [Monitor] addr=0x13 RD   NO_ACC wdata=0x68e67f rdata=0x15
+[SCB] ERROR! Addr 0x13: Exp=0x123494 Act=0x15
+T=8170000 [Driver] waiting for item ...
+T=8170000 [Driver] addr=0xd4 WR   NO_ACC wdata=0xb281e5 rdata=0x0
+T=8170000 [Monitor] addr=0xcc WR   NO_ACC wdata=0xe4df3d rdata=0x0
+[SCB] Writing to Addr 0xcc: the value is 0xe4df3d
+[SCB] Updated Addr 0xcc: New value is 0xe4df3d
+T=8190000 [Driver] waiting for item ...
+T=8190000 [Driver] addr=0x51 WR   NO_ACC wdata=0xffffff rdata=0x0
+T=8190000 [Monitor] addr=0xd4 WR   NO_ACC wdata=0xb281e5 rdata=0x0
+[SCB] Writing to Addr 0xd4: the value is 0xb281e5
+[SCB] Updated Addr 0xd4: New value is 0xb281e5
+T=8210000 [Driver] waiting for item ...
+T=8210000 [Driver] addr=0x89 RD   NO_ACC wdata=0x921b83 rdata=0x0
+T=8210000 [Monitor] addr=0x51 WR   NO_ACC wdata=0xffffff rdata=0x0
+[SCB] Writing to Addr 0x51: the value is 0xffffff
+[SCB] Updated Addr 0x51: New value is 0xffffff
+T=8230000 [Driver] waiting for item ...
+T=8230000 [Driver] addr=0xa7 WR   NO_ACC wdata=0x78d124 rdata=0x0
+T=8250000 [Driver] wait until ready is high
+T=8250000 [Monitor] addr=0x89 RD   NO_ACC wdata=0x921b83 rdata=0x123456
+[SCB] PASS! Addr 0x89: 0x123456
+T=8270000 [Driver] waiting for item ...
+T=8270000 [Driver] addr=0x92 WR ACC_MULT wdata=0x2b rdata=0x0
+T=8270000 [Monitor] addr=0xa7 WR   NO_ACC wdata=0x78d124 rdata=0x0
+[SCB] Writing to Addr 0xa7: the value is 0x78d124
+[SCB] Updated Addr 0xa7: New value is 0x78d124
+T=8290000 [Driver] waiting for item ...
+T=8290000 [Driver] addr=0x65 RD   NO_ACC wdata=0xbebf1c rdata=0x0
+T=8290000 [Monitor] addr=0x92 WR ACC_MULT wdata=0x2b rdata=0x0
+[SCB] Writing to Addr 0x92: the value is 0x2b
+[SCB] Updated Addr 0x92: New value is 0xeca72
+T=8310000 [Driver] waiting for item ...
+T=8310000 [Driver] addr=0xe0 RD ACC_MULT wdata=0x55 rdata=0x0
+T=8330000 [Driver] wait until ready is high
+T=8330000 [Monitor] addr=0x65 RD   NO_ACC wdata=0xbebf1c rdata=0x123456
+[SCB] PASS! Addr 0x65: 0x123456
+T=8350000 [Driver] waiting for item ...
+T=8350000 [Driver] addr=0x50 RD   NO_ACC wdata=0xb33f00 rdata=0x0
+T=8370000 [Driver] waiting for item ...
+T=8370000 [Driver] addr=0xa2 WR  ACC_ADD wdata=0x45 rdata=0x0
+T=8390000 [Driver] wait until ready is high
+T=8390000 [Monitor] addr=0xe0 RD ACC_MULT wdata=0x55 rdata=0x2
+[SCB] ERROR! Addr 0xe0: Exp=0x123456 Act=0x2
+T=8410000 [Driver] waiting for item ...
+T=8410000 [Driver] addr=0x63 RD   NO_ACC wdata=0x0 rdata=0x0
+T=8410000 [Monitor] addr=0xa2 WR  ACC_ADD wdata=0x45 rdata=0x0
+[SCB] Writing to Addr 0xa2: the value is 0x45
+[SCB] Updated Addr 0xa2: New value is 0x12349b
+T=8430000 [Driver] waiting for item ...
+T=8430000 [Driver] addr=0x67 RD   NO_ACC wdata=0x982b rdata=0x0
+T=8450000 [Driver] wait until ready is high
+T=8450000 [Monitor] addr=0x63 RD   NO_ACC wdata=0x0 rdata=0x123456
+[SCB] PASS! Addr 0x63: 0x123456
+T=8470000 [Driver] waiting for item ...
+T=8470000 [Driver] addr=0xa3 RD   NO_ACC wdata=0x222b55 rdata=0x0
+T=8490000 [Driver] wait until ready is high
+T=8490000 [Monitor] addr=0x67 RD   NO_ACC wdata=0x982b rdata=0x8bf234
+[SCB] ERROR! Addr 0x67: Exp=0x123456 Act=0x8bf234
+T=8510000 [Driver] waiting for item ...
+T=8510000 [Driver] addr=0x5a RD   NO_ACC wdata=0xfbcc61 rdata=0x0
+T=8530000 [Driver] wait until ready is high
+T=8530000 [Monitor] addr=0xa3 RD   NO_ACC wdata=0x222b55 rdata=0x123456
+[SCB] PASS! Addr 0xa3: 0x123456
+T=8550000 [Driver] waiting for item ...
+T=8550000 [Driver] addr=0xdc WR   NO_ACC wdata=0x0 rdata=0x0
+T=8570000 [Driver] wait until ready is high
+T=8570000 [Monitor] addr=0x5a RD   NO_ACC wdata=0xfbcc61 rdata=0x123456
+[SCB] PASS! Addr 0x5a: 0x123456
+T=8590000 [Driver] waiting for item ...
+T=8590000 [Driver] addr=0x2c RD   NO_ACC wdata=0xbadf rdata=0x0
+T=8590000 [Monitor] addr=0xdc WR   NO_ACC wdata=0x0 rdata=0x0
+[SCB] Writing to Addr 0xdc: the value is 0x0
+[SCB] Updated Addr 0xdc: New value is 0x0
+T=8610000 [Driver] waiting for item ...
+T=8610000 [Driver] addr=0x7d WR  ACC_ADD wdata=0x5f rdata=0x0
+T=8630000 [Driver] wait until ready is high
+T=8630000 [Monitor] addr=0x2c RD   NO_ACC wdata=0xbadf rdata=0x30680
+[SCB] PASS! Addr 0x2c: 0x30680
+T=8650000 [Driver] waiting for item ...
+T=8650000 [Driver] addr=0x84 RD   NO_ACC wdata=0x32dfd rdata=0x0
+T=8650000 [Monitor] addr=0x7d WR  ACC_ADD wdata=0x5f rdata=0x0
+[SCB] Writing to Addr 0x7d: the value is 0x5f
+[SCB] Updated Addr 0x7d: New value is 0xec71c
+T=8670000 [Driver] waiting for item ...
+T=8670000 [Driver] addr=0x31 RD   NO_ACC wdata=0xb44328 rdata=0x0
+T=8690000 [Driver] wait until ready is high
+T=8690000 [Monitor] addr=0x84 RD   NO_ACC wdata=0x32dfd rdata=0xd2e81
+[SCB] ERROR! Addr 0x84: Exp=0x123456 Act=0xd2e81
+T=8710000 [Driver] waiting for item ...
+T=8710000 [Driver] addr=0x88 RD   NO_ACC wdata=0x1525e rdata=0x0
+T=8730000 [Driver] wait until ready is high
+T=8730000 [Monitor] addr=0x31 RD   NO_ACC wdata=0xb44328 rdata=0xf1e8f9
+[SCB] PASS! Addr 0x31: 0xf1e8f9
+T=8750000 [Driver] waiting for item ...
+T=8750000 [Driver] addr=0x70 WR   NO_ACC wdata=0xf2563 rdata=0x0
+T=8770000 [Driver] wait until ready is high
+T=8770000 [Monitor] addr=0x88 RD   NO_ACC wdata=0x1525e rdata=0xc71c66
+[SCB] ERROR! Addr 0x88: Exp=0x123456 Act=0xc71c66
+T=8790000 [Driver] waiting for item ...
+T=8790000 [Driver] addr=0x2d WR   NO_ACC wdata=0x0 rdata=0x0
+T=8790000 [Monitor] addr=0x70 WR   NO_ACC wdata=0xf2563 rdata=0x0
+[SCB] Writing to Addr 0x70: the value is 0xf2563
+[SCB] Updated Addr 0x70: New value is 0xf2563
+T=8810000 [Driver] waiting for item ...
+T=8810000 [Driver] addr=0xab RD   NO_ACC wdata=0xbe4ec rdata=0x0
+T=8810000 [Monitor] addr=0x2d WR   NO_ACC wdata=0x0 rdata=0x0
+[SCB] Writing to Addr 0x2d: the value is 0x0
+[SCB] Updated Addr 0x2d: New value is 0x0
+T=8830000 [Driver] waiting for item ...
+T=8830000 [Driver] addr=0x43 RD   NO_ACC wdata=0x7df05 rdata=0x0
+T=8850000 [Driver] wait until ready is high
+T=8850000 [Monitor] addr=0xab RD   NO_ACC wdata=0xbe4ec rdata=0x47
+[SCB] PASS! Addr 0xab: 0x47
+T=8870000 [Driver] waiting for item ...
+T=8870000 [Driver] addr=0xb8 WR   NO_ACC wdata=0x282b5a rdata=0x0
+T=8890000 [Driver] wait until ready is high
+T=8890000 [Monitor] addr=0x43 RD   NO_ACC wdata=0x7df05 rdata=0x123456
+[SCB] PASS! Addr 0x43: 0x123456
+T=8910000 [Driver] waiting for item ...
+T=8910000 [Driver] addr=0x7e WR ACC_MULT wdata=0x2 rdata=0x0
+T=8910000 [Monitor] addr=0xb8 WR   NO_ACC wdata=0x282b5a rdata=0x0
+[SCB] Writing to Addr 0xb8: the value is 0x282b5a
+[SCB] Updated Addr 0xb8: New value is 0x282b5a
+T=8930000 [Driver] waiting for item ...
+T=8930000 [Driver] addr=0x2c RD   NO_ACC wdata=0xd2130c rdata=0x0
+T=8930000 [Monitor] addr=0x7e WR ACC_MULT wdata=0x2 rdata=0x0
+[SCB] Writing to Addr 0x7e: the value is 0x2
+[SCB] Updated Addr 0x7e: New value is 0x2d4cc
+T=8950000 [Driver] waiting for item ...
+T=8950000 [Driver] addr=0x2a WR  ACC_ADD wdata=0x51 rdata=0x0
+T=8970000 [Driver] wait until ready is high
+T=8970000 [Monitor] addr=0x2c RD   NO_ACC wdata=0xd2130c rdata=0x30680
+[SCB] PASS! Addr 0x2c: 0x30680
+T=8990000 [Driver] waiting for item ...
+T=8990000 [Driver] addr=0xcc RD   NO_ACC wdata=0xa6c13a rdata=0x0
+T=8990000 [Monitor] addr=0x2a WR  ACC_ADD wdata=0x51 rdata=0x0
+[SCB] Writing to Addr 0x2a: the value is 0x51
+[SCB] Updated Addr 0x2a: New value is 0x1234a7
+T=9010000 [Driver] waiting for item ...
+T=9010000 [Driver] addr=0x9b RD   NO_ACC wdata=0x417680 rdata=0x0
+T=9030000 [Driver] wait until ready is high
+T=9030000 [Monitor] addr=0xcc RD   NO_ACC wdata=0xa6c13a rdata=0xe4df3d
+[SCB] PASS! Addr 0xcc: 0xe4df3d
+T=9050000 [Driver] waiting for item ...
+T=9050000 [Driver] addr=0xfa WR ACC_MULT wdata=0x13 rdata=0x0
+T=9070000 [Driver] wait until ready is high
+T=9070000 [Monitor] addr=0x9b RD   NO_ACC wdata=0x417680 rdata=0xffffff
+[SCB] PASS! Addr 0x9b: 0xffffff
+T=9090000 [Driver] waiting for item ...
+T=9090000 [Driver] addr=0x51 WR ACC_MULT wdata=0x4a rdata=0x0
+T=9090000 [Monitor] addr=0xfa WR ACC_MULT wdata=0x13 rdata=0x0
+[SCB] Writing to Addr 0xfa: the value is 0x13
+[SCB] Updated Addr 0xfa: New value is 0x59e262
+T=9110000 [Driver] waiting for item ...
+T=9110000 [Driver] addr=0xf1 RD ACC_MULT wdata=0x2f rdata=0x0
+T=9110000 [Monitor] addr=0x51 WR ACC_MULT wdata=0x4a rdata=0x0
+[SCB] Writing to Addr 0x51: the value is 0x4a
+[SCB] Updated Addr 0x51: New value is 0xffffb6
+T=9130000 [Driver] waiting for item ...
+T=9130000 [Driver] addr=0x82 RD   NO_ACC wdata=0x34 rdata=0x0
+T=9150000 [Driver] waiting for item ...
+T=9150000 [Driver] addr=0xe6 WR   NO_ACC wdata=0x60844 rdata=0x0
+T=9170000 [Driver] wait until ready is high
+T=9170000 [Monitor] addr=0xf1 RD ACC_MULT wdata=0x2f rdata=0xdfe3
+[SCB] ERROR! Addr 0xf1: Exp=0x123456 Act=0xdfe3
+T=9190000 [Driver] waiting for item ...
+T=9190000 [Driver] addr=0x60 WR   NO_ACC wdata=0x79fd rdata=0x0
+T=9190000 [Monitor] addr=0xe6 WR   NO_ACC wdata=0x60844 rdata=0x0
+[SCB] Writing to Addr 0xe6: the value is 0x60844
+[SCB] Updated Addr 0xe6: New value is 0x60844
+T=9210000 [Driver] waiting for item ...
+T=9210000 [Driver] addr=0xa1 WR   NO_ACC wdata=0x4d9d9 rdata=0x0
+T=9210000 [Monitor] addr=0x60 WR   NO_ACC wdata=0x79fd rdata=0x0
+[SCB] Writing to Addr 0x60: the value is 0x79fd
+[SCB] Updated Addr 0x60: New value is 0x79fd
+T=9230000 [Driver] waiting for item ...
+T=9230000 [Driver] addr=0x22 WR   NO_ACC wdata=0x1f rdata=0x0
+T=9230000 [Monitor] addr=0xa1 WR   NO_ACC wdata=0x4d9d9 rdata=0x0
+[SCB] Writing to Addr 0xa1: the value is 0x4d9d9
+[SCB] Updated Addr 0xa1: New value is 0x4d9d9
+T=9250000 [Driver] waiting for item ...
+T=9250000 [Driver] addr=0x7d RD   NO_ACC wdata=0xefc2fc rdata=0x0
+T=9250000 [Monitor] addr=0x22 WR   NO_ACC wdata=0x1f rdata=0x0
+[SCB] Writing to Addr 0x22: the value is 0x1f
+[SCB] Updated Addr 0x22: New value is 0x1f
+T=9270000 [Driver] waiting for item ...
+T=9270000 [Driver] addr=0xe5 RD   NO_ACC wdata=0xc25ff rdata=0x0
+T=9290000 [Driver] wait until ready is high
+T=9290000 [Monitor] addr=0x7d RD   NO_ACC wdata=0xefc2fc rdata=0x5f
+[SCB] ERROR! Addr 0x7d: Exp=0xec71c Act=0x5f
+T=9310000 [Driver] waiting for item ...
+T=9310000 [Driver] addr=0x84 WR   NO_ACC wdata=0x3a37 rdata=0x0
+T=9330000 [Driver] wait until ready is high
+T=9330000 [Monitor] addr=0xe5 RD   NO_ACC wdata=0xc25ff rdata=0x123481
+[SCB] ERROR! Addr 0xe5: Exp=0x123456 Act=0x123481
+T=9350000 [Driver] waiting for item ...
+T=9350000 [Driver] addr=0x82 RD  ACC_ADD wdata=0x36 rdata=0x0
+T=9350000 [Monitor] addr=0x84 WR   NO_ACC wdata=0x3a37 rdata=0x0
+[SCB] Writing to Addr 0x84: the value is 0x3a37
+[SCB] Updated Addr 0x84: New value is 0x3a37
+T=9370000 [Driver] waiting for item ...
+T=9370000 [Driver] addr=0x3b WR   NO_ACC wdata=0xffffff rdata=0x0
+T=9390000 [Driver] waiting for item ...
+T=9390000 [Driver] addr=0x1b WR   NO_ACC wdata=0x9001e rdata=0x0
+T=9410000 [Driver] waiting for item ...
+T=9410000 [Driver] addr=0x6e WR ACC_MULT wdata=0x28 rdata=0x0
+T=9430000 [Driver] waiting for item ...
+T=9430000 [Driver] addr=0xd8 WR   NO_ACC wdata=0x526429 rdata=0x0
+T=9450000 [Driver] waiting for item ...
+T=9450000 [Driver] addr=0x7d RD ACC_MULT wdata=0x45 rdata=0x0
+T=9470000 [Driver] waiting for item ...
+T=9470000 [Driver] addr=0x99 WR   NO_ACC wdata=0xd1f71d rdata=0x0
+T=9490000 [Driver] waiting for item ...
+T=9490000 [Driver] addr=0x38 WR   NO_ACC wdata=0x7bde6 rdata=0x0
+T=9510000 [Driver] waiting for item ...
+T=9510000 [Driver] addr=0xb0 RD   NO_ACC wdata=0x31 rdata=0x0
+T=9530000 [Driver] waiting for item ...
+T=9530000 [Driver] addr=0x41 WR   NO_ACC wdata=0xcee7 rdata=0x0
+T=9550000 [Driver] wait until ready is high
+T=9550000 [Monitor] addr=0x82 RD  ACC_ADD wdata=0x36 rdata=0x123456
+[SCB] PASS! Addr 0x82: 0x123456
+T=9570000 [Driver] waiting for item ...
+T=9570000 [Driver] addr=0xa9 WR   NO_ACC wdata=0xee13d8 rdata=0x0
+T=9570000 [Monitor] addr=0x41 WR   NO_ACC wdata=0xcee7 rdata=0x0
+[SCB] Writing to Addr 0x41: the value is 0xcee7
+[SCB] Updated Addr 0x41: New value is 0xcee7
+T=9590000 [Driver] waiting for item ...
+T=9590000 [Driver] addr=0x10 RD  ACC_ADD wdata=0x3 rdata=0x0
+T=9590000 [Monitor] addr=0xa9 WR   NO_ACC wdata=0xee13d8 rdata=0x0
+[SCB] Writing to Addr 0xa9: the value is 0xee13d8
+[SCB] Updated Addr 0xa9: New value is 0xee13d8
+T=9610000 [Driver] waiting for item ...
+T=9610000 [Driver] addr=0x16 RD ACC_MULT wdata=0x43 rdata=0x0
+T=9630000 [Driver] waiting for item ...
+T=9630000 [Driver] addr=0xf8 WR   NO_ACC wdata=0xdb32 rdata=0x0
+T=9650000 [Driver] waiting for item ...
+T=9650000 [Driver] addr=0x2b RD   NO_ACC wdata=0x3d2cf3 rdata=0x0
+T=9670000 [Driver] waiting for item ...
+T=9670000 [Driver] addr=0x1a RD  ACC_ADD wdata=0x44 rdata=0x0
+T=9690000 [Driver] wait until ready is high
+T=9690000 [Monitor] addr=0x10 RD  ACC_ADD wdata=0x3 rdata=0x123456
+[SCB] PASS! Addr 0x10: 0x123456
+T=9710000 [Driver] waiting for item ...
+T=9710000 [Driver] addr=0xbe RD  ACC_ADD wdata=0x5a rdata=0x0
+T=9730000 [Driver] waiting for item ...
+T=9730000 [Driver] addr=0x7e WR   NO_ACC wdata=0xffffff rdata=0x0
+T=9750000 [Driver] waiting for item ...
+T=9750000 [Driver] addr=0xcb RD   NO_ACC wdata=0x18624f rdata=0x0
+T=9770000 [Driver] waiting for item ...
+T=9770000 [Driver] addr=0xb0 RD   NO_ACC wdata=0x51867 rdata=0x0
+T=9790000 [Driver] wait until ready is high
+T=9790000 [Monitor] addr=0x1a RD  ACC_ADD wdata=0x44 rdata=0x123456
+[SCB] ERROR! Addr 0x1a: Exp=0xe172ab Act=0x123456
+T=9810000 [Driver] waiting for item ...
+T=9810000 [Driver] addr=0x2 WR   NO_ACC wdata=0xd2d1 rdata=0x0
+T=9830000 [Driver] wait until ready is high
+T=9830000 [Monitor] addr=0xb0 RD   NO_ACC wdata=0x51867 rdata=0x123456
+[SCB] PASS! Addr 0xb0: 0x123456
+T=9850000 [Driver] waiting for item ...
+T=9850000 [Driver] addr=0xe3 RD   NO_ACC wdata=0x3ce4 rdata=0x0
+T=9850000 [Monitor] addr=0x2 WR   NO_ACC wdata=0xd2d1 rdata=0x0
+[SCB] Writing to Addr 0x2: the value is 0xd2d1
+[SCB] Updated Addr 0x2: New value is 0xd2d1
+T=9870000 [Driver] waiting for item ...
+T=9870000 [Driver] addr=0x3c WR   NO_ACC wdata=0x1be59c rdata=0x0
+T=9890000 [Driver] wait until ready is high
+T=9890000 [Monitor] addr=0xe3 RD   NO_ACC wdata=0x3ce4 rdata=0xce26f
+[SCB] PASS! Addr 0xe3: 0xce26f
+T=9910000 [Driver] waiting for item ...
+T=9910000 [Driver] addr=0x38 WR ACC_MULT wdata=0x19 rdata=0x0
+T=9910000 [Monitor] addr=0x3c WR   NO_ACC wdata=0x1be59c rdata=0x0
+[SCB] Writing to Addr 0x3c: the value is 0x1be59c
+[SCB] Updated Addr 0x3c: New value is 0x1be59c
+T=9930000 [Driver] waiting for item ...
+T=9930000 [Driver] addr=0x1d RD   NO_ACC wdata=0xb617 rdata=0x0
+T=9930000 [Monitor] addr=0x38 WR ACC_MULT wdata=0x19 rdata=0x0
+[SCB] Writing to Addr 0x38: the value is 0x19
+[SCB] Updated Addr 0x38: New value is 0x31f110
+T=9950000 [Driver] waiting for item ...
+T=9950000 [Driver] addr=0xbc RD   NO_ACC wdata=0x94b8a rdata=0x0
+T=9970000 [Driver] wait until ready is high
+T=9970000 [Monitor] addr=0x1d RD   NO_ACC wdata=0xb617 rdata=0xd
+[SCB] ERROR! Addr 0x1d: Exp=0xeca85e Act=0xd
+T=9990000 [Driver] waiting for item ...
+T=9990000 [Driver] addr=0xc6 RD   NO_ACC wdata=0xb4dd4 rdata=0x0
+T=10010000 [Driver] wait until ready is high
+T=10010000 [Monitor] addr=0xbc RD   NO_ACC wdata=0x94b8a rdata=0x123456
+[SCB] PASS! Addr 0xbc: 0x123456
+T=10030000 [Driver] waiting for item ...
+T=10030000 [Driver] addr=0x45 WR   NO_ACC wdata=0xffffff rdata=0x0
+T=10050000 [Driver] wait until ready is high
+T=10050000 [Monitor] addr=0xc6 RD   NO_ACC wdata=0xb4dd4 rdata=0x4a
+[SCB] ERROR! Addr 0xc6: Exp=0x4320dc Act=0x4a
+T=10070000 [Driver] waiting for item ...
+T=10070000 [Driver] addr=0xb0 WR   NO_ACC wdata=0x0 rdata=0x0
+T=10070000 [Monitor] addr=0x45 WR   NO_ACC wdata=0xffffff rdata=0x0
+[SCB] Writing to Addr 0x45: the value is 0xffffff
+[SCB] Updated Addr 0x45: New value is 0xffffff
+T=10090000 [Driver] waiting for item ...
+T=10090000 [Driver] addr=0xc9 WR ACC_MULT wdata=0x3 rdata=0x0
+T=10090000 [Monitor] addr=0xb0 WR   NO_ACC wdata=0x0 rdata=0x0
+[SCB] Writing to Addr 0xb0: the value is 0x0
+[SCB] Updated Addr 0xb0: New value is 0x0
+T=10110000 [Driver] waiting for item ...
+T=10110000 [Driver] addr=0x7d WR   NO_ACC wdata=0xc958 rdata=0x0
+T=10110000 [Monitor] addr=0xc9 WR ACC_MULT wdata=0x3 rdata=0x0
+[SCB] Writing to Addr 0xc9: the value is 0x3
+[SCB] Updated Addr 0xc9: New value is 0x369d02
+T=10130000 [Driver] waiting for item ...
+T=10130000 [Driver] addr=0x3d RD ACC_MULT wdata=0x64 rdata=0x0
+T=10130000 [Monitor] addr=0x7d WR   NO_ACC wdata=0xc958 rdata=0x0
+[SCB] Writing to Addr 0x7d: the value is 0xc958
+[SCB] Updated Addr 0x7d: New value is 0xc958
+T=10150000 [Driver] waiting for item ...
+T=10150000 [Driver] addr=0x8f RD ACC_MULT wdata=0x57 rdata=0x0
+T=10170000 [Driver] waiting for item ...
+T=10170000 [Driver] addr=0x69 WR ACC_MULT wdata=0x2a rdata=0x0
+T=10190000 [Driver] waiting for item ...
+T=10190000 [Driver] addr=0x88 RD   NO_ACC wdata=0x4ac0d3 rdata=0x0
+T=10210000 [Driver] waiting for item ...
+T=10210000 [Driver] addr=0xe4 RD   NO_ACC wdata=0xd8034a rdata=0x0
+T=10230000 [Driver] wait until ready is high
+T=10230000 [Monitor] addr=0x3d RD ACC_MULT wdata=0x64 rdata=0xc71c66
+[SCB] ERROR! Addr 0x3d: Exp=0x123456 Act=0xc71c66
+T=10250000 [Driver] waiting for item ...
+T=10250000 [Driver] addr=0x4 RD   NO_ACC wdata=0x882ef rdata=0x0
+T=10270000 [Driver] wait until ready is high
+T=10270000 [Monitor] addr=0xe4 RD   NO_ACC wdata=0xd8034a rdata=0x7f
+[SCB] ERROR! Addr 0xe4: Exp=0x4385 Act=0x7f
+T=10290000 [Driver] waiting for item ...
+T=10290000 [Driver] addr=0x52 WR  ACC_ADD wdata=0x53 rdata=0x0
+T=10310000 [Driver] wait until ready is high
+T=10310000 [Monitor] addr=0x4 RD   NO_ACC wdata=0x882ef rdata=0x123456
+[SCB] PASS! Addr 0x4: 0x123456
+T=10330000 [Driver] waiting for item ...
+T=10330000 [Driver] addr=0x6e RD ACC_MULT wdata=0xa rdata=0x0
+T=10330000 [Monitor] addr=0x52 WR  ACC_ADD wdata=0x53 rdata=0x0
+[SCB] Writing to Addr 0x52: the value is 0x53
+[SCB] Updated Addr 0x52: New value is 0x1234a9
+T=10350000 [Driver] waiting for item ...
+T=10350000 [Driver] addr=0x93 RD   NO_ACC wdata=0xef126 rdata=0x0
+T=10370000 [Driver] waiting for item ...
+T=10370000 [Driver] addr=0x49 WR ACC_MULT wdata=0x48 rdata=0x0
+T=10390000 [Driver] wait until ready is high
+T=10390000 [Monitor] addr=0x6e RD ACC_MULT wdata=0xa rdata=0x2ea2
+[SCB] ERROR! Addr 0x6e: Exp=0x123456 Act=0x2ea2
+T=10410000 [Driver] waiting for item ...
+T=10410000 [Driver] addr=0x6a RD  ACC_ADD wdata=0x1f rdata=0x0
+T=10410000 [Monitor] addr=0x49 WR ACC_MULT wdata=0x48 rdata=0x0
+[SCB] Writing to Addr 0x49: the value is 0x48
+[SCB] Updated Addr 0x49: New value is 0x272f10
+T=10430000 [Driver] waiting for item ...
+T=10430000 [Driver] addr=0xf6 RD   NO_ACC wdata=0x9818f9 rdata=0x0
+T=10450000 [Driver] waiting for item ...
+T=10450000 [Driver] addr=0x8f RD   NO_ACC wdata=0xffffff rdata=0x0
+T=10470000 [Driver] wait until ready is high
+T=10470000 [Monitor] addr=0x6a RD  ACC_ADD wdata=0x1f rdata=0x123456
+[SCB] ERROR! Addr 0x6a: Exp=0x0 Act=0x123456
+T=10490000 [Driver] waiting for item ...
+T=10490000 [Driver] addr=0xc0 RD ACC_MULT wdata=0x3 rdata=0x0
+T=10510000 [Driver] wait until ready is high
+T=10510000 [Monitor] addr=0x8f RD   NO_ACC wdata=0xffffff rdata=0x2fc93a
+[SCB] ERROR! Addr 0x8f: Exp=0x123456 Act=0x2fc93a
+T=10530000 [Driver] waiting for item ...
+T=10530000 [Driver] addr=0x31 RD   NO_ACC wdata=0xd03 rdata=0x0
+T=10550000 [Driver] waiting for item ...
+T=10550000 [Driver] addr=0xee RD   NO_ACC wdata=0x72 rdata=0x0
+T=10570000 [Driver] wait until ready is high
+T=10570000 [Monitor] addr=0xc0 RD ACC_MULT wdata=0x3 rdata=0xf1e8f9
+[SCB] ERROR! Addr 0xc0: Exp=0x123456 Act=0xf1e8f9
+T=10590000 [Driver] waiting for item ...
+T=10590000 [Driver] addr=0x19 WR   NO_ACC wdata=0x5b rdata=0x0
+T=10610000 [Driver] wait until ready is high
+T=10610000 [Monitor] addr=0xee RD   NO_ACC wdata=0x72 rdata=0x123456
+[SCB] PASS! Addr 0xee: 0x123456
+T=10630000 [Driver] waiting for item ...
+T=10630000 [Driver] addr=0xcd RD   NO_ACC wdata=0x5599 rdata=0x0
+T=10630000 [Monitor] addr=0x19 WR   NO_ACC wdata=0x5b rdata=0x0
+[SCB] Writing to Addr 0x19: the value is 0x5b
+[SCB] Updated Addr 0x19: New value is 0x5b
+T=10650000 [Driver] waiting for item ...
+T=10650000 [Driver] addr=0x33 RD   NO_ACC wdata=0xe549d4 rdata=0x0
+T=10670000 [Driver] wait until ready is high
+T=10670000 [Monitor] addr=0xcd RD   NO_ACC wdata=0x5599 rdata=0x123456
+[SCB] PASS! Addr 0xcd: 0x123456
+T=10690000 [Driver] waiting for item ...
+T=10690000 [Driver] addr=0x91 RD  ACC_ADD wdata=0x56 rdata=0x0
+T=10710000 [Driver] wait until ready is high
+T=10710000 [Monitor] addr=0x33 RD   NO_ACC wdata=0xe549d4 rdata=0x3e6af2
+[SCB] PASS! Addr 0x33: 0x3e6af2
+T=10730000 [Driver] waiting for item ...
+T=10730000 [Driver] addr=0x61 RD   NO_ACC wdata=0x0 rdata=0x0
+T=10750000 [Driver] waiting for item ...
+T=10750000 [Driver] addr=0xaa WR   NO_ACC wdata=0x0 rdata=0x0
+T=10770000 [Driver] wait until ready is high
+T=10770000 [Monitor] addr=0x91 RD  ACC_ADD wdata=0x56 rdata=0x123456
+[SCB] PASS! Addr 0x91: 0x123456
+T=10790000 [Driver] waiting for item ...
+T=10790000 [Driver] addr=0x70 WR   NO_ACC wdata=0x82ebf0 rdata=0x0
+T=10790000 [Monitor] addr=0xaa WR   NO_ACC wdata=0x0 rdata=0x0
+[SCB] Writing to Addr 0xaa: the value is 0x0
+[SCB] Updated Addr 0xaa: New value is 0x0
+T=10810000 [Driver] waiting for item ...
+T=10810000 [Driver] addr=0x93 RD ACC_MULT wdata=0x57 rdata=0x0
+T=10810000 [Monitor] addr=0x70 WR   NO_ACC wdata=0x82ebf0 rdata=0x0
+[SCB] Writing to Addr 0x70: the value is 0x82ebf0
+[SCB] Updated Addr 0x70: New value is 0x82ebf0
+T=10830000 [Driver] waiting for item ...
+T=10830000 [Driver] addr=0x98 RD  ACC_ADD wdata=0x5f rdata=0x0
+T=10850000 [Driver] waiting for item ...
+T=10850000 [Driver] addr=0x74 WR   NO_ACC wdata=0x7a5e0 rdata=0x0
+T=10870000 [Driver] waiting for item ...
+T=10870000 [Driver] addr=0xc1 WR   NO_ACC wdata=0x1c984 rdata=0x0
+T=10890000 [Driver] waiting for item ...
+T=10890000 [Driver] addr=0xb2 RD   NO_ACC wdata=0x2d91f rdata=0x0
+T=10910000 [Driver] waiting for item ...
+T=10910000 [Driver] addr=0xaa RD   NO_ACC wdata=0x224a rdata=0x0
+T=10930000 [Driver] wait until ready is high
+T=10930000 [Monitor] addr=0x93 RD ACC_MULT wdata=0x57 rdata=0xc869
+[SCB] ERROR! Addr 0x93: Exp=0x2ea2 Act=0xc869
+T=10950000 [Driver] waiting for item ...
+T=10950000 [Driver] addr=0x22 RD  ACC_ADD wdata=0x41 rdata=0x0
+T=10970000 [Driver] wait until ready is high
+T=10970000 [Monitor] addr=0xaa RD   NO_ACC wdata=0x224a rdata=0x0
+[SCB] PASS! Addr 0xaa: 0x0
+T=10990000 [Driver] waiting for item ...
+T=10990000 [Driver] addr=0xc5 WR   NO_ACC wdata=0xb03d rdata=0x0
+T=11010000 [Driver] waiting for item ...
+T=11010000 [Driver] addr=0x70 RD ACC_MULT wdata=0x1c rdata=0x0
+$finish called from file "../../tb/reg_ctrl_tb.sv", line 31.
+$finish at simulation time             11020000
+
+---------------------------------------------------------------------------
+VCS Coverage Metrics: during simulation line, cond, FSM, branch, tgl was monitored
+---------------------------------------------------------------------------
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 11020000 ps
+CPU Time:      0.510 seconds;       Data structure size:   0.0Mb
+Thu Jun 12 23:07:20 2025

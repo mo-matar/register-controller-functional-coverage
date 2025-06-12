@@ -1,0 +1,12 @@
+Design Hierarchy
+
+
+----------------
+SCORE  LINE   COND   TOGGLE FSM    BRANCH    
+ 69.81  95.12  30.77  83.33 --      70.00 tb 
+  
+  ----------------
+  SCORE  LINE   COND   TOGGLE FSM    BRANCH     
+   74.60 --     --      74.60 --     --     _if 
+   69.75  92.59  30.77  85.65 --      70.00 u0  
+

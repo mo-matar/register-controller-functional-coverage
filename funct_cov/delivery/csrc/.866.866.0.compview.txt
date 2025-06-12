@@ -1,0 +1,5 @@
+{"comelab":{"timestamp_begin":1749683766.001662170, "rt":0.72, "ut":0.41, "st":0.44}}
+{"SNPS_VCS_INTERNAL_ROOT_START_TIME": 1749683765.592651891}
+{"VCS_COMP_START_TIME": 1749683765.592651891}
+{"VCS_COMP_END_TIME": 1749683766.758671983}
+{"VCS_USER_OPTIONS": "-full64 -licqueue -timescale=1ns/1ns +vcs+flush+all +warn=all -sverilog -debug_access+all +vcs+vcdpluson -cm line+cond+fsm+branch+tgl tb -l ../../results/logs/build_cov.log"}

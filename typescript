@@ -1,0 +1,974 @@
+Script started on Wed Jun 11 23:23:09 2025
+]0;12112195@vlsi112:~/register-controller-functional-coverage[?1034h[12112195@vlsi112 register-controller-functional-coverage]$ scripts
+bash: scripts: command not found...
+Similar command is: 'script'
+]0;12112195@vlsi112:~/register-controller-functional-coverage[12112195@vlsi112 register-controller-functional-coverage]$ cd scripts
+]0;12112195@vlsi112:~/register-controller-functional-coverage/scripts[12112195@vlsi112 scripts]$ make clean
+Cleaning build artifacts...
+rm -rf simv* csrc DVEfiles AN.DB *.log *.vcd *.vpd simv.daidir
+Clean completed!
+]0;12112195@vlsi112:~/register-controller-functional-coverage/scripts[12112195@vlsi112 scripts]$ make comiple-con  v ov
+make: *** No rule to make target `comiple-cov'.  Stop.
+]0;12112195@vlsi112:~/register-controller-functional-coverage/scripts[12112195@vlsi112 scripts]$ make m compile-cov
+Compiling testbench with coverage enabled...
+Linking with precompiled DUT from delivery folder...
+cd ../funct_cov/delivery && vlogan -sverilog ../../tb/interface.sv ../../tb/transaction.sv ../../tb/test_registry.sv ../../tb/driver.sv ../../tb/monitor.sv ../../tb/scoreboard.sv ../../tb/coverage.sv ../../tb/generator.sv ../../tb/enviroment.sv ../../tests/basic_test.sv ../../tb/reg_ctrl_tb.sv -l ../../results/logs/compile_cov.log
+                         Chronologic VCS (TM)
+           Version N-2017.12-1 -- Wed Jun 11 23:24:50 2025
+               Copyright (c) 1991-2017 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+Parsing design file '../../tb/interface.sv'
+Parsing design file '../../tb/transaction.sv'
+
+Warning-[TMBIN] Too many bits in Based Number
+../../tb/transaction.sv, 33
+  The specified width is '16' bits, actually got '20' bits.
+  The offending number is : '10000'.
+
+
+Warning-[TMBIN] Too many bits in Based Number
+../../tb/transaction.sv, 33
+  The specified width is '16' bits, actually got '20' bits.
+  The offending number is : 'FFFFF'.
+
+
+Warning-[TMBIN] Too many bits in Based Number
+../../tb/transaction.sv, 34
+  The specified width is '16' bits, actually got '24' bits.
+  The offending number is : '100000'.
+
+Parsing design file '../../tb/test_registry.sv'
+Parsing design file '../../tb/driver.sv'
+Parsing design file '../../tb/monitor.sv'
+Parsing design file '../../tb/scoreboard.sv'
+Parsing design file '../../tb/coverage.sv'
+
+Warning-[TMBIN] Too many bits in Based Number
+../../tb/coverage.sv, 18
+  The specified width is '16' bits, actually got '20' bits.
+  The offending number is : '10000'.
+
+
+Warning-[TMBIN] Too many bits in Based Number
+../../tb/coverage.sv, 18
+  The specified width is '16' bits, actually got '20' bits.
+  The offending number is : 'FFFFF'.
+
+
+Warning-[TMBIN] Too many bits in Based Number
+../../tb/coverage.sv, 19
+  The specified width is '16' bits, actually got '24' bits.
+  The offending number is : '100000'.
+
+Parsing design file '../../tb/generator.sv'
+Parsing design file '../../tb/enviroment.sv'
+Parsing design file '../../tests/basic_test.sv'
+Parsing design file '../../tb/reg_ctrl_tb.sv'
+CPU time: .123 seconds to compile
+cd ../funct_cov/delivery && vcs -full64 -licqueue -timescale=1ns/1ns +vcs+flush+all +warn=all -sverilog -debug_access+all +vcs+vcdpluson -cm line+cond+fsm+branch+tgl tb -l ../../results/logs/build_cov.log
+Doing common elaboration 
+                         Chronologic VCS (TM)
+        Version N-2017.12-1_Full64 -- Wed Jun 11 23:24:51 2025
+               Copyright (c) 1991-2017 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+Top Level Modules:
+       tb
+TimeScale is 1 ns / 1 ps
+VCS Coverage Metrics Release N-2017.12-1_Full64 Copyright (c) 1991-2017 by Synopsys Inc.
+***** Warning: +memcbk/-debug_access will not enable toggle coverage on MDAs.  Please use -cm_tgl mda to enable it.
+Starting vcs inline pass...
+3 modules and 0 UDP read.
+recompiling module tb
+recompiling module reg_ctrl
+Both modules done.
+	However, due to incremental compilation, only 2 modules need to be compiled. 
+make[1]: Entering directory `/home/12112195/register-controller-functional-coverage/funct_cov/delivery/csrc'
+make[1]: Leaving directory `/home/12112195/register-controller-functional-coverage/funct_cov/delivery/csrc'
+make[1]: Entering directory `/home/12112195/register-controller-functional-coverage/funct_cov/delivery/csrc'
+rm -f _csrc*.so pre_vcsobj_*.so share_vcsobj_*.so
+ld -shared  -o .//../simv.daidir//_csrc0.so objs/amcQw_d.o 
+rm -f _csrc0.so
+if [ -x ../simv ]; then chmod -x ../simv; fi
+g++  -o ../simv   -Wl,-rpath-link=./ -Wl,-rpath='$ORIGIN'/simv.daidir/ -Wl,-rpath=./simv.daidir/ -Wl,-rpath='$ORIGIN'/simv.daidir//scsim.db.dir  -rdynamic    _100030_archive_1.so _prev_archive_1.so _csrc0.so  SIM_l.o  _csrc0.so     rmapats_mop.o rmapats.o rmar.o rmar_nd.o  rmar_llvm_0_1.o rmar_llvm_0_0.o          /Disk2/eda/synopsys/2017-18/RHELx86/VCSMX_2017.12-1/linux64/lib/libzerosoft_rt_stubs.so /Disk2/eda/synopsys/2017-18/RHELx86/VCSMX_2017.12-1/linux64/lib/liberrorinf.so /Disk2/eda/synopsys/2017-18/RHELx86/VCSMX_2017.12-1/linux64/lib/libsnpsmalloc.so /Disk2/eda/synopsys/2017-18/RHELx86/VCSMX_2017.12-1/linux64/lib/libvfs.so    /Disk2/eda/synopsys/2017-18/RHELx86/VCSMX_2017.12-1/linux64/lib/libvcsnew.so /Disk2/eda/synopsys/2017-18/RHELx86/VCSMX_2017.12-1/linux64/lib/libsimprofile.so /Disk2/eda/synopsys/2017-18/RHELx86/VCSMX_2017.12-1/linux64/lib/libvirsim.so /Disk2/eda/synopsys/2017-18/RHELx86/VCSMX_2017.12-1/linux64/lib/libreader_common.so /Disk2/eda/synopsys/2017-18/RHELx86/VCSMX_2017.12-1/linux64/lib/libBA.a /Disk2/eda/synopsys/2017-18/RHELx86/VCSMX_2017.12-1/linux64/lib/libuclinative.so /Disk2/eda/synopsys/2017-18/RHELx86/VCSMX_2017.12-1/linux64/lib/vcs_tls.o   -Wl,-whole-archive /Disk2/eda/synopsys/2017-18/RHELx86/VCSMX_2017.12-1/linux64/lib/libvcsucli.so -Wl,-no-whole-archive        _vcs_pli_stub_.o   /Disk2/eda/synopsys/2017-18/RHELx86/VCSMX_2017.12-1/linux64/lib/vcs_save_restore_new.o /Disk2/eda/synopsys/2017-18/RHELx86/VERDI_2017.12-1/share/PLI/VCS/LINUX64/pli.a -ldl  -lc -lm -lpthread -ldl 
+../simv up to date
+make[1]: Leaving directory `/home/12112195/register-controller-functional-coverage/funct_cov/delivery/csrc'
+CPU time: .476 seconds to compile + .326 seconds to elab + .290 seconds to link
+Coverage compilation completed!
+]0;12112195@vlsi112:~/register-controller-functional-coverage/scripts[12112195@vlsi112 scripts]$ make clear
+make: *** No rule to make target `clear'.  Stop.
+]0;12112195@vlsi112:~/register-controller-functional-coverage/scripts[12112195@vlsi112 scripts]$ make clean
+Cleaning build artifacts...
+rm -rf simv* csrc DVEfiles AN.DB *.log *.vcd *.vpd simv.daidir
+Clean completed!
+]0;12112195@vlsi112:~/register-controller-functional-coverage/scripts[12112195@vlsi112 scripts]$ clear
+[3;J[H[2J]0;12112195@vlsi112:~/register-controller-functional-coverage/scripts[12112195@vlsi112 scripts]$ make compile-cov
+Compiling testbench with coverage enabled...
+Linking with precompiled DUT from delivery folder...
+cd ../funct_cov/delivery && vlogan -sverilog ../../tb/interface.sv ../../tb/transaction.sv ../../tb/test_registry.sv ../../tb/driver.sv ../../tb/monitor.sv ../../tb/scoreboard.sv ../../tb/coverage.sv ../../tb/generator.sv ../../tb/enviroment.sv ../../tests/basic_test.sv ../../tb/reg_ctrl_tb.sv -l ../../results/logs/compile_cov.log
+                         Chronologic VCS (TM)
+           Version N-2017.12-1 -- Wed Jun 11 23:25:35 2025
+               Copyright (c) 1991-2017 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+Parsing design file '../../tb/interface.sv'
+Parsing design file '../../tb/transaction.sv'
+
+Warning-[TMBIN] Too many bits in Based Number
+../../tb/transaction.sv, 33
+  The specified width is '16' bits, actually got '20' bits.
+  The offending number is : '10000'.
+
+
+Warning-[TMBIN] Too many bits in Based Number
+../../tb/transaction.sv, 33
+  The specified width is '16' bits, actually got '20' bits.
+  The offending number is : 'FFFFF'.
+
+
+Warning-[TMBIN] Too many bits in Based Number
+../../tb/transaction.sv, 34
+  The specified width is '16' bits, actually got '24' bits.
+  The offending number is : '100000'.
+
+Parsing design file '../../tb/test_registry.sv'
+Parsing design file '../../tb/driver.sv'
+Parsing design file '../../tb/monitor.sv'
+Parsing design file '../../tb/scoreboard.sv'
+Parsing design file '../../tb/coverage.sv'
+
+Warning-[TMBIN] Too many bits in Based Number
+../../tb/coverage.sv, 18
+  The specified width is '16' bits, actually got '20' bits.
+  The offending number is : '10000'.
+
+
+Warning-[TMBIN] Too many bits in Based Number
+../../tb/coverage.sv, 18
+  The specified width is '16' bits, actually got '20' bits.
+  The offending number is : 'FFFFF'.
+
+
+Warning-[TMBIN] Too many bits in Based Number
+../../tb/coverage.sv, 19
+  The specified width is '16' bits, actually got '24' bits.
+  The offending number is : '100000'.
+
+Parsing design file '../../tb/generator.sv'
+Parsing design file '../../tb/enviroment.sv'
+Parsing design file '../../tests/basic_test.sv'
+Parsing design file '../../tb/reg_ctrl_tb.sv'
+CPU time: .118 seconds to compile
+cd ../funct_cov/delivery && vcs -full64 -licqueue -timescale=1ns/1ns +vcs+flush+all +warn=all -sverilog -debug_access+all +vcs+vcdpluson -cm line+cond+fsm+branch+tgl tb -l ../../results/logs/build_cov.log
+Doing common elaboration 
+                         Chronologic VCS (TM)
+        Version N-2017.12-1_Full64 -- Wed Jun 11 23:25:36 2025
+               Copyright (c) 1991-2017 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+Top Level Modules:
+       tb
+TimeScale is 1 ns / 1 ps
+VCS Coverage Metrics Release N-2017.12-1_Full64 Copyright (c) 1991-2017 by Synopsys Inc.
+***** Warning: +memcbk/-debug_access will not enable toggle coverage on MDAs.  Please use -cm_tgl mda to enable it.
+Starting vcs inline pass...
+3 modules and 0 UDP read.
+	However, due to incremental compilation, no re-compilation is necessary.
+make[1]: Entering directory `/home/12112195/register-controller-functional-coverage/funct_cov/delivery/csrc'
+make[1]: Leaving directory `/home/12112195/register-controller-functional-coverage/funct_cov/delivery/csrc'
+make[1]: Entering directory `/home/12112195/register-controller-functional-coverage/funct_cov/delivery/csrc'
+rm -f _csrc*.so pre_vcsobj_*.so share_vcsobj_*.so
+ld -shared  -o .//../simv.daidir//_csrc0.so objs/amcQw_d.o 
+rm -f _csrc0.so
+if [ -x ../simv ]; then chmod -x ../simv; fi
+g++  -o ../simv   -Wl,-rpath-link=./ -Wl,-rpath='$ORIGIN'/simv.daidir/ -Wl,-rpath=./simv.daidir/ -Wl,-rpath='$ORIGIN'/simv.daidir//scsim.db.dir  -rdynamic    _101433_archive_1.so _prev_archive_1.so _csrc0.so  SIM_l.o  _csrc0.so     rmapats_mop.o rmapats.o rmar.o rmar_nd.o  rmar_llvm_0_1.o rmar_llvm_0_0.o          /Disk2/eda/synopsys/2017-18/RHELx86/VCSMX_2017.12-1/linux64/lib/libzerosoft_rt_stubs.so /Disk2/eda/synopsys/2017-18/RHELx86/VCSMX_2017.12-1/linux64/lib/liberrorinf.so /Disk2/eda/synopsys/2017-18/RHELx86/VCSMX_2017.12-1/linux64/lib/libsnpsmalloc.so /Disk2/eda/synopsys/2017-18/RHELx86/VCSMX_2017.12-1/linux64/lib/libvfs.so    /Disk2/eda/synopsys/2017-18/RHELx86/VCSMX_2017.12-1/linux64/lib/libvcsnew.so /Disk2/eda/synopsys/2017-18/RHELx86/VCSMX_2017.12-1/linux64/lib/libsimprofile.so /Disk2/eda/synopsys/2017-18/RHELx86/VCSMX_2017.12-1/linux64/lib/libvirsim.so /Disk2/eda/synopsys/2017-18/RHELx86/VCSMX_2017.12-1/linux64/lib/libreader_common.so /Disk2/eda/synopsys/2017-18/RHELx86/VCSMX_2017.12-1/linux64/lib/libBA.a /Disk2/eda/synopsys/2017-18/RHELx86/VCSMX_2017.12-1/linux64/lib/libuclinative.so /Disk2/eda/synopsys/2017-18/RHELx86/VCSMX_2017.12-1/linux64/lib/vcs_tls.o   -Wl,-whole-archive /Disk2/eda/synopsys/2017-18/RHELx86/VCSMX_2017.12-1/linux64/lib/libvcsucli.so -Wl,-no-whole-archive        _vcs_pli_stub_.o   /Disk2/eda/synopsys/2017-18/RHELx86/VCSMX_2017.12-1/linux64/lib/vcs_save_restore_new.o /Disk2/eda/synopsys/2017-18/RHELx86/VERDI_2017.12-1/share/PLI/VCS/LINUX64/pli.a -ldl  -lc -lm -lpthread -ldl 
+../simv up to date
+make[1]: Leaving directory `/home/12112195/register-controller-functional-coverage/funct_cov/delivery/csrc'
+CPU time: .412 seconds to compile + .356 seconds to elab + .327 seconds to link
+Coverage compilation completed!
+]0;12112195@vlsi112:~/register-controller-functional-coverage/scripts[12112195@vlsi112 scripts]$ make sim-cov
+Running simulation with coverage...
+Running coverage simulation from delivery directory...
+cd ../funct_cov/delivery && ./simv +vcs+vcdpluson -cm line+cond+fsm+branch+tgl -l ../../results/logs/simulation_cov.log +vcdfile=../../results/logs/dump_cov.vcd
+Chronologic VCS simulator copyright 1991-2017
+Contains Synopsys proprietary information.
+Compiler version N-2017.12-1_Full64; Runtime version N-2017.12-1_Full64;  Jun 11 23:25 2025
+
+ VCS Coverage Metrics Release N-2017.12-1_Full64 Copyright (c) 1991-2017 by Synopsys Inc.
+VCD+ Writer N-2017.12-1_Full64 Copyright (c) 1991-2017 by Synopsys Inc.
+T=20000 [Driver] starting ...
+T=20000 [Monitor] starting ...
+T=20000 [Coverage] starting ...
+T=20000 [Generator] Generating 1000 transactions ...
+T=30000 [Driver] waiting for item ...
+T=30000 [Driver] addr=0xa2 wr=1 acc=0 func=0 wdata=0x764600 rdata=0x0
+T=50000 [Driver] waiting for item ...
+T=50000 [Driver] addr=0x17 wr=1 acc=0 func=0 wdata=0x430edb rdata=0x0
+T=50000 [Monitor] addr=0xa2 wr=1 acc=0 func=0 wdata=0x764600 rdata=0x0
+T=50000 [Scoreboard] addr=0xa2 wr=1 acc=0 func=0 wdata=0x764600 rdata=0x0
+T=50000 [Scoreboard] Store addr=0xa2 wr=0x1 data=0x764600
+T=70000 [Driver] waiting for item ...
+T=70000 [Driver] addr=0xdc wr=0 acc=0 func=0 wdata=0xc8772d rdata=0x0
+T=70000 [Monitor] addr=0x17 wr=1 acc=0 func=0 wdata=0x430edb rdata=0x0
+T=70000 [Scoreboard] addr=0x17 wr=1 acc=0 func=0 wdata=0x430edb rdata=0x0
+T=70000 [Scoreboard] Store addr=0x17 wr=0x1 data=0x430edb
+T=90000 [Driver] waiting for item ...
+T=90000 [Driver] addr=0x28 wr=0 acc=1 func=0 wdata=0x2d9d rdata=0x0
+T=110000 [Driver] wait until ready is high
+T=110000 [Monitor] addr=0xdc wr=0 acc=0 func=0 wdata=0xc8772d rdata=0x123456
+T=110000 [Scoreboard] addr=0xdc wr=0 acc=0 func=0 wdata=0xc8772d rdata=0x123456
+T=110000 [Scoreboard] ERROR! First time read, addr=0xdc exp=1234 act=0x123456
+T=130000 [Driver] waiting for item ...
+T=130000 [Driver] addr=0xb7 wr=1 acc=1 func=1 wdata=0x90cb31 rdata=0x0
+T=150000 [Driver] waiting for item ...
+T=150000 [Driver] addr=0xa5 wr=1 acc=0 func=0 wdata=0x308524 rdata=0x0
+T=150000 [Monitor] addr=0x28 wr=0 acc=1 func=0 wdata=0x2d9d rdata=0x0
+T=150000 [Scoreboard] addr=0x28 wr=0 acc=1 func=0 wdata=0x2d9d rdata=0x0
+T=150000 [Scoreboard] ERROR! First time read, addr=0x28 exp=1234 act=0x0
+T=170000 [Driver] waiting for item ...
+T=170000 [Driver] addr=0x55 wr=0 acc=1 func=1 wdata=0x8bdc80 rdata=0x0
+T=170000 [Monitor] addr=0xa5 wr=1 acc=0 func=0 wdata=0x308524 rdata=0x0
+T=170000 [Scoreboard] addr=0xa5 wr=1 acc=0 func=0 wdata=0x308524 rdata=0x0
+T=170000 [Scoreboard] Store addr=0xa5 wr=0x1 data=0x308524
+T=190000 [Driver] waiting for item ...
+T=190000 [Driver] addr=0xf8 wr=1 acc=0 func=0 wdata=0x391a6c rdata=0x0
+T=210000 [Driver] waiting for item ...
+T=210000 [Driver] addr=0x3b wr=0 acc=1 func=0 wdata=0xa88c4a rdata=0x0
+T=210000 [Monitor] addr=0x55 wr=0 acc=1 func=1 wdata=0x8bdc80 rdata=0x0
+T=210000 [Scoreboard] addr=0x55 wr=0 acc=1 func=1 wdata=0x8bdc80 rdata=0x0
+T=210000 [Scoreboard] ERROR! First time read, addr=0x55 exp=1234 act=0x0
+T=230000 [Driver] waiting for item ...
+T=230000 [Driver] addr=0x56 wr=1 acc=1 func=0 wdata=0x7a2535 rdata=0x0
+T=250000 [Driver] waiting for item ...
+T=250000 [Driver] addr=0x3a wr=1 acc=1 func=1 wdata=0x93f9bd rdata=0x0
+T=250000 [Monitor] addr=0x3b wr=0 acc=1 func=0 wdata=0xa88c4a rdata=0x0
+T=250000 [Scoreboard] addr=0x3b wr=0 acc=1 func=0 wdata=0xa88c4a rdata=0x0
+T=250000 [Scoreboard] ERROR! First time read, addr=0x3b exp=1234 act=0x0
+T=270000 [Driver] waiting for item ...
+T=270000 [Driver] addr=0x86 wr=1 acc=0 func=0 wdata=0xbd471b rdata=0x0
+T=270000 [Monitor] addr=0x3a wr=1 acc=1 func=1 wdata=0x93f9bd rdata=0x0
+T=270000 [Scoreboard] addr=0x3a wr=1 acc=1 func=1 wdata=0x93f9bd rdata=0x0
+T=270000 [Scoreboard] Store addr=0x3a wr=0x1 data=0x93f9bd
+T=290000 [Driver] waiting for item ...
+T=290000 [Driver] addr=0x7d wr=0 acc=0 func=0 wdata=0x78492c rdata=0x0
+T=290000 [Monitor] addr=0x86 wr=1 acc=0 func=0 wdata=0xbd471b rdata=0x0
+T=290000 [Scoreboard] addr=0x86 wr=1 acc=0 func=0 wdata=0xbd471b rdata=0x0
+T=290000 [Scoreboard] Store addr=0x86 wr=0x1 data=0xbd471b
+T=310000 [Driver] waiting for item ...
+T=310000 [Driver] addr=0x8d wr=1 acc=1 func=0 wdata=0x4ba0b9 rdata=0x0
+T=330000 [Driver] wait until ready is high
+T=330000 [Monitor] addr=0x7d wr=0 acc=0 func=0 wdata=0x78492c rdata=0x123456
+T=330000 [Scoreboard] addr=0x7d wr=0 acc=0 func=0 wdata=0x78492c rdata=0x123456
+T=330000 [Scoreboard] ERROR! First time read, addr=0x7d exp=1234 act=0x123456
+T=350000 [Driver] waiting for item ...
+T=350000 [Driver] addr=0x43 wr=0 acc=1 func=0 wdata=0x35adac rdata=0x0
+T=350000 [Monitor] addr=0x8d wr=1 acc=1 func=0 wdata=0x4ba0b9 rdata=0x0
+T=350000 [Scoreboard] addr=0x8d wr=1 acc=1 func=0 wdata=0x4ba0b9 rdata=0x0
+T=350000 [Scoreboard] Store addr=0x8d wr=0x1 data=0x4ba0b9
+T=370000 [Driver] waiting for item ...
+T=370000 [Driver] addr=0xb wr=0 acc=0 func=0 wdata=0xf618c2 rdata=0x0
+T=390000 [Driver] waiting for item ...
+T=390000 [Driver] addr=0x64 wr=0 acc=0 func=0 wdata=0xa117c3 rdata=0x0
+T=390000 [Monitor] addr=0x43 wr=0 acc=1 func=0 wdata=0x35adac rdata=0x0
+T=390000 [Scoreboard] addr=0x43 wr=0 acc=1 func=0 wdata=0x35adac rdata=0x0
+T=390000 [Scoreboard] ERROR! First time read, addr=0x43 exp=1234 act=0x0
+T=410000 [Driver] wait until ready is high
+T=430000 [Driver] waiting for item ...
+T=430000 [Driver] addr=0xa6 wr=0 acc=0 func=0 wdata=0xecc79e rdata=0x0
+T=430000 [Monitor] addr=0x64 wr=0 acc=0 func=0 wdata=0xa117c3 rdata=0x0
+T=430000 [Scoreboard] addr=0x64 wr=0 acc=0 func=0 wdata=0xa117c3 rdata=0x0
+T=430000 [Scoreboard] ERROR! First time read, addr=0x64 exp=1234 act=0x0
+T=450000 [Driver] wait until ready is high
+T=470000 [Driver] waiting for item ...
+T=470000 [Driver] addr=0x14 wr=0 acc=0 func=0 wdata=0xc3143a rdata=0x0
+T=470000 [Monitor] addr=0xa6 wr=0 acc=0 func=0 wdata=0xecc79e rdata=0x0
+T=470000 [Scoreboard] addr=0xa6 wr=0 acc=0 func=0 wdata=0xecc79e rdata=0x0
+T=470000 [Scoreboard] ERROR! First time read, addr=0xa6 exp=1234 act=0x0
+T=490000 [Driver] wait until ready is high
+T=510000 [Driver] waiting for item ...
+T=510000 [Driver] addr=0x9b wr=1 acc=1 func=1 wdata=0x36c630 rdata=0x0
+T=510000 [Monitor] addr=0x14 wr=0 acc=0 func=0 wdata=0xc3143a rdata=0x0
+T=510000 [Scoreboard] addr=0x14 wr=0 acc=0 func=0 wdata=0xc3143a rdata=0x0
+T=510000 [Scoreboard] ERROR! First time read, addr=0x14 exp=1234 act=0x0
+T=530000 [Driver] wait until ready is high
+T=530000 [Monitor] addr=0x9b wr=1 acc=1 func=1 wdata=0x36c630 rdata=0x0
+T=530000 [Scoreboard] addr=0x9b wr=1 acc=1 func=1 wdata=0x36c630 rdata=0x0
+T=530000 [Scoreboard] Store addr=0x9b wr=0x1 data=0x36c630
+T=550000 [Driver] waiting for item ...
+T=550000 [Driver] addr=0x9f wr=0 acc=0 func=0 wdata=0x8becf9 rdata=0x0
+T=550000 [Monitor] addr=0x9b wr=1 acc=1 func=1 wdata=0x36c630 rdata=0x0
+T=550000 [Scoreboard] addr=0x9b wr=1 acc=1 func=1 wdata=0x36c630 rdata=0x0
+T=550000 [Scoreboard] Store addr=0x9b wr=0x1 data=0x36c630
+T=570000 [Driver] waiting for item ...
+T=570000 [Driver] addr=0xbf wr=1 acc=0 func=0 wdata=0xfd2350 rdata=0x0
+T=590000 [Driver] wait until ready is high
+T=590000 [Monitor] addr=0x9f wr=0 acc=0 func=0 wdata=0x8becf9 rdata=0x123456
+T=590000 [Scoreboard] addr=0x9f wr=0 acc=0 func=0 wdata=0x8becf9 rdata=0x123456
+T=590000 [Scoreboard] ERROR! First time read, addr=0x9f exp=1234 act=0x123456
+T=610000 [Driver] waiting for item ...
+T=610000 [Driver] addr=0x9c wr=1 acc=1 func=1 wdata=0xffbbdc rdata=0x0
+T=610000 [Monitor] addr=0xbf wr=1 acc=0 func=0 wdata=0xfd2350 rdata=0x0
+T=610000 [Scoreboard] addr=0xbf wr=1 acc=0 func=0 wdata=0xfd2350 rdata=0x0
+T=610000 [Scoreboard] Store addr=0xbf wr=0x1 data=0xfd2350
+T=630000 [Driver] waiting for item ...
+T=630000 [Driver] addr=0x9c wr=0 acc=1 func=1 wdata=0xc4c281 rdata=0x0
+T=630000 [Monitor] addr=0x9c wr=1 acc=1 func=1 wdata=0xffbbdc rdata=0x0
+T=630000 [Scoreboard] addr=0x9c wr=1 acc=1 func=1 wdata=0xffbbdc rdata=0x0
+T=630000 [Scoreboard] Store addr=0x9c wr=0x1 data=0xffbbdc
+T=650000 [Driver] waiting for item ...
+T=650000 [Driver] addr=0x46 wr=0 acc=1 func=1 wdata=0x65aa9b rdata=0x0
+T=670000 [Driver] waiting for item ...
+T=670000 [Driver] addr=0x7d wr=0 acc=1 func=1 wdata=0xa261fd rdata=0x0
+T=670000 [Monitor] addr=0x9c wr=0 acc=1 func=1 wdata=0xc4c281 rdata=0x0
+T=670000 [Scoreboard] addr=0x9c wr=0 acc=1 func=1 wdata=0xc4c281 rdata=0x0
+T=670000 [Scoreboard] ERROR! addr=0x9c exp=0xffbbdc act=0x0
+T=690000 [Driver] waiting for item ...
+T=690000 [Driver] addr=0xab wr=0 acc=0 func=0 wdata=0x9b1744 rdata=0x0
+T=710000 [Driver] waiting for item ...
+T=710000 [Driver] addr=0x4 wr=1 acc=1 func=0 wdata=0x6f7cca rdata=0x0
+T=710000 [Monitor] addr=0x7d wr=0 acc=1 func=1 wdata=0xa261fd rdata=0x0
+T=710000 [Scoreboard] addr=0x7d wr=0 acc=1 func=1 wdata=0xa261fd rdata=0x0
+T=710000 [Scoreboard] ERROR! First time read, addr=0x7d exp=1234 act=0x0
+T=730000 [Driver] wait until ready is high
+T=730000 [Monitor] addr=0x4 wr=1 acc=1 func=0 wdata=0x6f7cca rdata=0x0
+T=730000 [Scoreboard] addr=0x4 wr=1 acc=1 func=0 wdata=0x6f7cca rdata=0x0
+T=730000 [Scoreboard] Store addr=0x4 wr=0x1 data=0x6f7cca
+T=750000 [Driver] waiting for item ...
+T=750000 [Driver] addr=0x79 wr=1 acc=0 func=0 wdata=0x7f3089 rdata=0x0
+T=750000 [Monitor] addr=0x4 wr=1 acc=1 func=0 wdata=0x6f7cca rdata=0x0
+T=750000 [Scoreboard] addr=0x4 wr=1 acc=1 func=0 wdata=0x6f7cca rdata=0x0
+T=750000 [Scoreboard] Store addr=0x4 wr=0x1 data=0x6f7cca
+T=770000 [Driver] waiting for item ...
+T=770000 [Driver] addr=0xb4 wr=0 acc=0 func=0 wdata=0x2a7f98 rdata=0x0
+T=770000 [Monitor] addr=0x79 wr=1 acc=0 func=0 wdata=0x7f3089 rdata=0x0
+T=770000 [Scoreboard] addr=0x79 wr=1 acc=0 func=0 wdata=0x7f3089 rdata=0x0
+T=770000 [Scoreboard] Store addr=0x79 wr=0x1 data=0x7f3089
+T=790000 [Driver] waiting for item ...
+T=790000 [Driver] addr=0xad wr=1 acc=0 func=0 wdata=0x3681e7 rdata=0x0
+T=810000 [Driver] wait until ready is high
+T=810000 [Monitor] addr=0xb4 wr=0 acc=0 func=0 wdata=0x2a7f98 rdata=0x123456
+T=810000 [Scoreboard] addr=0xb4 wr=0 acc=0 func=0 wdata=0x2a7f98 rdata=0x123456
+T=810000 [Scoreboard] ERROR! First time read, addr=0xb4 exp=1234 act=0x123456
+T=830000 [Driver] waiting for item ...
+T=830000 [Driver] addr=0xfa wr=0 acc=1 func=1 wdata=0x1ef rdata=0x0
+T=830000 [Monitor] addr=0xad wr=1 acc=0 func=0 wdata=0x3681e7 rdata=0x0
+T=830000 [Scoreboard] addr=0xad wr=1 acc=0 func=0 wdata=0x3681e7 rdata=0x0
+T=830000 [Scoreboard] Store addr=0xad wr=0x1 data=0x3681e7
+T=850000 [Driver] waiting for item ...
+T=850000 [Driver] addr=0xa wr=1 acc=1 func=1 wdata=0xdf319 rdata=0x0
+T=870000 [Driver] waiting for item ...
+T=870000 [Driver] addr=0x8f wr=0 acc=0 func=0 wdata=0x57acac rdata=0x0
+T=870000 [Monitor] addr=0xfa wr=0 acc=1 func=1 wdata=0x1ef rdata=0x0
+T=870000 [Scoreboard] addr=0xfa wr=0 acc=1 func=1 wdata=0x1ef rdata=0x0
+T=870000 [Scoreboard] ERROR! First time read, addr=0xfa exp=1234 act=0x0
+T=890000 [Driver] waiting for item ...
+T=890000 [Driver] addr=0x75 wr=0 acc=0 func=0 wdata=0xcaeb66 rdata=0x0
+T=910000 [Driver] wait until ready is high
+T=910000 [Monitor] addr=0x8f wr=0 acc=0 func=0 wdata=0x57acac rdata=0x123456
+T=910000 [Scoreboard] addr=0x8f wr=0 acc=0 func=0 wdata=0x57acac rdata=0x123456
+T=910000 [Scoreboard] ERROR! First time read, addr=0x8f exp=1234 act=0x123456
+T=930000 [Driver] waiting for item ...
+T=930000 [Driver] addr=0x9f wr=0 acc=1 func=1 wdata=0x55057d rdata=0x0
+T=950000 [Driver] wait until ready is high
+T=950000 [Monitor] addr=0x75 wr=0 acc=0 func=0 wdata=0xcaeb66 rdata=0x123456
+T=950000 [Scoreboard] addr=0x75 wr=0 acc=0 func=0 wdata=0xcaeb66 rdata=0x123456
+T=950000 [Scoreboard] ERROR! First time read, addr=0x75 exp=1234 act=0x123456
+T=970000 [Driver] waiting for item ...
+T=970000 [Driver] addr=0x73 wr=0 acc=1 func=1 wdata=0x9ff7d2 rdata=0x0
+T=990000 [Driver] waiting for item ...
+T=990000 [Driver] addr=0xe3 wr=0 acc=0 func=0 wdata=0x733035 rdata=0x0
+T=990000 [Monitor] addr=0x9f wr=0 acc=1 func=1 wdata=0x55057d rdata=0x0
+T=990000 [Scoreboard] addr=0x9f wr=0 acc=1 func=1 wdata=0x55057d rdata=0x0
+T=990000 [Scoreboard] ERROR! First time read, addr=0x9f exp=1234 act=0x0
+T=1010000 [Driver] waiting for item ...
+T=1010000 [Driver] addr=0x6e wr=1 acc=1 func=0 wdata=0x2f7b78 rdata=0x0
+=== FUNCTIONAL COVERAGE REPORT ===
+Total Coverage: 90.00%
+==================================
+T=1030000 [Driver] wait until ready is high
+T=1030000 [Monitor] addr=0xe3 wr=0 acc=0 func=0 wdata=0x733035 rdata=0x123456
+T=1030000 [Scoreboard] addr=0xe3 wr=0 acc=0 func=0 wdata=0x733035 rdata=0x123456
+T=1030000 [Scoreboard] ERROR! First time read, addr=0xe3 exp=1234 act=0x123456
+T=1050000 [Driver] waiting for item ...
+T=1050000 [Driver] addr=0x71 wr=0 acc=0 func=0 wdata=0x4e20c8 rdata=0x0
+T=1050000 [Monitor] addr=0x6e wr=1 acc=1 func=0 wdata=0x2f7b78 rdata=0x0
+T=1050000 [Scoreboard] addr=0x6e wr=1 acc=1 func=0 wdata=0x2f7b78 rdata=0x0
+T=1050000 [Scoreboard] Store addr=0x6e wr=0x1 data=0x2f7b78
+T=1070000 [Driver] waiting for item ...
+T=1070000 [Driver] addr=0x69 wr=1 acc=0 func=0 wdata=0xbf389b rdata=0x0
+T=1090000 [Driver] wait until ready is high
+T=1090000 [Monitor] addr=0x71 wr=0 acc=0 func=0 wdata=0x4e20c8 rdata=0x123456
+T=1090000 [Scoreboard] addr=0x71 wr=0 acc=0 func=0 wdata=0x4e20c8 rdata=0x123456
+T=1090000 [Scoreboard] ERROR! First time read, addr=0x71 exp=1234 act=0x123456
+T=1110000 [Driver] waiting for item ...
+T=1110000 [Driver] addr=0x1d wr=0 acc=0 func=0 wdata=0xf3ed93 rdata=0x0
+T=1110000 [Monitor] addr=0x69 wr=1 acc=0 func=0 wdata=0xbf389b rdata=0x0
+T=1110000 [Scoreboard] addr=0x69 wr=1 acc=0 func=0 wdata=0xbf389b rdata=0x0
+T=1110000 [Scoreboard] Store addr=0x69 wr=0x1 data=0xbf389b
+T=1130000 [Driver] waiting for item ...
+T=1130000 [Driver] addr=0x6e wr=1 acc=1 func=1 wdata=0x82f76d rdata=0x0
+T=1150000 [Driver] wait until ready is high
+T=1150000 [Monitor] addr=0x1d wr=0 acc=0 func=0 wdata=0xf3ed93 rdata=0x123456
+T=1150000 [Scoreboard] addr=0x1d wr=0 acc=0 func=0 wdata=0xf3ed93 rdata=0x123456
+T=1150000 [Scoreboard] ERROR! First time read, addr=0x1d exp=1234 act=0x123456
+T=1170000 [Driver] waiting for item ...
+T=1170000 [Driver] addr=0x73 wr=1 acc=1 func=1 wdata=0x19ae4 rdata=0x0
+T=1170000 [Monitor] addr=0x6e wr=1 acc=1 func=1 wdata=0x82f76d rdata=0x0
+T=1170000 [Scoreboard] addr=0x6e wr=1 acc=1 func=1 wdata=0x82f76d rdata=0x0
+T=1170000 [Scoreboard] Store addr=0x6e wr=0x1 data=0x82f76d
+T=1190000 [Driver] waiting for item ...
+T=1190000 [Driver] addr=0x50 wr=1 acc=1 func=1 wdata=0x3f60c3 rdata=0x0
+T=1190000 [Monitor] addr=0x73 wr=1 acc=1 func=1 wdata=0x19ae4 rdata=0x0
+T=1190000 [Scoreboard] addr=0x73 wr=1 acc=1 func=1 wdata=0x19ae4 rdata=0x0
+T=1190000 [Scoreboard] Store addr=0x73 wr=0x1 data=0x19ae4
+T=1210000 [Driver] waiting for item ...
+T=1210000 [Driver] addr=0x71 wr=1 acc=1 func=0 wdata=0x664b48 rdata=0x0
+T=1210000 [Monitor] addr=0x50 wr=1 acc=1 func=1 wdata=0x3f60c3 rdata=0x0
+T=1210000 [Scoreboard] addr=0x50 wr=1 acc=1 func=1 wdata=0x3f60c3 rdata=0x0
+T=1210000 [Scoreboard] Store addr=0x50 wr=0x1 data=0x3f60c3
+T=1230000 [Driver] waiting for item ...
+T=1230000 [Driver] addr=0x83 wr=1 acc=0 func=0 wdata=0xc8684b rdata=0x0
+T=1230000 [Monitor] addr=0x71 wr=1 acc=1 func=0 wdata=0x664b48 rdata=0x0
+T=1230000 [Scoreboard] addr=0x71 wr=1 acc=1 func=0 wdata=0x664b48 rdata=0x0
+T=1230000 [Scoreboard] Store addr=0x71 wr=0x1 data=0x664b48
+T=1250000 [Driver] waiting for item ...
+T=1250000 [Driver] addr=0x7b wr=1 acc=0 func=0 wdata=0xa0c897 rdata=0x0
+T=1250000 [Monitor] addr=0x83 wr=1 acc=0 func=0 wdata=0xc8684b rdata=0x0
+T=1250000 [Scoreboard] addr=0x83 wr=1 acc=0 func=0 wdata=0xc8684b rdata=0x0
+T=1250000 [Scoreboard] Store addr=0x83 wr=0x1 data=0xc8684b
+T=1270000 [Driver] waiting for item ...
+T=1270000 [Driver] addr=0x91 wr=1 acc=0 func=0 wdata=0xd56ecb rdata=0x0
+T=1270000 [Monitor] addr=0x7b wr=1 acc=0 func=0 wdata=0xa0c897 rdata=0x0
+T=1270000 [Scoreboard] addr=0x7b wr=1 acc=0 func=0 wdata=0xa0c897 rdata=0x0
+T=1270000 [Scoreboard] Store addr=0x7b wr=0x1 data=0xa0c897
+T=1290000 [Driver] waiting for item ...
+T=1290000 [Driver] addr=0x32 wr=0 acc=1 func=1 wdata=0x75c04d rdata=0x0
+T=1290000 [Monitor] addr=0x91 wr=1 acc=0 func=0 wdata=0xd56ecb rdata=0x0
+T=1290000 [Scoreboard] addr=0x91 wr=1 acc=0 func=0 wdata=0xd56ecb rdata=0x0
+T=1290000 [Scoreboard] Store addr=0x91 wr=0x1 data=0xd56ecb
+T=1310000 [Driver] waiting for item ...
+T=1310000 [Driver] addr=0x2f wr=0 acc=1 func=1 wdata=0x34efd rdata=0x0
+T=1330000 [Driver] waiting for item ...
+T=1330000 [Driver] addr=0x99 wr=1 acc=1 func=1 wdata=0x5d7723 rdata=0x0
+T=1330000 [Monitor] addr=0x32 wr=0 acc=1 func=1 wdata=0x75c04d rdata=0x0
+T=1330000 [Scoreboard] addr=0x32 wr=0 acc=1 func=1 wdata=0x75c04d rdata=0x0
+T=1330000 [Scoreboard] ERROR! First time read, addr=0x32 exp=1234 act=0x0
+T=1350000 [Driver] waiting for item ...
+T=1350000 [Driver] addr=0x8a wr=0 acc=1 func=1 wdata=0x802107 rdata=0x0
+T=1350000 [Monitor] addr=0x99 wr=1 acc=1 func=1 wdata=0x5d7723 rdata=0x0
+T=1350000 [Scoreboard] addr=0x99 wr=1 acc=1 func=1 wdata=0x5d7723 rdata=0x0
+T=1350000 [Scoreboard] Store addr=0x99 wr=0x1 data=0x5d7723
+T=1370000 [Driver] waiting for item ...
+T=1370000 [Driver] addr=0x1d wr=0 acc=0 func=0 wdata=0x2907c6 rdata=0x0
+T=1390000 [Driver] waiting for item ...
+T=1390000 [Driver] addr=0x1f wr=0 acc=0 func=0 wdata=0xe3c0be rdata=0x0
+T=1390000 [Monitor] addr=0x8a wr=0 acc=1 func=1 wdata=0x802107 rdata=0x0
+T=1390000 [Scoreboard] addr=0x8a wr=0 acc=1 func=1 wdata=0x802107 rdata=0x0
+T=1390000 [Scoreboard] ERROR! First time read, addr=0x8a exp=1234 act=0x0
+T=1410000 [Driver] wait until ready is high
+T=1430000 [Driver] waiting for item ...
+T=1430000 [Driver] addr=0x75 wr=1 acc=1 func=1 wdata=0x43ea8f rdata=0x0
+T=1430000 [Monitor] addr=0x1f wr=0 acc=0 func=0 wdata=0xe3c0be rdata=0x0
+T=1430000 [Scoreboard] addr=0x1f wr=0 acc=0 func=0 wdata=0xe3c0be rdata=0x0
+T=1430000 [Scoreboard] ERROR! First time read, addr=0x1f exp=1234 act=0x0
+T=1450000 [Driver] wait until ready is high
+T=1450000 [Monitor] addr=0x75 wr=1 acc=1 func=1 wdata=0x43ea8f rdata=0x0
+T=1450000 [Scoreboard] addr=0x75 wr=1 acc=1 func=1 wdata=0x43ea8f rdata=0x0
+T=1450000 [Scoreboard] Store addr=0x75 wr=0x1 data=0x43ea8f
+T=1470000 [Driver] waiting for item ...
+T=1470000 [Driver] addr=0x90 wr=0 acc=1 func=1 wdata=0xefdf50 rdata=0x0
+T=1470000 [Monitor] addr=0x75 wr=1 acc=1 func=1 wdata=0x43ea8f rdata=0x0
+T=1470000 [Scoreboard] addr=0x75 wr=1 acc=1 func=1 wdata=0x43ea8f rdata=0x0
+T=1470000 [Scoreboard] Store addr=0x75 wr=0x1 data=0x43ea8f
+T=1490000 [Driver] waiting for item ...
+T=1490000 [Driver] addr=0x42 wr=0 acc=0 func=0 wdata=0x83ee73 rdata=0x0
+T=1510000 [Driver] waiting for item ...
+T=1510000 [Driver] addr=0xb wr=1 acc=1 func=0 wdata=0xb36ae7 rdata=0x0
+T=1510000 [Monitor] addr=0x90 wr=0 acc=1 func=1 wdata=0xefdf50 rdata=0x0
+T=1510000 [Scoreboard] addr=0x90 wr=0 acc=1 func=1 wdata=0xefdf50 rdata=0x0
+T=1510000 [Scoreboard] ERROR! First time read, addr=0x90 exp=1234 act=0x0
+$finish called from file "../../tb/reg_ctrl_tb.sv", line 33.
+$finish at simulation time              1520000
+
+---------------------------------------------------------------------------
+VCS Coverage Metrics: during simulation line, cond, FSM, branch, tgl was monitored
+---------------------------------------------------------------------------
+
+ Coverage status: End of All Coverages ...
+
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 1520000 ps
+CPU Time:      0.360 seconds;       Data structure size:   0.0Mb
+Wed Jun 11 23:25:51 2025
+Coverage simulation completed!
+Coverage database available in delivery/simv.vdb
+]0;12112195@vlsi112:~/register-controller-functional-coverage/scripts[12112195@vlsi112 scripts]$ clear
+[3;J[H[2J]0;12112195@vlsi112:~/register-controller-functional-coverage/scripts[12112195@vlsi112 scripts]$ make clean
+Cleaning build artifacts...
+rm -rf simv* csrc DVEfiles AN.DB *.log *.vcd *.vpd simv.daidir
+Clean completed!
+]0;12112195@vlsi112:~/register-controller-functional-coverage/scripts[12112195@vlsi112 scripts]$ c make compile-cov
+Compiling testbench with coverage enabled...
+Linking with precompiled DUT from delivery folder...
+cd ../funct_cov/delivery && vlogan -sverilog ../../tb/interface.sv ../../tb/transaction.sv ../../tb/test_registry.sv ../../tb/driver.sv ../../tb/monitor.sv ../../tb/scoreboard.sv ../../tb/coverage.sv ../../tb/generator.sv ../../tb/enviroment.sv ../../tests/basic_test.sv ../../tb/reg_ctrl_tb.sv -l ../../results/logs/compile_cov.log
+                         Chronologic VCS (TM)
+           Version N-2017.12-1 -- Wed Jun 11 23:26:24 2025
+               Copyright (c) 1991-2017 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+Parsing design file '../../tb/interface.sv'
+Parsing design file '../../tb/transaction.sv'
+
+Warning-[TMBIN] Too many bits in Based Number
+../../tb/transaction.sv, 33
+  The specified width is '16' bits, actually got '20' bits.
+  The offending number is : '10000'.
+
+
+Warning-[TMBIN] Too many bits in Based Number
+../../tb/transaction.sv, 33
+  The specified width is '16' bits, actually got '20' bits.
+  The offending number is : 'FFFFF'.
+
+
+Warning-[TMBIN] Too many bits in Based Number
+../../tb/transaction.sv, 34
+  The specified width is '16' bits, actually got '24' bits.
+  The offending number is : '100000'.
+
+Parsing design file '../../tb/test_registry.sv'
+Parsing design file '../../tb/driver.sv'
+Parsing design file '../../tb/monitor.sv'
+Parsing design file '../../tb/scoreboard.sv'
+Parsing design file '../../tb/coverage.sv'
+
+Warning-[TMBIN] Too many bits in Based Number
+../../tb/coverage.sv, 18
+  The specified width is '16' bits, actually got '20' bits.
+  The offending number is : '10000'.
+
+
+Warning-[TMBIN] Too many bits in Based Number
+../../tb/coverage.sv, 18
+  The specified width is '16' bits, actually got '20' bits.
+  The offending number is : 'FFFFF'.
+
+
+Warning-[TMBIN] Too many bits in Based Number
+../../tb/coverage.sv, 19
+  The specified width is '16' bits, actually got '24' bits.
+  The offending number is : '100000'.
+
+Parsing design file '../../tb/generator.sv'
+Parsing design file '../../tb/enviroment.sv'
+Parsing design file '../../tests/basic_test.sv'
+Parsing design file '../../tb/reg_ctrl_tb.sv'
+CPU time: .103 seconds to compile
+cd ../funct_cov/delivery && vcs -full64 -licqueue -timescale=1ns/1ns +vcs+flush+all +warn=all -sverilog -debug_access+all +vcs+vcdpluson -cm line+cond+fsm+branch+tgl tb -l ../../results/logs/build_cov.log
+Doing common elaboration 
+                         Chronologic VCS (TM)
+        Version N-2017.12-1_Full64 -- Wed Jun 11 23:26:25 2025
+               Copyright (c) 1991-2017 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+Top Level Modules:
+       tb
+TimeScale is 1 ns / 1 ps
+VCS Coverage Metrics Release N-2017.12-1_Full64 Copyright (c) 1991-2017 by Synopsys Inc.
+***** Warning: +memcbk/-debug_access will not enable toggle coverage on MDAs.  Please use -cm_tgl mda to enable it.
+Starting vcs inline pass...
+3 modules and 0 UDP read.
+	However, due to incremental compilation, no re-compilation is necessary.
+make[1]: Entering directory `/home/12112195/register-controller-functional-coverage/funct_cov/delivery/csrc'
+make[1]: Leaving directory `/home/12112195/register-controller-functional-coverage/funct_cov/delivery/csrc'
+make[1]: Entering directory `/home/12112195/register-controller-functional-coverage/funct_cov/delivery/csrc'
+rm -f _csrc*.so pre_vcsobj_*.so share_vcsobj_*.so
+ld -shared  -o .//../simv.daidir//_csrc0.so objs/amcQw_d.o 
+rm -f _csrc0.so
+if [ -x ../simv ]; then chmod -x ../simv; fi
+g++  -o ../simv   -Wl,-rpath-link=./ -Wl,-rpath='$ORIGIN'/simv.daidir/ -Wl,-rpath=./simv.daidir/ -Wl,-rpath='$ORIGIN'/simv.daidir//scsim.db.dir  -rdynamic    _102841_archive_1.so _prev_archive_1.so _csrc0.so  SIM_l.o  _csrc0.so     rmapats_mop.o rmapats.o rmar.o rmar_nd.o  rmar_llvm_0_1.o rmar_llvm_0_0.o          /Disk2/eda/synopsys/2017-18/RHELx86/VCSMX_2017.12-1/linux64/lib/libzerosoft_rt_stubs.so /Disk2/eda/synopsys/2017-18/RHELx86/VCSMX_2017.12-1/linux64/lib/liberrorinf.so /Disk2/eda/synopsys/2017-18/RHELx86/VCSMX_2017.12-1/linux64/lib/libsnpsmalloc.so /Disk2/eda/synopsys/2017-18/RHELx86/VCSMX_2017.12-1/linux64/lib/libvfs.so    /Disk2/eda/synopsys/2017-18/RHELx86/VCSMX_2017.12-1/linux64/lib/libvcsnew.so /Disk2/eda/synopsys/2017-18/RHELx86/VCSMX_2017.12-1/linux64/lib/libsimprofile.so /Disk2/eda/synopsys/2017-18/RHELx86/VCSMX_2017.12-1/linux64/lib/libvirsim.so /Disk2/eda/synopsys/2017-18/RHELx86/VCSMX_2017.12-1/linux64/lib/libreader_common.so /Disk2/eda/synopsys/2017-18/RHELx86/VCSMX_2017.12-1/linux64/lib/libBA.a /Disk2/eda/synopsys/2017-18/RHELx86/VCSMX_2017.12-1/linux64/lib/libuclinative.so /Disk2/eda/synopsys/2017-18/RHELx86/VCSMX_2017.12-1/linux64/lib/vcs_tls.o   -Wl,-whole-archive /Disk2/eda/synopsys/2017-18/RHELx86/VCSMX_2017.12-1/linux64/lib/libvcsucli.so -Wl,-no-whole-archive        _vcs_pli_stub_.o   /Disk2/eda/synopsys/2017-18/RHELx86/VCSMX_2017.12-1/linux64/lib/vcs_save_restore_new.o /Disk2/eda/synopsys/2017-18/RHELx86/VERDI_2017.12-1/share/PLI/VCS/LINUX64/pli.a -ldl  -lc -lm -lpthread -ldl 
+../simv up to date
+make[1]: Leaving directory `/home/12112195/register-controller-functional-coverage/funct_cov/delivery/csrc'
+CPU time: .448 seconds to compile + .353 seconds to elab + .355 seconds to link
+Coverage compilation completed!
+]0;12112195@vlsi112:~/register-controller-functional-coverage/scripts[12112195@vlsi112 scripts]$ mo ake sim-cov
+Running simulation with coverage...
+Running coverage simulation from delivery directory...
+cd ../funct_cov/delivery && ./simv +vcs+vcdpluson -cm line+cond+fsm+branch+tgl -l ../../results/logs/simulation_cov.log +vcdfile=../../results/logs/dump_cov.vcd
+Chronologic VCS simulator copyright 1991-2017
+Contains Synopsys proprietary information.
+Compiler version N-2017.12-1_Full64; Runtime version N-2017.12-1_Full64;  Jun 11 23:26 2025
+
+ VCS Coverage Metrics Release N-2017.12-1_Full64 Copyright (c) 1991-2017 by Synopsys Inc.
+VCD+ Writer N-2017.12-1_Full64 Copyright (c) 1991-2017 by Synopsys Inc.
+T=20000 [Driver] starting ...
+T=20000 [Monitor] starting ...
+T=20000 [Coverage] starting ...
+T=20000 [Generator] Generating 1000 transactions ...
+T=30000 [Driver] waiting for item ...
+T=30000 [Driver] addr=0xa2 wr=1 acc=0 func=0 wdata=0x764600 rdata=0x0
+T=50000 [Driver] waiting for item ...
+T=50000 [Driver] addr=0x17 wr=1 acc=0 func=0 wdata=0x430edb rdata=0x0
+T=50000 [Monitor] addr=0xa2 wr=1 acc=0 func=0 wdata=0x764600 rdata=0x0
+T=50000 [Scoreboard] addr=0xa2 wr=1 acc=0 func=0 wdata=0x764600 rdata=0x0
+T=50000 [Scoreboard] Store addr=0xa2 wr=0x1 data=0x764600
+T=70000 [Driver] waiting for item ...
+T=70000 [Driver] addr=0xdc wr=0 acc=0 func=0 wdata=0xc8772d rdata=0x0
+T=70000 [Monitor] addr=0x17 wr=1 acc=0 func=0 wdata=0x430edb rdata=0x0
+T=70000 [Scoreboard] addr=0x17 wr=1 acc=0 func=0 wdata=0x430edb rdata=0x0
+T=70000 [Scoreboard] Store addr=0x17 wr=0x1 data=0x430edb
+T=90000 [Driver] waiting for item ...
+T=90000 [Driver] addr=0x28 wr=0 acc=1 func=0 wdata=0x2d9d rdata=0x0
+T=110000 [Driver] wait until ready is high
+T=110000 [Monitor] addr=0xdc wr=0 acc=0 func=0 wdata=0xc8772d rdata=0x123456
+T=110000 [Scoreboard] addr=0xdc wr=0 acc=0 func=0 wdata=0xc8772d rdata=0x123456
+T=110000 [Scoreboard] ERROR! First time read, addr=0xdc exp=1234 act=0x123456
+T=130000 [Driver] waiting for item ...
+T=130000 [Driver] addr=0xb7 wr=1 acc=1 func=1 wdata=0x90cb31 rdata=0x0
+T=150000 [Driver] waiting for item ...
+T=150000 [Driver] addr=0xa5 wr=1 acc=0 func=0 wdata=0x308524 rdata=0x0
+T=150000 [Monitor] addr=0x28 wr=0 acc=1 func=0 wdata=0x2d9d rdata=0x0
+T=150000 [Scoreboard] addr=0x28 wr=0 acc=1 func=0 wdata=0x2d9d rdata=0x0
+T=150000 [Scoreboard] ERROR! First time read, addr=0x28 exp=1234 act=0x0
+T=170000 [Driver] waiting for item ...
+T=170000 [Driver] addr=0x55 wr=0 acc=1 func=1 wdata=0x8bdc80 rdata=0x0
+T=170000 [Monitor] addr=0xa5 wr=1 acc=0 func=0 wdata=0x308524 rdata=0x0
+T=170000 [Scoreboard] addr=0xa5 wr=1 acc=0 func=0 wdata=0x308524 rdata=0x0
+T=170000 [Scoreboard] Store addr=0xa5 wr=0x1 data=0x308524
+T=190000 [Driver] waiting for item ...
+T=190000 [Driver] addr=0xf8 wr=1 acc=0 func=0 wdata=0x391a6c rdata=0x0
+T=210000 [Driver] waiting for item ...
+T=210000 [Driver] addr=0x3b wr=0 acc=1 func=0 wdata=0xa88c4a rdata=0x0
+T=210000 [Monitor] addr=0x55 wr=0 acc=1 func=1 wdata=0x8bdc80 rdata=0x0
+T=210000 [Scoreboard] addr=0x55 wr=0 acc=1 func=1 wdata=0x8bdc80 rdata=0x0
+T=210000 [Scoreboard] ERROR! First time read, addr=0x55 exp=1234 act=0x0
+T=230000 [Driver] waiting for item ...
+T=230000 [Driver] addr=0x56 wr=1 acc=1 func=0 wdata=0x7a2535 rdata=0x0
+T=250000 [Driver] waiting for item ...
+T=250000 [Driver] addr=0x3a wr=1 acc=1 func=1 wdata=0x93f9bd rdata=0x0
+T=250000 [Monitor] addr=0x3b wr=0 acc=1 func=0 wdata=0xa88c4a rdata=0x0
+T=250000 [Scoreboard] addr=0x3b wr=0 acc=1 func=0 wdata=0xa88c4a rdata=0x0
+T=250000 [Scoreboard] ERROR! First time read, addr=0x3b exp=1234 act=0x0
+T=270000 [Driver] waiting for item ...
+T=270000 [Driver] addr=0x86 wr=1 acc=0 func=0 wdata=0xbd471b rdata=0x0
+T=270000 [Monitor] addr=0x3a wr=1 acc=1 func=1 wdata=0x93f9bd rdata=0x0
+T=270000 [Scoreboard] addr=0x3a wr=1 acc=1 func=1 wdata=0x93f9bd rdata=0x0
+T=270000 [Scoreboard] Store addr=0x3a wr=0x1 data=0x93f9bd
+T=290000 [Driver] waiting for item ...
+T=290000 [Driver] addr=0x7d wr=0 acc=0 func=0 wdata=0x78492c rdata=0x0
+T=290000 [Monitor] addr=0x86 wr=1 acc=0 func=0 wdata=0xbd471b rdata=0x0
+T=290000 [Scoreboard] addr=0x86 wr=1 acc=0 func=0 wdata=0xbd471b rdata=0x0
+T=290000 [Scoreboard] Store addr=0x86 wr=0x1 data=0xbd471b
+T=310000 [Driver] waiting for item ...
+T=310000 [Driver] addr=0x8d wr=1 acc=1 func=0 wdata=0x4ba0b9 rdata=0x0
+T=330000 [Driver] wait until ready is high
+T=330000 [Monitor] addr=0x7d wr=0 acc=0 func=0 wdata=0x78492c rdata=0x123456
+T=330000 [Scoreboard] addr=0x7d wr=0 acc=0 func=0 wdata=0x78492c rdata=0x123456
+T=330000 [Scoreboard] ERROR! First time read, addr=0x7d exp=1234 act=0x123456
+T=350000 [Driver] waiting for item ...
+T=350000 [Driver] addr=0x43 wr=0 acc=1 func=0 wdata=0x35adac rdata=0x0
+T=350000 [Monitor] addr=0x8d wr=1 acc=1 func=0 wdata=0x4ba0b9 rdata=0x0
+T=350000 [Scoreboard] addr=0x8d wr=1 acc=1 func=0 wdata=0x4ba0b9 rdata=0x0
+T=350000 [Scoreboard] Store addr=0x8d wr=0x1 data=0x4ba0b9
+T=370000 [Driver] waiting for item ...
+T=370000 [Driver] addr=0xb wr=0 acc=0 func=0 wdata=0xf618c2 rdata=0x0
+T=390000 [Driver] waiting for item ...
+T=390000 [Driver] addr=0x64 wr=0 acc=0 func=0 wdata=0xa117c3 rdata=0x0
+T=390000 [Monitor] addr=0x43 wr=0 acc=1 func=0 wdata=0x35adac rdata=0x0
+T=390000 [Scoreboard] addr=0x43 wr=0 acc=1 func=0 wdata=0x35adac rdata=0x0
+T=390000 [Scoreboard] ERROR! First time read, addr=0x43 exp=1234 act=0x0
+T=410000 [Driver] wait until ready is high
+T=430000 [Driver] waiting for item ...
+T=430000 [Driver] addr=0xa6 wr=0 acc=0 func=0 wdata=0xecc79e rdata=0x0
+T=430000 [Monitor] addr=0x64 wr=0 acc=0 func=0 wdata=0xa117c3 rdata=0x0
+T=430000 [Scoreboard] addr=0x64 wr=0 acc=0 func=0 wdata=0xa117c3 rdata=0x0
+T=430000 [Scoreboard] ERROR! First time read, addr=0x64 exp=1234 act=0x0
+T=450000 [Driver] wait until ready is high
+T=470000 [Driver] waiting for item ...
+T=470000 [Driver] addr=0x14 wr=0 acc=0 func=0 wdata=0xc3143a rdata=0x0
+T=470000 [Monitor] addr=0xa6 wr=0 acc=0 func=0 wdata=0xecc79e rdata=0x0
+T=470000 [Scoreboard] addr=0xa6 wr=0 acc=0 func=0 wdata=0xecc79e rdata=0x0
+T=470000 [Scoreboard] ERROR! First time read, addr=0xa6 exp=1234 act=0x0
+T=490000 [Driver] wait until ready is high
+T=510000 [Driver] waiting for item ...
+T=510000 [Driver] addr=0x9b wr=1 acc=1 func=1 wdata=0x36c630 rdata=0x0
+T=510000 [Monitor] addr=0x14 wr=0 acc=0 func=0 wdata=0xc3143a rdata=0x0
+T=510000 [Scoreboard] addr=0x14 wr=0 acc=0 func=0 wdata=0xc3143a rdata=0x0
+T=510000 [Scoreboard] ERROR! First time read, addr=0x14 exp=1234 act=0x0
+T=530000 [Driver] wait until ready is high
+T=530000 [Monitor] addr=0x9b wr=1 acc=1 func=1 wdata=0x36c630 rdata=0x0
+T=530000 [Scoreboard] addr=0x9b wr=1 acc=1 func=1 wdata=0x36c630 rdata=0x0
+T=530000 [Scoreboard] Store addr=0x9b wr=0x1 data=0x36c630
+T=550000 [Driver] waiting for item ...
+T=550000 [Driver] addr=0x9f wr=0 acc=0 func=0 wdata=0x8becf9 rdata=0x0
+T=550000 [Monitor] addr=0x9b wr=1 acc=1 func=1 wdata=0x36c630 rdata=0x0
+T=550000 [Scoreboard] addr=0x9b wr=1 acc=1 func=1 wdata=0x36c630 rdata=0x0
+T=550000 [Scoreboard] Store addr=0x9b wr=0x1 data=0x36c630
+T=570000 [Driver] waiting for item ...
+T=570000 [Driver] addr=0xbf wr=1 acc=0 func=0 wdata=0xfd2350 rdata=0x0
+T=590000 [Driver] wait until ready is high
+T=590000 [Monitor] addr=0x9f wr=0 acc=0 func=0 wdata=0x8becf9 rdata=0x123456
+T=590000 [Scoreboard] addr=0x9f wr=0 acc=0 func=0 wdata=0x8becf9 rdata=0x123456
+T=590000 [Scoreboard] ERROR! First time read, addr=0x9f exp=1234 act=0x123456
+T=610000 [Driver] waiting for item ...
+T=610000 [Driver] addr=0x9c wr=1 acc=1 func=1 wdata=0xffbbdc rdata=0x0
+T=610000 [Monitor] addr=0xbf wr=1 acc=0 func=0 wdata=0xfd2350 rdata=0x0
+T=610000 [Scoreboard] addr=0xbf wr=1 acc=0 func=0 wdata=0xfd2350 rdata=0x0
+T=610000 [Scoreboard] Store addr=0xbf wr=0x1 data=0xfd2350
+T=630000 [Driver] waiting for item ...
+T=630000 [Driver] addr=0x9c wr=0 acc=1 func=1 wdata=0xc4c281 rdata=0x0
+T=630000 [Monitor] addr=0x9c wr=1 acc=1 func=1 wdata=0xffbbdc rdata=0x0
+T=630000 [Scoreboard] addr=0x9c wr=1 acc=1 func=1 wdata=0xffbbdc rdata=0x0
+T=630000 [Scoreboard] Store addr=0x9c wr=0x1 data=0xffbbdc
+T=650000 [Driver] waiting for item ...
+T=650000 [Driver] addr=0x46 wr=0 acc=1 func=1 wdata=0x65aa9b rdata=0x0
+T=670000 [Driver] waiting for item ...
+T=670000 [Driver] addr=0x7d wr=0 acc=1 func=1 wdata=0xa261fd rdata=0x0
+T=670000 [Monitor] addr=0x9c wr=0 acc=1 func=1 wdata=0xc4c281 rdata=0x0
+T=670000 [Scoreboard] addr=0x9c wr=0 acc=1 func=1 wdata=0xc4c281 rdata=0x0
+T=670000 [Scoreboard] ERROR! addr=0x9c exp=0xffbbdc act=0x0
+T=690000 [Driver] waiting for item ...
+T=690000 [Driver] addr=0xab wr=0 acc=0 func=0 wdata=0x9b1744 rdata=0x0
+T=710000 [Driver] waiting for item ...
+T=710000 [Driver] addr=0x4 wr=1 acc=1 func=0 wdata=0x6f7cca rdata=0x0
+T=710000 [Monitor] addr=0x7d wr=0 acc=1 func=1 wdata=0xa261fd rdata=0x0
+T=710000 [Scoreboard] addr=0x7d wr=0 acc=1 func=1 wdata=0xa261fd rdata=0x0
+T=710000 [Scoreboard] ERROR! First time read, addr=0x7d exp=1234 act=0x0
+T=730000 [Driver] wait until ready is high
+T=730000 [Monitor] addr=0x4 wr=1 acc=1 func=0 wdata=0x6f7cca rdata=0x0
+T=730000 [Scoreboard] addr=0x4 wr=1 acc=1 func=0 wdata=0x6f7cca rdata=0x0
+T=730000 [Scoreboard] Store addr=0x4 wr=0x1 data=0x6f7cca
+T=750000 [Driver] waiting for item ...
+T=750000 [Driver] addr=0x79 wr=1 acc=0 func=0 wdata=0x7f3089 rdata=0x0
+T=750000 [Monitor] addr=0x4 wr=1 acc=1 func=0 wdata=0x6f7cca rdata=0x0
+T=750000 [Scoreboard] addr=0x4 wr=1 acc=1 func=0 wdata=0x6f7cca rdata=0x0
+T=750000 [Scoreboard] Store addr=0x4 wr=0x1 data=0x6f7cca
+T=770000 [Driver] waiting for item ...
+T=770000 [Driver] addr=0xb4 wr=0 acc=0 func=0 wdata=0x2a7f98 rdata=0x0
+T=770000 [Monitor] addr=0x79 wr=1 acc=0 func=0 wdata=0x7f3089 rdata=0x0
+T=770000 [Scoreboard] addr=0x79 wr=1 acc=0 func=0 wdata=0x7f3089 rdata=0x0
+T=770000 [Scoreboard] Store addr=0x79 wr=0x1 data=0x7f3089
+T=790000 [Driver] waiting for item ...
+T=790000 [Driver] addr=0xad wr=1 acc=0 func=0 wdata=0x3681e7 rdata=0x0
+T=810000 [Driver] wait until ready is high
+T=810000 [Monitor] addr=0xb4 wr=0 acc=0 func=0 wdata=0x2a7f98 rdata=0x123456
+T=810000 [Scoreboard] addr=0xb4 wr=0 acc=0 func=0 wdata=0x2a7f98 rdata=0x123456
+T=810000 [Scoreboard] ERROR! First time read, addr=0xb4 exp=1234 act=0x123456
+T=830000 [Driver] waiting for item ...
+T=830000 [Driver] addr=0xfa wr=0 acc=1 func=1 wdata=0x1ef rdata=0x0
+T=830000 [Monitor] addr=0xad wr=1 acc=0 func=0 wdata=0x3681e7 rdata=0x0
+T=830000 [Scoreboard] addr=0xad wr=1 acc=0 func=0 wdata=0x3681e7 rdata=0x0
+T=830000 [Scoreboard] Store addr=0xad wr=0x1 data=0x3681e7
+T=850000 [Driver] waiting for item ...
+T=850000 [Driver] addr=0xa wr=1 acc=1 func=1 wdata=0xdf319 rdata=0x0
+T=870000 [Driver] waiting for item ...
+T=870000 [Driver] addr=0x8f wr=0 acc=0 func=0 wdata=0x57acac rdata=0x0
+T=870000 [Monitor] addr=0xfa wr=0 acc=1 func=1 wdata=0x1ef rdata=0x0
+T=870000 [Scoreboard] addr=0xfa wr=0 acc=1 func=1 wdata=0x1ef rdata=0x0
+T=870000 [Scoreboard] ERROR! First time read, addr=0xfa exp=1234 act=0x0
+T=890000 [Driver] waiting for item ...
+T=890000 [Driver] addr=0x75 wr=0 acc=0 func=0 wdata=0xcaeb66 rdata=0x0
+T=910000 [Driver] wait until ready is high
+T=910000 [Monitor] addr=0x8f wr=0 acc=0 func=0 wdata=0x57acac rdata=0x123456
+T=910000 [Scoreboard] addr=0x8f wr=0 acc=0 func=0 wdata=0x57acac rdata=0x123456
+T=910000 [Scoreboard] ERROR! First time read, addr=0x8f exp=1234 act=0x123456
+T=930000 [Driver] waiting for item ...
+T=930000 [Driver] addr=0x9f wr=0 acc=1 func=1 wdata=0x55057d rdata=0x0
+T=950000 [Driver] wait until ready is high
+T=950000 [Monitor] addr=0x75 wr=0 acc=0 func=0 wdata=0xcaeb66 rdata=0x123456
+T=950000 [Scoreboard] addr=0x75 wr=0 acc=0 func=0 wdata=0xcaeb66 rdata=0x123456
+T=950000 [Scoreboard] ERROR! First time read, addr=0x75 exp=1234 act=0x123456
+T=970000 [Driver] waiting for item ...
+T=970000 [Driver] addr=0x73 wr=0 acc=1 func=1 wdata=0x9ff7d2 rdata=0x0
+T=990000 [Driver] waiting for item ...
+T=990000 [Driver] addr=0xe3 wr=0 acc=0 func=0 wdata=0x733035 rdata=0x0
+T=990000 [Monitor] addr=0x9f wr=0 acc=1 func=1 wdata=0x55057d rdata=0x0
+T=990000 [Scoreboard] addr=0x9f wr=0 acc=1 func=1 wdata=0x55057d rdata=0x0
+T=990000 [Scoreboard] ERROR! First time read, addr=0x9f exp=1234 act=0x0
+T=1010000 [Driver] waiting for item ...
+T=1010000 [Driver] addr=0x6e wr=1 acc=1 func=0 wdata=0x2f7b78 rdata=0x0
+=== FUNCTIONAL COVERAGE REPORT ===
+Total Coverage: 90.00%
+==================================
+T=1030000 [Driver] wait until ready is high
+T=1030000 [Monitor] addr=0xe3 wr=0 acc=0 func=0 wdata=0x733035 rdata=0x123456
+T=1030000 [Scoreboard] addr=0xe3 wr=0 acc=0 func=0 wdata=0x733035 rdata=0x123456
+T=1030000 [Scoreboard] ERROR! First time read, addr=0xe3 exp=1234 act=0x123456
+T=1050000 [Driver] waiting for item ...
+T=1050000 [Driver] addr=0x71 wr=0 acc=0 func=0 wdata=0x4e20c8 rdata=0x0
+T=1050000 [Monitor] addr=0x6e wr=1 acc=1 func=0 wdata=0x2f7b78 rdata=0x0
+T=1050000 [Scoreboard] addr=0x6e wr=1 acc=1 func=0 wdata=0x2f7b78 rdata=0x0
+T=1050000 [Scoreboard] Store addr=0x6e wr=0x1 data=0x2f7b78
+T=1070000 [Driver] waiting for item ...
+T=1070000 [Driver] addr=0x69 wr=1 acc=0 func=0 wdata=0xbf389b rdata=0x0
+T=1090000 [Driver] wait until ready is high
+T=1090000 [Monitor] addr=0x71 wr=0 acc=0 func=0 wdata=0x4e20c8 rdata=0x123456
+T=1090000 [Scoreboard] addr=0x71 wr=0 acc=0 func=0 wdata=0x4e20c8 rdata=0x123456
+T=1090000 [Scoreboard] ERROR! First time read, addr=0x71 exp=1234 act=0x123456
+T=1110000 [Driver] waiting for item ...
+T=1110000 [Driver] addr=0x1d wr=0 acc=0 func=0 wdata=0xf3ed93 rdata=0x0
+T=1110000 [Monitor] addr=0x69 wr=1 acc=0 func=0 wdata=0xbf389b rdata=0x0
+T=1110000 [Scoreboard] addr=0x69 wr=1 acc=0 func=0 wdata=0xbf389b rdata=0x0
+T=1110000 [Scoreboard] Store addr=0x69 wr=0x1 data=0xbf389b
+T=1130000 [Driver] waiting for item ...
+T=1130000 [Driver] addr=0x6e wr=1 acc=1 func=1 wdata=0x82f76d rdata=0x0
+T=1150000 [Driver] wait until ready is high
+T=1150000 [Monitor] addr=0x1d wr=0 acc=0 func=0 wdata=0xf3ed93 rdata=0x123456
+T=1150000 [Scoreboard] addr=0x1d wr=0 acc=0 func=0 wdata=0xf3ed93 rdata=0x123456
+T=1150000 [Scoreboard] ERROR! First time read, addr=0x1d exp=1234 act=0x123456
+T=1170000 [Driver] waiting for item ...
+T=1170000 [Driver] addr=0x73 wr=1 acc=1 func=1 wdata=0x19ae4 rdata=0x0
+T=1170000 [Monitor] addr=0x6e wr=1 acc=1 func=1 wdata=0x82f76d rdata=0x0
+T=1170000 [Scoreboard] addr=0x6e wr=1 acc=1 func=1 wdata=0x82f76d rdata=0x0
+T=1170000 [Scoreboard] Store addr=0x6e wr=0x1 data=0x82f76d
+T=1190000 [Driver] waiting for item ...
+T=1190000 [Driver] addr=0x50 wr=1 acc=1 func=1 wdata=0x3f60c3 rdata=0x0
+T=1190000 [Monitor] addr=0x73 wr=1 acc=1 func=1 wdata=0x19ae4 rdata=0x0
+T=1190000 [Scoreboard] addr=0x73 wr=1 acc=1 func=1 wdata=0x19ae4 rdata=0x0
+T=1190000 [Scoreboard] Store addr=0x73 wr=0x1 data=0x19ae4
+T=1210000 [Driver] waiting for item ...
+T=1210000 [Driver] addr=0x71 wr=1 acc=1 func=0 wdata=0x664b48 rdata=0x0
+T=1210000 [Monitor] addr=0x50 wr=1 acc=1 func=1 wdata=0x3f60c3 rdata=0x0
+T=1210000 [Scoreboard] addr=0x50 wr=1 acc=1 func=1 wdata=0x3f60c3 rdata=0x0
+T=1210000 [Scoreboard] Store addr=0x50 wr=0x1 data=0x3f60c3
+T=1230000 [Driver] waiting for item ...
+T=1230000 [Driver] addr=0x83 wr=1 acc=0 func=0 wdata=0xc8684b rdata=0x0
+T=1230000 [Monitor] addr=0x71 wr=1 acc=1 func=0 wdata=0x664b48 rdata=0x0
+T=1230000 [Scoreboard] addr=0x71 wr=1 acc=1 func=0 wdata=0x664b48 rdata=0x0
+T=1230000 [Scoreboard] Store addr=0x71 wr=0x1 data=0x664b48
+T=1250000 [Driver] waiting for item ...
+T=1250000 [Driver] addr=0x7b wr=1 acc=0 func=0 wdata=0xa0c897 rdata=0x0
+T=1250000 [Monitor] addr=0x83 wr=1 acc=0 func=0 wdata=0xc8684b rdata=0x0
+T=1250000 [Scoreboard] addr=0x83 wr=1 acc=0 func=0 wdata=0xc8684b rdata=0x0
+T=1250000 [Scoreboard] Store addr=0x83 wr=0x1 data=0xc8684b
+T=1270000 [Driver] waiting for item ...
+T=1270000 [Driver] addr=0x91 wr=1 acc=0 func=0 wdata=0xd56ecb rdata=0x0
+T=1270000 [Monitor] addr=0x7b wr=1 acc=0 func=0 wdata=0xa0c897 rdata=0x0
+T=1270000 [Scoreboard] addr=0x7b wr=1 acc=0 func=0 wdata=0xa0c897 rdata=0x0
+T=1270000 [Scoreboard] Store addr=0x7b wr=0x1 data=0xa0c897
+T=1290000 [Driver] waiting for item ...
+T=1290000 [Driver] addr=0x32 wr=0 acc=1 func=1 wdata=0x75c04d rdata=0x0
+T=1290000 [Monitor] addr=0x91 wr=1 acc=0 func=0 wdata=0xd56ecb rdata=0x0
+T=1290000 [Scoreboard] addr=0x91 wr=1 acc=0 func=0 wdata=0xd56ecb rdata=0x0
+T=1290000 [Scoreboard] Store addr=0x91 wr=0x1 data=0xd56ecb
+T=1310000 [Driver] waiting for item ...
+T=1310000 [Driver] addr=0x2f wr=0 acc=1 func=1 wdata=0x34efd rdata=0x0
+T=1330000 [Driver] waiting for item ...
+T=1330000 [Driver] addr=0x99 wr=1 acc=1 func=1 wdata=0x5d7723 rdata=0x0
+T=1330000 [Monitor] addr=0x32 wr=0 acc=1 func=1 wdata=0x75c04d rdata=0x0
+T=1330000 [Scoreboard] addr=0x32 wr=0 acc=1 func=1 wdata=0x75c04d rdata=0x0
+T=1330000 [Scoreboard] ERROR! First time read, addr=0x32 exp=1234 act=0x0
+T=1350000 [Driver] waiting for item ...
+T=1350000 [Driver] addr=0x8a wr=0 acc=1 func=1 wdata=0x802107 rdata=0x0
+T=1350000 [Monitor] addr=0x99 wr=1 acc=1 func=1 wdata=0x5d7723 rdata=0x0
+T=1350000 [Scoreboard] addr=0x99 wr=1 acc=1 func=1 wdata=0x5d7723 rdata=0x0
+T=1350000 [Scoreboard] Store addr=0x99 wr=0x1 data=0x5d7723
+T=1370000 [Driver] waiting for item ...
+T=1370000 [Driver] addr=0x1d wr=0 acc=0 func=0 wdata=0x2907c6 rdata=0x0
+T=1390000 [Driver] waiting for item ...
+T=1390000 [Driver] addr=0x1f wr=0 acc=0 func=0 wdata=0xe3c0be rdata=0x0
+T=1390000 [Monitor] addr=0x8a wr=0 acc=1 func=1 wdata=0x802107 rdata=0x0
+T=1390000 [Scoreboard] addr=0x8a wr=0 acc=1 func=1 wdata=0x802107 rdata=0x0
+T=1390000 [Scoreboard] ERROR! First time read, addr=0x8a exp=1234 act=0x0
+T=1410000 [Driver] wait until ready is high
+T=1430000 [Driver] waiting for item ...
+T=1430000 [Driver] addr=0x75 wr=1 acc=1 func=1 wdata=0x43ea8f rdata=0x0
+T=1430000 [Monitor] addr=0x1f wr=0 acc=0 func=0 wdata=0xe3c0be rdata=0x0
+T=1430000 [Scoreboard] addr=0x1f wr=0 acc=0 func=0 wdata=0xe3c0be rdata=0x0
+T=1430000 [Scoreboard] ERROR! First time read, addr=0x1f exp=1234 act=0x0
+T=1450000 [Driver] wait until ready is high
+T=1450000 [Monitor] addr=0x75 wr=1 acc=1 func=1 wdata=0x43ea8f rdata=0x0
+T=1450000 [Scoreboard] addr=0x75 wr=1 acc=1 func=1 wdata=0x43ea8f rdata=0x0
+T=1450000 [Scoreboard] Store addr=0x75 wr=0x1 data=0x43ea8f
+T=1470000 [Driver] waiting for item ...
+T=1470000 [Driver] addr=0x90 wr=0 acc=1 func=1 wdata=0xefdf50 rdata=0x0
+T=1470000 [Monitor] addr=0x75 wr=1 acc=1 func=1 wdata=0x43ea8f rdata=0x0
+T=1470000 [Scoreboard] addr=0x75 wr=1 acc=1 func=1 wdata=0x43ea8f rdata=0x0
+T=1470000 [Scoreboard] Store addr=0x75 wr=0x1 data=0x43ea8f
+T=1490000 [Driver] waiting for item ...
+T=1490000 [Driver] addr=0x42 wr=0 acc=0 func=0 wdata=0x83ee73 rdata=0x0
+T=1510000 [Driver] waiting for item ...
+T=1510000 [Driver] addr=0xb wr=1 acc=1 func=0 wdata=0xb36ae7 rdata=0x0
+T=1510000 [Monitor] addr=0x90 wr=0 acc=1 func=1 wdata=0xefdf50 rdata=0x0
+T=1510000 [Scoreboard] addr=0x90 wr=0 acc=1 func=1 wdata=0xefdf50 rdata=0x0
+T=1510000 [Scoreboard] ERROR! First time read, addr=0x90 exp=1234 act=0x0
+$finish called from file "../../tb/reg_ctrl_tb.sv", line 33.
+$finish at simulation time              1520000
+
+---------------------------------------------------------------------------
+VCS Coverage Metrics: during simulation line, cond, FSM, branch, tgl was monitored
+---------------------------------------------------------------------------
+
+ Coverage status: End of All Coverages ...
+
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 1520000 ps
+CPU Time:      0.370 seconds;       Data structure size:   0.0Mb
+Wed Jun 11 23:26:33 2025
+Coverage simulation completed!
+Coverage database available in delivery/simv.vdb
+]0;12112195@vlsi112:~/register-controller-functional-coverage/scripts[12112195@vlsi112 scripts]$ make cov-report-text
+Generating text coverage reports...
+cd ../funct_cov/delivery && urg -dir simv.vdb -format text -report ../../results/coverage
+Note: Bumping stack limit from 8192 to unlimited Kbytes.
+URG Version N-2017.12-1 Copyright (c) 1991-2017 by Synopsys Inc.
+Load Failed: 
+Warning-[UCAPI-SNF] Shape Not Found
+  'Fsm' coverage shape is not there in the vdb 'simv.vdb'. Coverage of this 
+  metric will not be reported.
+  Please check if proper -cm option was used at compile time.
+
+Warning-[URG-NSF] No source found
+  The source file '/home/suleiman/sv_blackbox2_exercise10/delivery/../dut.sv' 
+  or './home/suleiman/sv_blackbox2_exercise10/delivery/../dut.sv' could not be
+  found. Annotated line coverage report will not be generated for modules 
+  defined in this file.
+  Please make the source files available and try again.
+
+
+Warning-[URG-NSF] No source found
+  The source file '/home/suleiman/sv_blackbox2_exercise10/delivery/../dut.sv' 
+  or './home/suleiman/sv_blackbox2_exercise10/delivery/../dut.sv' could not be
+  found. Annotated branch coverage report will not be generated for modules 
+  defined in this file.
+  Please make the source files available and try again.
+
+
+Note-[URG-RDG] Report directory generated
+  Report written to directory ../../results/coverage
+
+Text coverage reports generated in results/coverage/
+View with: cat results/coverage/*.txt
+]0;12112195@vlsi112:~/register-controller-functional-coverage/scripts[12112195@vlsi112 scripts]$ [K[12112195@vlsi112 scripts]$ [K[12112195@vlsi112 scripts]$ [K[12112195@vlsi112 scripts]$ [K[12112195@vlsi112 scripts]$ [K[12112195@vlsi112 scripts]$ [K[12112195@vlsi112 scripts]$ [K[12112195@vlsi112 scripts]$ [K[12112195@vlsi112 scripts]$ [K[12112195@vlsi112 scripts]$ [K[12112195@vlsi112 scripts]$ [K[12112195@vlsi112 scripts]$ [K[12112195@vlsi112 scripts]$ make cov-report
+Generating coverage reports...
+cd ../funct_cov/delivery && urg -dir simv.vdb -report ../../results/coverage
+Note: Bumping stack limit from 8192 to unlimited Kbytes.
+URG Version N-2017.12-1 Copyright (c) 1991-2017 by Synopsys Inc.
+Load Failed: 
+Warning-[UCAPI-SNF] Shape Not Found
+  'Fsm' coverage shape is not there in the vdb '

@@ -1,0 +1,7 @@
+{"vcs1":{"timestamp_begin":1748327802.168767169, "rt":0.13, "ut":0.08, "st":0.04}}
+{"vcselab":{"timestamp_begin":1748327802.369946402, "rt":0.32, "ut":0.26, "st":0.06}}
+{"link":{"timestamp_begin":1748327802.741605156, "rt":0.11, "ut":0.08, "st":0.03}}
+{"SNPS_VCS_INTERNAL_ROOT_START_TIME": 1748327801.893717156}
+{"VCS_COMP_START_TIME": 1748327801.893717156}
+{"VCS_COMP_END_TIME": 1748327802.916157350}
+{"VCS_USER_OPTIONS": "-sverilog ../dut.sv -sverilog"}

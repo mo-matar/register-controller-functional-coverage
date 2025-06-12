@@ -1,0 +1,647 @@
+===============================================================================
+Module : reg_ctrl
+===============================================================================
+SCORE  LINE   COND   TOGGLE FSM    BRANCH 
+ 69.75  92.59  30.77  85.65 --      70.00 
+
+Source File(s) : 
+
+/home/suleiman/sv_blackbox2_exercise10/delivery/../dut.sv
+
+Module self-instances :
+
+SCORE  LINE   COND   TOGGLE FSM    BRANCH NAME  
+ 69.75  92.59  30.77  85.65 --      70.00 tb.u0 
+
+
+
+-------------------------------------------------------------------------------
+Line Coverage for Module : reg_ctrl
+
+             Line No.   Total   Covered  Percent
+TOTAL                       27       25    92.59
+ALWAYS             72       16       15    93.75
+ALWAYS             96        6        6   100.00
+ALWAYS            105        5        4    80.00
+WARNING: The source file '/home/suleiman/sv_blackbox2_exercise10/delivery/../dut.sv' or './home/suleiman/sv_blackbox2_exercise10/delivery/../dut.sv' was not found, so annotated line coverage report could not be generated.
+Line No. Covered Statements                   
+72       1       1          
+73       1       1          
+74       1       1          
+77       1       1          
+78       0       1          
+                                 MISSING_ELSE 
+79       1       1          
+80       1       1          
+81       1       1          
+82       1       1          
+83       1       1          
+84       1       1          
+                                 MISSING_ELSE 
+87       1       1          
+88       1       1          
+89       1       1          
+90       1       1          
+92       1       1          
+96       1       1          
+97       1       1          
+98       1       1          
+99       1       1          
+100      1       1          
+101      1       1          
+                                 MISSING_ELSE 
+105      1       1          
+106      1       1          
+107      1       1          
+108      0       1          
+110      1       1          
+
+
+-------------------------------------------------------------------------------
+Cond Coverage for Module : reg_ctrl
+
+               Total   Covered  Percent
+Conditions         26        8    30.77
+Logical            26        8    30.77
+Non-Logical         0        0
+Event               0        0
+
+ LINE       34
+ EXPRESSION ((addr == 8'h40) && (wdata == 24'h00beef))
+             -------1-------    ----------2----------
+
+-1- -2- Status
+ 0   1  Not Covered
+ 1   0  Not Covered
+ 1   1  Not Covered
+
+ LINE       35
+ EXPRESSION ((addr == 8'h50) && (wdata == 24'h00c0de))
+             -------1-------    ----------2----------
+
+-1- -2- Status
+ 0   1  Not Covered
+ 1   0  Covered
+ 1   1  Not Covered
+
+ LINE       36
+ EXPRESSION ((addr == 8'h60) && (wdata == 24'h00feed))
+             -------1-------    ----------2----------
+
+-1- -2- Status
+ 0   1  Not Covered
+ 1   0  Not Covered
+ 1   1  Not Covered
+
+ LINE       37
+ EXPRESSION ((addr == 8'h70) && (wdata == 24'h00babe))
+             -------1-------    ----------2----------
+
+-1- -2- Status
+ 0   1  Not Covered
+ 1   0  Not Covered
+ 1   1  Not Covered
+
+ LINE       42
+ EXPRESSION (addr_trig0 ? ({5'b0, addr[2:0]}) : addr)
+             -----1----
+
+-1- Status
+ 0  Covered
+ 1  Not Covered
+
+ LINE       45
+ EXPRESSION (addr_trig1 ? ({wdata[23:5], 5'b11111}) : wdata)
+             -----1----
+
+-1- Status
+ 0  Covered
+ 1  Not Covered
+
+ LINE       48
+ EXPRESSION (addr_trig2 ? ((bugged_wdata_2 ^ 24'h0003e0)) : bugged_wdata_2)
+             -----1----
+
+-1- Status
+ 0  Covered
+ 1  Not Covered
+
+ LINE       51
+ EXPRESSION (data_trig0 ? ((bugged_wdata_3 & (~24'hf80000))) : bugged_wdata_3)
+             -----1----
+
+-1- Status
+ 0  Covered
+ 1  Not Covered
+
+ LINE       54
+ EXPRESSION (data_trig1 ? 24'b0 : bugged_wdata_4)
+             -----1----
+
+-1- Status
+ 0  Covered
+ 1  Not Covered
+
+ LINE       61
+ EXPRESSION (combo_trig0 ? ((raw_rdata & (~24'h001f00))) : raw_rdata)
+             -----1-----
+
+-1- Status
+ 0  Covered
+ 1  Not Covered
+
+ LINE       64
+ EXPRESSION (combo_trig1 ? 1'b0 : func)
+             -----1-----
+
+-1- Status
+ 0  Covered
+ 1  Not Covered
+
+-------------------------------------------------------------------------------
+Toggle Coverage for Module : reg_ctrl
+                Total Covered Percent 
+Totals          32    16      50.00   
+Total Bits      460   394     85.65   
+Total Bits 0->1 230   198     86.09   
+Total Bits 1->0 230   196     85.22   
+
+                             
+Ports          10  7  70.00  
+Port Bits      126 94 74.60  
+Port Bits 0->1 63  48 76.19  
+Port Bits 1->0 63  46 73.02  
+
+                                
+Signals          22  9   40.91  
+Signal Bits      334 300 89.82  
+Signal Bits 0->1 167 150 89.82  
+Signal Bits 1->0 167 150 89.82  
+
+Port Details
+             Toggle Toggle 1->0 Toggle 0->1 Direction 
+clk          Yes    Yes         Yes         INPUT     
+rstn         No     No          Yes         INPUT     
+addr[7:0]    Yes    Yes         Yes         INPUT     
+sel          No     No          Yes         INPUT     
+wr           Yes    Yes         Yes         INPUT     
+acc          Yes    Yes         Yes         INPUT     
+func         Yes    Yes         Yes         INPUT     
+wdata[23:0]  Yes    Yes         Yes         INPUT     
+rdata[0]     No     No          No          OUTPUT    
+rdata[2:1]   Yes    Yes         Yes         OUTPUT    
+rdata[3]     No     No          No          OUTPUT    
+rdata[4]     Yes    Yes         Yes         OUTPUT    
+rdata[5]     No     No          No          OUTPUT    
+rdata[6]     Yes    Yes         Yes         OUTPUT    
+rdata[9:7]   No     No          No          OUTPUT    
+rdata[10]    Yes    Yes         Yes         OUTPUT    
+rdata[11]    No     No          No          OUTPUT    
+rdata[13:12] Yes    Yes         Yes         OUTPUT    
+rdata[16:14] No     No          No          OUTPUT    
+rdata[17]    Yes    Yes         Yes         OUTPUT    
+rdata[19:18] No     No          No          OUTPUT    
+rdata[20]    Yes    Yes         Yes         OUTPUT    
+rdata[23:21] No     No          No          OUTPUT    
+ready        Yes    Yes         Yes         OUTPUT    
+
+Signal Details
+                      Toggle Toggle 1->0 Toggle 0->1 
+ready_dly             Yes    Yes         Yes         
+ready_pe              Yes    Yes         Yes         
+addr_trig0            No     No          No          
+addr_trig1            No     No          No          
+addr_trig2            No     No          No          
+data_trig0            No     No          No          
+data_trig1            No     No          No          
+data_trig2            No     No          No          
+combo_trig0           No     No          No          
+combo_trig1           No     No          No          
+combo_trig2           No     No          No          
+combo_trig3           No     No          No          
+bugged_addr[7:0]      Yes    Yes         Yes         
+bugged_wdata_2[23:0]  Yes    Yes         Yes         
+bugged_wdata_3[23:0]  Yes    Yes         Yes         
+bugged_wdata_4[23:0]  Yes    Yes         Yes         
+final_wdata[23:0]     Yes    Yes         Yes         
+valid_wr              Yes    Yes         Yes         
+raw_rdata[0]          No     No          No          
+raw_rdata[12:1]       Yes    Yes         Yes         
+raw_rdata[13]         No     No          No          
+raw_rdata[16:14]      Yes    Yes         Yes         
+raw_rdata[17]         No     No          No          
+raw_rdata[23:18]      Yes    Yes         Yes         
+bugged_rdata_7[0]     No     No          No          
+bugged_rdata_7[12:1]  Yes    Yes         Yes         
+bugged_rdata_7[13]    No     No          No          
+bugged_rdata_7[16:14] Yes    Yes         Yes         
+bugged_rdata_7[17]    No     No          No          
+bugged_rdata_7[23:18] Yes    Yes         Yes         
+bugged_func           Yes    Yes         Yes         
+bug_flip_ready_dly    No     No          No          
+
+
+-------------------------------------------------------------------------------
+Branch Coverage for Module : reg_ctrl
+         Line No. Total Covered Percent 
+Branches          30    21      70.00   
+TERNARY  42       2     1       50.00   
+TERNARY  45       2     1       50.00   
+TERNARY  48       2     1       50.00   
+TERNARY  51       2     1       50.00   
+TERNARY  54       2     1       50.00   
+TERNARY  61       2     1       50.00   
+TERNARY  64       2     1       50.00   
+IF       72       6     5       83.33   
+IF       87       3     3       100.00  
+IF       96       4     4       100.00  
+IF       105      3     2       66.67   
+
+WARNING: The source file /home/suleiman/sv_blackbox2_exercise10/delivery/../dut.sv' or './home/suleiman/sv_blackbox2_exercise10/delivery/../dut.sv was not found/opened, so annotated branch coverage report could not be generated.
+	LineNo.	Expression
+-1-:	42	(addr_trig0) ? 
+
+Branches:
+
+-1- Status      
+1   Not Covered 
+0   Covered     
+
+
+	LineNo.	Expression
+-1-:	45	(addr_trig1) ? 
+
+Branches:
+
+-1- Status      
+1   Not Covered 
+0   Covered     
+
+
+	LineNo.	Expression
+-1-:	48	(addr_trig2) ? 
+
+Branches:
+
+-1- Status      
+1   Not Covered 
+0   Covered     
+
+
+	LineNo.	Expression
+-1-:	51	(data_trig0) ? 
+
+Branches:
+
+-1- Status      
+1   Not Covered 
+0   Covered     
+
+
+	LineNo.	Expression
+-1-:	54	(data_trig1) ? 
+
+Branches:
+
+-1- Status      
+1   Not Covered 
+0   Covered     
+
+
+	LineNo.	Expression
+-1-:	61	(combo_trig0) ? 
+
+Branches:
+
+-1- Status      
+1   Not Covered 
+0   Covered     
+
+
+	LineNo.	Expression
+-1-:	64	(combo_trig1) ? 
+
+Branches:
+
+-1- Status      
+1   Not Covered 
+0   Covered     
+
+
+	LineNo.	Expression
+-1-:	72	if ((!rstn))
+-2-:	77	if (combo_trig2)
+-3-:	79	if (valid_wr)
+-4-:	81	if ((((sel & ready) & acc) & (!bugged_func)))
+-5-:	83	if ((((sel & ready) & acc) & bugged_func))
+
+Branches:
+
+-1- -2- -3- -4- -5- Status      
+1   1   -   -   -   Not Covered 
+1   0   -   -   -   Covered     
+0   -   1   -   -   Covered     
+0   -   0   1   -   Covered     
+0   -   0   0   1   Covered     
+0   -   0   0   0   Covered     
+
+
+	LineNo.	Expression
+-1-:	87	if ((!rstn))
+-2-:	89	if ((((sel & ready) & (!wr)) & (!acc)))
+
+Branches:
+
+-1- -2- Status  
+1   -   Covered 
+0   1   Covered 
+0   0   Covered 
+
+
+	LineNo.	Expression
+-1-:	96	if ((!rstn))
+-2-:	98	if ((sel & ready_pe))
+-3-:	100	if ((((sel & ready) & (!wr)) & (!acc)))
+
+Branches:
+
+-1- -2- -3- Status  
+1   -   -   Covered 
+0   1   -   Covered 
+0   0   1   Covered 
+0   0   0   Covered 
+
+
+	LineNo.	Expression
+-1-:	105	if ((!rstn))
+-2-:	107	if (bug_flip_ready_dly)
+
+Branches:
+
+-1- -2- Status      
+1   -   Covered     
+0   1   Not Covered 
+0   0   Covered     
+
+
+-------------------------------------------------------------------------------
+===============================================================================
+Module Instance : tb.u0
+===============================================================================
+
+Instance :
+
+SCORE  LINE   COND   TOGGLE FSM    BRANCH 
+ 69.75  92.59  30.77  85.65 --      70.00 
+
+
+Instance's subtree :
+
+SCORE  LINE   COND   TOGGLE FSM    BRANCH 
+ 69.75  92.59  30.77  85.65 --      70.00 
+
+
+Module : 
+
+SCORE  LINE   COND   TOGGLE FSM    BRANCH NAME     
+ 69.75  92.59  30.77  85.65 --      70.00 reg_ctrl 
+
+
+Parent : 
+
+SCORE  LINE   COND   TOGGLE FSM    BRANCH NAME 
+100.00 100.00 --     100.00 --     --     tb   
+
+
+Subtrees :
+
+
+no children
+----------------
+
+
+-------------------------------------------------------------------------------
+Since this is the module's only instance, the coverage report is the same as for the module.
+===============================================================================
+Module : reg_if
+===============================================================================
+SCORE  LINE   COND   TOGGLE FSM    BRANCH 
+ 74.60 --     --      74.60 --     --     
+
+Source File(s) : 
+
+/home/12112195/register-controller-functional-coverage/funct_cov/delivery/../../tb/interface.sv
+
+Module self-instances :
+
+SCORE  LINE   COND   TOGGLE FSM    BRANCH NAME   
+ 74.60 --     --      74.60 --     --     tb._if 
+
+
+
+-------------------------------------------------------------------------------
+Toggle Coverage for Module : reg_if
+                Total Covered Percent 
+Totals          10    7       70.00   
+Total Bits      126   94      74.60   
+Total Bits 0->1 63    48      76.19   
+Total Bits 1->0 63    46      73.02   
+
+                          
+Ports          1 1 100.00 
+Port Bits      2 2 100.00 
+Port Bits 0->1 1 1 100.00 
+Port Bits 1->0 1 1 100.00 
+
+                               
+Signals          9   6  66.67  
+Signal Bits      124 92 74.19  
+Signal Bits 0->1 62  47 75.81  
+Signal Bits 1->0 62  45 72.58  
+
+Port Details
+    Toggle Toggle 1->0 Toggle 0->1 Direction 
+clk Yes    Yes         Yes         INPUT     
+
+Signal Details
+             Toggle Toggle 1->0 Toggle 0->1 
+rstn         No     No          Yes         
+addr[7:0]    Yes    Yes         Yes         
+wdata[23:0]  Yes    Yes         Yes         
+rdata[0]     No     No          No          
+rdata[2:1]   Yes    Yes         Yes         
+rdata[3]     No     No          No          
+rdata[4]     Yes    Yes         Yes         
+rdata[5]     No     No          No          
+rdata[6]     Yes    Yes         Yes         
+rdata[9:7]   No     No          No          
+rdata[10]    Yes    Yes         Yes         
+rdata[11]    No     No          No          
+rdata[13:12] Yes    Yes         Yes         
+rdata[16:14] No     No          No          
+rdata[17]    Yes    Yes         Yes         
+rdata[19:18] No     No          No          
+rdata[20]    Yes    Yes         Yes         
+rdata[23:21] No     No          No          
+wr           Yes    Yes         Yes         
+sel          No     No          Yes         
+ready        Yes    Yes         Yes         
+acc          Yes    Yes         Yes         
+func         Yes    Yes         Yes         
+
+
+-------------------------------------------------------------------------------
+===============================================================================
+Module Instance : tb._if
+===============================================================================
+
+Instance :
+
+SCORE  LINE   COND   TOGGLE FSM    BRANCH 
+ 74.60 --     --      74.60 --     --     
+
+
+Instance's subtree :
+
+SCORE  LINE   COND   TOGGLE FSM    BRANCH 
+ 74.60 --     --      74.60 --     --     
+
+
+Module : 
+
+SCORE  LINE   COND   TOGGLE FSM    BRANCH NAME   
+ 74.60 --     --      74.60 --     --     reg_if 
+
+
+Parent : 
+
+SCORE  LINE   COND   TOGGLE FSM    BRANCH NAME 
+100.00 100.00 --     100.00 --     --     tb   
+
+
+Subtrees :
+
+
+no children
+----------------
+
+
+-------------------------------------------------------------------------------
+Since this is the module's only instance, the coverage report is the same as for the module.
+===============================================================================
+Module : tb
+===============================================================================
+SCORE  LINE   COND   TOGGLE FSM    BRANCH 
+100.00 100.00 --     100.00 --     --     
+
+Source File(s) : 
+
+/home/12112195/register-controller-functional-coverage/funct_cov/delivery/../../tb/reg_ctrl_tb.sv
+
+Module self-instances :
+
+SCORE  LINE   COND   TOGGLE FSM    BRANCH NAME 
+100.00 100.00 --     100.00 --     --     tb   
+
+
+
+-------------------------------------------------------------------------------
+Line Coverage for Module : tb
+
+             Line No.   Total   Covered  Percent
+TOTAL                       14       14   100.00
+ALWAYS              3        2        2   100.00
+INITIAL            19        2        2   100.00
+INITIAL            25       10       10   100.00
+
+2                           reg clk;
+3          2/2              always #10 clk = ~clk;
+4                       
+5                           reg_if _if(clk);    reg_ctrl u0 (
+6                               .clk   (clk),
+7                               .rstn  (_if.rstn),
+8                               .addr  (_if.addr),
+9                               .sel   (_if.sel),
+10                              .wr    (_if.wr),
+11                              .acc   (_if.acc),
+12                              .func  (_if.func),
+13                              .wdata (_if.wdata),
+14                              .rdata (_if.rdata),
+15                              .ready (_if.ready)
+16                          );
+17                      
+18                          initial begin
+19         1/1                  $dumpfile("dump.vcd");
+20         1/1                  $dumpvars;
+21                          end
+22                      
+23                          initial begin
+24                              test t0;
+25         1/1                  clk = 0;
+26         1/1                  _if.rstn = 0;
+27         1/1                  _if.sel  = 0;
+28         2/2                  #20 _if.rstn = 1;
+29                      
+30         1/1                  t0 = new;
+31         1/1                  t0.e0.vif = _if;
+32         1/1                  t0.run();
+33         2/2                  #500 $finish;
+
+-------------------------------------------------------------------------------
+Toggle Coverage for Module : tb
+                Total Covered Percent 
+Totals          1     1       100.00  
+Total Bits      2     2       100.00  
+Total Bits 0->1 1     1       100.00  
+Total Bits 1->0 1     1       100.00  
+
+                            
+Signals          1 1 100.00 
+Signal Bits      2 2 100.00 
+Signal Bits 0->1 1 1 100.00 
+Signal Bits 1->0 1 1 100.00 
+
+Signal Details
+    Toggle Toggle 1->0 Toggle 0->1 
+clk Yes    Yes         Yes         
+
+
+-------------------------------------------------------------------------------
+===============================================================================
+Module Instance : tb
+===============================================================================
+
+Instance :
+
+SCORE  LINE   COND   TOGGLE FSM    BRANCH 
+100.00 100.00 --     100.00 --     --     
+
+
+Instance's subtree :
+
+SCORE  LINE   COND   TOGGLE FSM    BRANCH 
+ 69.81  95.12  30.77  83.33 --      70.00 
+
+
+Module : 
+
+SCORE  LINE   COND   TOGGLE FSM    BRANCH NAME 
+100.00 100.00 --     100.00 --     --     tb   
+
+
+Parent : 
+
+none
+----------------
+
+
+Subtrees :
+
+SCORE  LINE   COND   TOGGLE FSM    BRANCH NAME 
+ 74.60 --     --      74.60 --     --     _if  
+ 69.75  92.59  30.77  85.65 --      70.00 u0   
+
+
+
+-------------------------------------------------------------------------------
+Since this is the module's only instance, the coverage report is the same as for the module.
