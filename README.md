@@ -101,6 +101,9 @@ The coverage model targets the following scenarios:
 ## Usage
 
 Navigate to the `scripts` directory and use the following make commands:
+```bash
+cd scripts
+```
 
 
 ### Coverage Testing
@@ -146,10 +149,10 @@ Simulation logs are stored in `results/logs/`:
 ```
 dv_assignment/
 ├── docs/           # Documentation and images
-├── dut/            # Design Under Test files
-├── funct_cov/      # Coverage analysis files
+├── dut/            # Contains Black box files (not used)
+├── funct_cov/      # Contains Black box files
 ├── results/        # Simulation and coverage results
 ├── scripts/        # Build and run scripts
 ├── tb/             # Testbench components
-└── tests/          # Test scenarios and configurations
+└── tests/          # Test registry with 1000 transactions
 ```
